@@ -138,12 +138,12 @@ dmypy.json
 *.html
 
 *.db
-Projects/P04-Movie-Data-Analysis/Base de datos_dvdrental.zip
+proyectos/p04-analisis-de-peliculas-sql/Base de datos_dvdrental.zip
 
 *:Zone.Identifier
 *:shield
 # Dumps written by the M40 notebook on every run
-S07-SQL/M40-sqlite-python/Base*.sql
+s07-sql/m40-sqlite-con-python/Base*.sql
 
 # EBAC course material (guides, glossaries, FAQs, instructions): kept locally, not redistributed
 Cientifico de [Dd]atos M*.pdf
@@ -154,4 +154,4 @@ M5 SQL m03 Anexo Tarea .pdf
 screencapture-lms-ebac-mx-*.pdf
 
 # Archive of the Sales Extract CSVs, which are tracked with Git LFS
-S08-PowerBI/wetransfer_sales-extract-dataset_2022-06-07_2023.zip
+s08-power-bi/wetransfer_sales-extract-dataset_2022-06-07_2023.zip

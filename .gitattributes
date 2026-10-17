@@ -4,6 +4,6 @@
 # Git LFS: Power BI files, archives and datasets over 10 MB
 *.pbix filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
-Projects/P02-Heart-Attack/MNIST.csv filter=lfs diff=lfs merge=lfs -text
-Projects/P03-Customer-Segmentation/M30[[:space:]]Online[[:space:]]Retail.csv filter=lfs diff=lfs merge=lfs -text
-S08-PowerBI/Practice/Sales[[:space:]]Extract/**/*.csv filter=lfs diff=lfs merge=lfs -text
+proyectos/p02-aprendizaje-supervisado/mnist.csv filter=lfs diff=lfs merge=lfs -text
+proyectos/p03-segmentacion-de-clientes/online-retail.csv filter=lfs diff=lfs merge=lfs -text
+s08-power-bi/practica-ventas/datos-ventas/**/*.csv filter=lfs diff=lfs merge=lfs -text
