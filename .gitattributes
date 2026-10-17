@@ -1,12 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+S08-PowerBI/Practice/Sales[[:space:]]Extract/Sales[[:space:]]2019.csv filter=lfs diff=lfs merge=lfs -text
+S08-PowerBI/Practice/Sales[[:space:]]Extract/Sales[[:space:]]by[[:space:]]year/*.csv filter=lfs diff=lfs merge=lfs -text
 *.pbix filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
 Projects/P02-Heart-Attack/MNIST.csv filter=lfs diff=lfs merge=lfs -text
-S05-Aprendizaje-no-supervisado/P03-Market-Basket/M30[[:space:]]Online[[:space:]]Retail.csv filter=lfs diff=lfs merge=lfs -text
 Projects/P03-Customer-Segmentation/M30[[:space:]]Online[[:space:]]Retail.csv filter=lfs diff=lfs merge=lfs -text
-S08-PowerBI/Practice/Sales[[:space:]]Extract/Sales[[:space:]]2019.csv filter=lfs diff=lfs merge=lfs -text
-S08-PowerBI/Practice/Sales[[:space:]]Extract/Sales[[:space:]]by[[:space:]]year/*.csv filter=lfs diff=lfs merge=lfs -text
+S05-Aprendizaje-no-supervisado/P03-Market-Basket/M30[[:space:]]Online[[:space:]]Retail.csv filter=lfs diff=lfs merge=lfs -text
 S04-Aprendizaje-supervisado/P02-Heart-Attack/MNIST.csv filter=lfs diff=lfs merge=lfs -text
 MNIST.csv filter=lfs diff=lfs merge=lfs -text
 M30[[:space:]]Online[[:space:]]Retail.csv filter=lfs diff=lfs merge=lfs -text
