@@ -2,4 +2,4 @@
 
 Author: Juliho Castillo Colmenares
 
-![data-model](screenshot-01.png)
+![data-model](captura-01.png)

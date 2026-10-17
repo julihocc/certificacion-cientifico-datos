@@ -32,48 +32,72 @@ This repository contains comprehensive coursework, practical exercises, and real
 
 ```
 certificacion-cientifico-datos/
-├── S02-Ciencia-de-datos/          Data science theory & fundamentals (4 modules)
-├── S03-Metodología/               Frameworks & workflows (4 modules)
-├── S04-Aprendizaje-supervisado/   Supervised learning algorithms (7 modules)
-├── S06-Estadística/               Statistical analysis methods (3 modules)
-├── S07-SQL/                       Database & SQL queries (9 modules, 52 scripts)
-├── S08-PowerBI/                   BI & dashboarding (7 modules, 146 MB)
-├── S09-Modelling/                 Advanced statistical modelling (6 modules)
-├── M57-Storytelling/              Data visualization & presentation (1 module)
-└── Projects/                      Capstone projects (4 projects)
+├── s01-programacion/                Python programming fundamentals (M01-M12)
+├── s02-ciencia-de-datos/            Data science theory & fundamentals (M13-M16)
+├── s03-metodologia/                 Frameworks & workflows (M17-M20)
+├── s04-aprendizaje-supervisado/     Supervised learning algorithms (M21-M26)
+├── s05-aprendizaje-no-supervisado/  Unsupervised learning algorithms (M27-M31)
+├── s06-estadistica/                 Statistical analysis methods (M32-M34)
+├── s07-sql/                         Database & SQL queries (M35-M43)
+├── s08-power-bi/                    BI & dashboarding (M44-M50 + practica-ventas/)
+├── s09-modelado/                    Advanced statistical modelling (M51-M56)
+├── s10-storytelling/                Data visualization & presentation (M57)
+└── proyectos/                       Capstone projects (P01-P05)
 ```
+
+### Naming convention
+
+- All names are lowercase ASCII kebab-case in Spanish (no accents, spaces or underscores).
+- Sections are `sNN-tema/`, modules `mNN-tema/` and projects `proyectos/pNN-tema/`. Modules are numbered sequentially from M01 to M57 across the whole program.
+- The main deliverable of each module is named after it: `mNN-tema.ipynb`, plus its `.pdf` or `.md` exports. Assignment statements are in `instrucciones.md`.
+- For example, `s04-aprendizaje-supervisado/m21-regresion-lineal-simple/m21-regresion-lineal-simple.ipynb`.
 
 ---
 
 ## Section Details
 
+### S01: Programación (Programming)
+Python programming fundamentals
+- **M01-M06:** Introduction to Python, data structures, control flow, loops, functions, object-oriented programming
+- **M07-M08:** Pandas and NumPy
+- **M09-M10:** Data visualization (2 modules)
+- **M11-M12:** Advanced functions, modules and packages
+
 ### S02: Ciencia de Datos (Data Science Fundamentals) - 1.8 MB
 Foundational concepts and theory of data science
-- **M11:** History, context, and basic definitions
-- **M12:** Types of analytics
-- **M13:** Solution-based approaches
-- **M14:** Analytics applications (Spotify case study)
+- **M13:** History, context, and basic definitions
+- **M14:** Types of analytics
+- **M15:** Solution-based approaches
+- **M16:** Analytics applications (Spotify case study)
 
 ### S03: Metodología (Methodology) - 2.6 MB
 Data science methodologies and frameworks
-- **M15:** Data science methodology
-- **M16:** KDD and CRISP-DM frameworks
-- **M17-M18:** TDSP and data mining with Orange (2 modules)
+- **M17:** Data science methodology
+- **M18:** KDD and CRISP-DM frameworks
+- **M19-M20:** TDSP and data mining with Orange (2 modules)
 
 ### S04: Aprendizaje Supervisado (Supervised Learning) - 6.7 MB
 Machine learning algorithms and techniques
-- **M19:** Simple Linear Regression (GDP data)
-- **M20:** Regularized Regression
-- **M21:** K-Nearest Neighbors (KNN)
-- **M22:** Support Vector Machines (SVM)
-- **M24:** Ensemble Methods
-- **M25:** Logistic Regression
+- **M21:** Simple Linear Regression (GDP data)
+- **M22:** Regularized Regression
+- **M23:** K-Nearest Neighbors (KNN)
+- **M24:** Support Vector Machines (SVM)
+- **M25:** Ensemble Methods
+- **M26:** Logistic Regression
+
+### S05: Aprendizaje No Supervisado (Unsupervised Learning)
+Clustering and dimensionality reduction
+- **M27:** Hierarchical Clustering
+- **M28:** K-Means
+- **M29:** Principal Component Analysis (PCA)
+- **M30:** Singular Value Decomposition (SVD)
+- **M31:** KNN-based clustering (wine data)
 
 ### S06: Estadística (Statistics) - 2.8 MB
 Statistical analysis and hypothesis testing
-- **M31:** Descriptive Statistics
-- **M32:** Inferential Statistics (hypothesis testing)
-- **M33:** Advanced Statistics (housing price analysis)
+- **M32:** Descriptive Statistics
+- **M33:** Inferential Statistics (hypothesis testing)
+- **M34:** Advanced Statistics (housing price analysis)
 
 ### S07: SQL (Database & Queries) - 16 MB
 SQL fundamentals and advanced database querying
@@ -83,14 +107,14 @@ SQL fundamentals and advanced database querying
 
 ### S08: PowerBI (Business Intelligence) - 146 MB ⭐ Largest Section
 Business intelligence and dashboard development
-- **M45:** Data Preparation
-- **M46:** Data Modelling
-- **M47:** Conditional Formatting
-- **M48:** DAX (Data Analysis Expressions)
-- **M49:** Dynamic Objects
-- **M50:** Dashboard Design
-- **M51:** Publishing Dashboards
-- Includes sample dashboards and sales dataset (55 MB)
+- **M44:** Data Preparation
+- **M45:** Data Modelling
+- **M46:** Conditional Formatting
+- **M47:** DAX (Data Analysis Expressions)
+- **M48:** Dynamic Objects
+- **M49:** Dashboard Design
+- **M50:** Publishing Dashboards
+- Includes a sample dashboard and sales dataset in `practica-ventas/` (55 MB)
 
 ### S09: Modelling (Advanced Analytics) - 17 MB
 Advanced statistical and time series modelling
@@ -101,7 +125,7 @@ Advanced statistical and time series modelling
 - **M55:** AR(p) Models (AutoRegressive)
 - **M56:** ARIMA Models (New York temperature data)
 
-### M57: Storytelling with Data - 7.8 MB
+### S10: Storytelling (M57: Storytelling with Data) - 7.8 MB
 Data visualization and presentation techniques
 - Jupyter notebook with practical examples
 - UN economic activity data analysis
@@ -122,6 +146,12 @@ Data visualization and presentation techniques
 - **Datasets:** Medical dataset (11 KB), MNIST digits (76 MB)
 - **Techniques:** Supervised learning, classification models, feature engineering
 - **Deliverables:** Jupyter notebook, PDF report, model analysis
+
+### P03: Customer Segmentation
+**Objective:** Customer segmentation of online retail transactions
+- **Dataset:** Online Retail (UCI)
+- **Techniques:** Unsupervised learning, clustering
+- **Deliverables:** Jupyter notebook, PDF report
 
 ### P04: Movie Data Analysis - 1.5+ MB
 **Objective:** Comprehensive SQL and data analysis of movie rental database
@@ -167,7 +197,7 @@ Data visualization and presentation techniques
 
 ---
 
-Every module holds my submitted work, except [M01 Introducción a Python](S01-Programación/M01-Introducción-a-Python/m01-introduccion-a-python.ipynb). M01 is a complementary lesson written later to complete S01.
+Every module holds my submitted work, except [M01 Introducción a Python](s01-programacion/m01-introduccion-a-python/m01-introduccion-a-python.ipynb). M01 is a complementary lesson written later to complete S01.
 
 ## Running the notebooks
 
@@ -188,13 +218,13 @@ Power BI files (`*.pbix`), zip archives and the large datasets are stored with [
 
 | Dataset | Used by | Source |
 | --- | --- | --- |
-| `Projects/P02-Heart-Attack/MNIST.csv` | P02 | `train.csv` from Kaggle's [Digit Recognizer](https://www.kaggle.com/competitions/digit-recognizer/data) competition |
-| `Projects/P03-Customer-Segmentation/M30 Online Retail.csv` | P03 | Course-provided copy of the [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) dataset, with columns renamed to upper case (`INVOICE_NO`, `CUSTOMER_ID`, `REGION`…) and dates shifted to 2019 |
-| `S08-PowerBI/Practice/Sales Extract/` | S08 practice dashboard | Sales extract provided by the course |
+| `proyectos/p02-aprendizaje-supervisado/mnist.csv` | P02 | `train.csv` from Kaggle's [Digit Recognizer](https://www.kaggle.com/competitions/digit-recognizer/data) competition |
+| `proyectos/p03-segmentacion-de-clientes/online-retail.csv` | P03 | Course-provided copy of the [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) dataset, with columns renamed to upper case (`INVOICE_NO`, `CUSTOMER_ID`, `REGION`…) and dates shifted to 2019 |
+| `s08-power-bi/practica-ventas/datos-ventas/` | S08 practice dashboard | Sales extract provided by the course |
 
 ## Not included
 
-- The `dvdrental` data files for P04 come from the PostgreSQL `dvdrental` sample database. To rebuild it, edit the file paths in [restore.sql](Projects/P04-Movie-Data-Analysis/dvdrental/restore.sql) to point at your local copy.
+- The `dvdrental` data files for P04 come from the PostgreSQL `dvdrental` sample database. To rebuild it, edit the file paths in [restore.sql](proyectos/p04-analisis-de-peliculas-sql/dvdrental/restore.sql) to point at your local copy.
 - EBAC course material (class guides, glossaries, FAQs and assignment PDFs) is not included.
 
 ---
@@ -226,10 +256,10 @@ The repository includes multiple real-world and educational datasets:
 
 ### Learning Path
 The repository is organized as a progressive learning path:
-1. **Foundation** (S02-S03): Theory and methodology
-2. **Technical Skills** (S04, S06, S07): ML, statistics, SQL
+1. **Foundation** (S01-S03): Programming, theory and methodology
+2. **Technical Skills** (S04-S07): ML, statistics, SQL
 3. **Advanced Tools** (S08-S09): BI, modelling, time series
-4. **Integration** (M57, Projects): Storytelling and capstone projects
+4. **Integration** (S10, proyectos): Storytelling and capstone projects
 
 ---
 
@@ -247,14 +277,14 @@ The repository is organized as a progressive learning path:
 
 ## How to Navigate
 
-- **Learning Sequential:** Start in S02 and progress through sections in numerical order
+- **Learning Sequential:** Start in S01 and progress through sections in numerical order
 - **By Technology:**
-  - Python/ML: S04 and Projects
+  - Python/ML: S01, S04, S05 and proyectos
   - SQL: S07 and P04
   - Statistics: S06 and S09
   - PowerBI: S08 and P05
-  - Methodology: S03 and M57
-- **By Project:** Jump to `Projects/` folder for capstone deliverables
+  - Methodology: S03 and S10
+- **By Project:** Jump to `proyectos/` folder for capstone deliverables
 
 ---
 

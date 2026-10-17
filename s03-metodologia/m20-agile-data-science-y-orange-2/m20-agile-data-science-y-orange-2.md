@@ -39,7 +39,7 @@ En conclusión, aunque la gestión ágil ofrece numerosas ventajas, especialment
 
 Para la predicción de los resultados, utilizaremos el siguiente flujo de trabajo
 
-![image-20240428155733844](./assets/image-20240428155733844.png)
+![image-20240428155733844](./assets/figura-01.png)
 
 ### Entrenamiento del modelo
 
@@ -52,7 +52,7 @@ Para la predicción de los resultados, utilizaremos el siguiente flujo de trabaj
 
 En la imagen que has proporcionado, se muestran los resultados de una regresión logística realizada con Scikit-Learn.
 
-![image-20240428160001767](./assets/image-20240428160001767.png)
+![image-20240428160001767](./assets/figura-02.png)
 
 
 
@@ -90,24 +90,24 @@ En la imagen que has proporcionado, se muestran los resultados de una regresión
    1. Para el primer paciente, se recomienda el medicamento `Y`.
    2. Para la segunda paciente, se recomienda el medicamento `B`.
 
-![image-20240428160346558](./assets/image-20240428160346558.png)
+![image-20240428160346558](./assets/figura-03.png)
 
 ### Mejora de los resultados
 
 Siguiente el mismo flujo, añadimos un modelo `Gradient Boosting`.
 
-![image-20240428160743180](./assets/image-20240428160743180.png)
+![image-20240428160743180](./assets/figura-04.png)
 
 
 
 
 
-![image-20240428160758504](./assets/image-20240428160758504.png)
+![image-20240428160758504](./assets/figura-05.png)
 
 Se obtienen los siguiente resultados 
 
-![image-20240428160903457](./assets/image-20240428160903457.png)
+![image-20240428160903457](./assets/figura-06.png)
 
 Esto nos muestra que el modelo `Gradiente Boosting` obtiene mejores resultados métrica por métrica. Sin embargo, los resultados esperados son los mismos. 
 
-![image-20240428161007711](./assets/image-20240428161007711.png)
+![image-20240428161007711](./assets/figura-07.png)

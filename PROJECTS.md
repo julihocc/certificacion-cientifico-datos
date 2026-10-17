@@ -18,7 +18,7 @@ This document provides detailed documentation of all capstone projects in the EB
 
 ## P01: User Reviews Clustering Analysis
 
-**Directory:** `Projects/P01-User-Reviews/`
+**Directory:** `proyectos/p01-resenas-de-apps/`
 **Size:** 7.7 MB
 **Project Type:** Unsupervised Learning
 **Status:** Completed
@@ -36,7 +36,7 @@ This project demonstrates unsupervised learning techniques through clustering an
 
 ### Dataset
 
-**File:** `User-Reviews.csv` (7.7 MB)
+**File:** `user-reviews.csv` (7.7 MB)
 - **Records:** Thousands of user reviews
 - **Features:** Review text, ratings, user ID, product ID, date
 - **Format:** CSV (structured text data)
@@ -85,13 +85,13 @@ This project demonstrates unsupervised learning techniques through clustering an
 
 ### Deliverables
 
-1. **Jupyter Notebook:** `P01-User-Reviews-Analysis.ipynb`
+1. **Jupyter Notebook:** `p01-resenas-de-apps.ipynb`
    - Full analysis workflow
    - Code and explanations
    - Visualizations embedded
    - Results and findings
 
-2. **Project Report:** `P01-Project-Report.pdf`
+2. **Project Report:** `p01-resenas-de-apps.pdf`
    - Executive summary
    - Methodology explanation
    - Key findings
@@ -130,7 +130,7 @@ This project demonstrates unsupervised learning techniques through clustering an
 
 ## P02: Heart Attack Prediction
 
-**Directory:** `Projects/P02-Heart-Attack/`
+**Directory:** `proyectos/p02-aprendizaje-supervisado/`
 **Size:** 76+ MB (due to MNIST dataset)
 **Project Type:** Supervised Learning / Classification
 **Status:** Completed
@@ -151,7 +151,7 @@ This project demonstrates supervised learning techniques for medical prediction 
 ### Datasets
 
 #### Primary Dataset: Medical Data
-**File:** `medical_dataset.csv` (11 KB)
+**File:** `heart-attack.csv` (11 KB)
 - **Records:** 1000+ patient records
 - **Features:** Age, sex, blood pressure, cholesterol, heart rate, etc.
 - **Target:** Heart attack risk (0/1)
@@ -159,7 +159,7 @@ This project demonstrates supervised learning techniques for medical prediction 
 - **Application:** Heart attack risk prediction
 
 #### Supplementary Dataset: MNIST Handwritten Digits
-**Directory:** `mnist_data/` (76 MB)
+**File:** `mnist.csv` (76 MB)
 - **Records:** 70,000 handwritten digit images
 - **Features:** 28x28 pixel images (784 features)
 - **Target:** Digit class (0-9)
@@ -229,7 +229,7 @@ This project demonstrates supervised learning techniques for medical prediction 
 
 ### Deliverables
 
-1. **Jupyter Notebook:** `P02-Heart-Attack-Prediction.ipynb`
+1. **Jupyter Notebook:** `p02-aprendizaje-supervisado.ipynb`
    - Complete analysis workflow
    - Medical data analysis
    - Multiple model implementations
@@ -237,7 +237,7 @@ This project demonstrates supervised learning techniques for medical prediction 
    - Model evaluation and comparison
    - Visualizations and results
 
-2. **Project Report:** `P02-Project-Report.pdf`
+2. **Project Report:** `p02-aprendizaje-supervisado.pdf`
    - Executive summary
    - Medical background and dataset description
    - Methodology and modeling approach
@@ -288,7 +288,7 @@ This project demonstrates supervised learning techniques for medical prediction 
 
 ## P04: Movie Rental Data Analysis
 
-**Directory:** `Projects/P04-Movie-Data-Analysis/`
+**Directory:** `proyectos/p04-analisis-de-peliculas-sql/`
 **Size:** 1.5+ MB
 **Project Type:** SQL & Data Analytics
 **Status:** Completed
@@ -345,7 +345,7 @@ Staff (2 staff members)
 ```
 
 #### Database Files
-- `dvdrental.sql` - Complete database schema and restore script
+- `dvdrental/restore.sql` - Complete database schema and restore script
 - `dvdrental_backup/` - Database backup files
 - Restore instructions: `RESTORE-DATABASE.md`
 
@@ -430,14 +430,14 @@ Staff (2 staff members)
    - `customer-analysis.sql` - 14+ queries
    - `advanced-queries.sql` - 10+ complex queries
 
-2. **Comprehensive Report:** `P04-Movie-Analysis-Report.pdf` (1.5 MB)
+2. **Comprehensive Report:** `p04-analisis-de-peliculas-sql.pdf` (1.5 MB)
    - Executive summary
    - Key findings by analysis area
    - Recommendations
    - Visualizations (15+ charts)
    - Data-driven insights
 
-3. **Visualizations:** `Visualizations/` folder
+3. **Visualizations:** `ejercicio-01.png` … `ejercicio-15.png`
    - Rental trend line charts
    - Category revenue pie charts
    - Geographic distribution maps
@@ -445,7 +445,7 @@ Staff (2 staff members)
    - Customer demographic distributions
    - Year-over-year comparisons
 
-4. **Technical Documentation:** `P04-Analysis-Guide.md`
+4. **Technical Documentation:** `p04-analisis-de-peliculas-sql.md`
    - SQL techniques used
    - Query explanations
    - Performance notes
@@ -502,7 +502,7 @@ Staff (2 staff members)
 
 ## P05: PowerBI COVID-19 Dashboard
 
-**Directory:** `Projects/P05-PowerBI-COVID19/`
+**Directory:** `proyectos/p05-dashboard-covid/`
 **Size:** Variable (PowerBI file + data)
 **Project Type:** Business Intelligence / Dashboarding
 **Status:** Completed
@@ -616,14 +616,14 @@ This project demonstrates advanced business intelligence techniques using Micros
 
 ### Deliverables
 
-1. **PowerBI File:** `covid_dashboard.pbix`
+1. **PowerBI File:** `p05-dashboard-covid.pbix`
    - Complete interactive dashboard
    - Multiple pages/views
    - All calculations and formatting
    - Ready for publication
    - File size: 10-20 MB (including embedded data)
 
-2. **Dashboard Report:** `P05-COVID19-Analysis-Report.pdf`
+2. **Dashboard Report:** `p05-dashboard-covid.pdf`
    - Executive summary
    - Key findings and insights
    - Dashboard navigation guide
@@ -707,12 +707,12 @@ This project demonstrates advanced business intelligence techniques using Micros
 
 ### Related Modules
 - S08: PowerBI (7 modules, 146 MB content)
-  - M45: Data preparation
-  - M46: Data modelling
-  - M48: DAX formulas
-  - M49: Dynamic objects
-  - M50: Dashboard design
-  - M51: Publishing
+  - M44: Data preparation
+  - M45: Data modelling
+  - M47: DAX formulas
+  - M48: Dynamic objects
+  - M49: Dashboard design
+  - M50: Publishing
 - S06: Statistics (for metric interpretation)
 - M57: Storytelling (for insight communication)
 

@@ -8,15 +8,17 @@
 
 ```
 certificacion-cientifico-datos/
-├── S02: Data Science Fundamentals (4 modules, 1.8 MB)
-├── S03: Methodology (4 modules, 2.6 MB)
-├── S04: Supervised Learning (7 modules, 6.7 MB)
-├── S06: Statistics (3 modules, 2.8 MB)
-├── S07: SQL (9 modules, 52 scripts, 16 MB)
-├── S08: PowerBI (7 modules, 146 MB) ⭐
-├── S09: Modelling (6 modules, 17 MB)
-├── M57: Storytelling (1 module, 7.8 MB)
-└── Projects/ (4 capstone projects, 95 MB)
+├── s01-programacion/                Programming (12 modules, 3.6 MB)
+├── s02-ciencia-de-datos/            Data Science Fundamentals (4 modules, 1.8 MB)
+├── s03-metodologia/                 Methodology (4 modules, 2.6 MB)
+├── s04-aprendizaje-supervisado/     Supervised Learning (7 modules, 6.7 MB)
+├── s05-aprendizaje-no-supervisado/  Unsupervised Learning (5 modules, 9.2 MB)
+├── s06-estadistica/                 Statistics (3 modules, 2.8 MB)
+├── s07-sql/                         SQL (9 modules, 52 scripts, 16 MB)
+├── s08-power-bi/                    PowerBI (7 modules, 146 MB) ⭐
+├── s09-modelado/                    Modelling (6 modules, 17 MB)
+├── s10-storytelling/                Storytelling (1 module, 7.8 MB)
+└── proyectos/                       Projects (4 capstone projects, 95 MB)
 ```
 
 **Total: 295 MB | 316 files | 68 directories**
@@ -57,35 +59,35 @@ certificacion-cientifico-datos/
 ### Section 2: Data Science Fundamentals
 | Module | Topic | Time |
 |--------|-------|------|
-| M11 | History & Definitions | 2-3h |
-| M12 | Types of Analytics | 2-3h |
-| M13 | Solution-Based Approaches | 2h |
-| M14 | Applications & Case Studies | 2-4h |
+| M13 | History & Definitions | 2-3h |
+| M14 | Types of Analytics | 2-3h |
+| M15 | Solution-Based Approaches | 2h |
+| M16 | Applications & Case Studies | 2-4h |
 
 ### Section 3: Methodology
 | Module | Topic | Time |
 |--------|-------|------|
-| M15 | Data Science Methodology | 3-4h |
-| M16 | KDD & CRISP-DM | 3-4h |
-| M17 | TDSP Framework | 2-3h |
-| M18 | Orange Data Mining | 3-4h |
+| M17 | Data Science Methodology | 3-4h |
+| M18 | KDD & CRISP-DM | 3-4h |
+| M19 | TDSP Framework | 2-3h |
+| M20 | Orange Data Mining | 3-4h |
 
 ### Section 4: Supervised Learning (7 modules)
 | Module | Algorithm | Time |
 |--------|-----------|------|
-| M19 | Linear Regression | 6-8h |
-| M20 | Regularized Regression | 5-6h |
-| M21 | K-Nearest Neighbors | 5-6h |
-| M22 | Support Vector Machines | 6-8h |
-| M24 | Ensemble Methods | 6-8h |
-| M25 | Logistic Regression | 5-6h |
+| M21 | Linear Regression | 6-8h |
+| M22 | Regularized Regression | 5-6h |
+| M23 | K-Nearest Neighbors | 5-6h |
+| M24 | Support Vector Machines | 6-8h |
+| M25 | Ensemble Methods | 6-8h |
+| M26 | Logistic Regression | 5-6h |
 
 ### Section 6: Statistics
 | Module | Topic | Time |
 |--------|-------|------|
-| M31 | Descriptive Statistics | 5-6h |
-| M32 | Inferential Statistics | 6-8h |
-| M33 | Advanced Statistics | 6-8h |
+| M32 | Descriptive Statistics | 5-6h |
+| M33 | Inferential Statistics | 6-8h |
+| M34 | Advanced Statistics | 6-8h |
 
 ### Section 7: SQL (9 modules)
 | Module | Topic | Scripts | Time |
@@ -103,13 +105,13 @@ certificacion-cientifico-datos/
 ### Section 8: PowerBI (7 modules + Practice)
 | Module | Topic | Time |
 |--------|-------|------|
-| M45 | Data Preparation | 6-8h |
-| M46 | Data Modelling | 8-10h |
-| M47 | Conditional Formatting | 5-6h |
-| M48 | DAX Formulas | 8-10h |
-| M49 | Dynamic Objects | 6-8h |
-| M50 | Dashboard Design | 8-10h |
-| M51 | Publishing | 4-5h |
+| M44 | Data Preparation | 6-8h |
+| M45 | Data Modelling | 8-10h |
+| M46 | Conditional Formatting | 5-6h |
+| M47 | DAX Formulas | 8-10h |
+| M48 | Dynamic Objects | 6-8h |
+| M49 | Dashboard Design | 8-10h |
+| M50 | Publishing | 4-5h |
 | Practice | Hands-on exercises | 10-12h |
 
 ### Section 9: Modelling (6 modules)
@@ -181,25 +183,25 @@ Git: Version control
 ## 📂 File Location Guide
 
 ### Find SQL Scripts
-`S07-SQL/M35-M43/` (52 files organized by module)
+`s07-sql/m35-*/` to `s07-sql/m43-*/` (52 files organized by module)
 
 ### Find Jupyter Notebooks
 `Throughout project folders` (21 notebooks total)
 
 ### Find Datasets
 `Distributed across module folders` (30 CSV files)
-- GDP data: `S04/`
-- Marketing data: `S06/M32/`
-- Housing data: `S06/M33/` & `S09/M51-M52/`
-- Movies: `Projects/P04/`
-- Reviews: `Projects/P01/`
+- GDP data: `s04-aprendizaje-supervisado/m21-regresion-lineal-simple/data/`
+- Marketing data: `s06-estadistica/m33-estadistica-inferencial/`
+- Housing data: `s06-estadistica/m34-estadistica-avanzada/` & `s09-modelado/m51-analisis-de-regresion/`, `s09-modelado/m52-pruebas-de-hipotesis/`
+- Movies: `proyectos/p04-analisis-de-peliculas-sql/`
+- Reviews: `proyectos/p01-resenas-de-apps/`
 
 ### Find PowerBI Files
-`S08-PowerBI/` (.pbix files in each module)
+`s08-power-bi/` (.pbix files in each module)
 
 ### Find Large Datasets
-- MNIST: `Projects/P02/mnist_data/` (76 MB)
-- Sales: `S08-PowerBI/Practice/` (55 MB ZIP)
+- MNIST: `proyectos/p02-aprendizaje-supervisado/mnist.csv` (76 MB)
+- Sales: `s08-power-bi/practica-ventas/datos-ventas/` (55 MB)
 
 ---
 
@@ -208,21 +210,21 @@ Git: Version control
 ### By Language
 - **Python:** Notebooks, scripts in S04, S06, S09, Projects
 - **SQL:** All files in S07 (M35-M43)
-- **DAX:** S08-PowerBI (M48)
+- **DAX:** s08-power-bi (M47)
 - **Markdown:** Documentation throughout
 
 ### By Algorithm
-- **Regression:** M19, M20, S06/M33, S09/M51-53
-- **Classification:** M25, P02
+- **Regression:** M21, M22, S06/M34, S09/M51-53
+- **Classification:** M26, P02
 - **Clustering:** S04 (ensemble), P01
 - **Time Series:** S09/M54-56
 - **NLP:** P01 (text mining)
 
 ### By Tool
 - **Python/Pandas:** Most modules
-- **Scikit-learn:** S04 (M19-25)
-- **PowerBI:** S08 (M45-51)
-- **Orange:** S03/M18
+- **Scikit-learn:** S04 (M21-26)
+- **PowerBI:** S08 (M44-50)
+- **Orange:** S03/M20
 - **SQL:** S07 (M35-43)
 
 ---
@@ -310,21 +312,21 @@ Git: Version control
 
 ### Want to learn about...
 
-**Machine Learning?** → S04, Projects/P01-P02
-**Databases?** → S07, Projects/P04
-**Business Intelligence?** → S08, Projects/P05
+**Machine Learning?** → S04, proyectos/ (P01-P02)
+**Databases?** → S07, proyectos/ (P04)
+**Business Intelligence?** → S08, proyectos/ (P05)
 **Statistics?** → S06, S09
 **Project Management?** → S03, M57
 **Data Storytelling?** → M57, All Projects
 
 ### Quick Access to...
 
-**SQL Files** → S07/M35-M43/ (organized by topic)
+**SQL Files** → s07-sql/ (m35-m43) (organized by topic)
 **Notebooks** → Throughout sections (21 total)
 **PDFs** → Every module folder
-**Datasets** → Module folders + Projects/
-**PowerBI Files** → S08/M45-M51/ (one per module)
-**Orange Workflows** → S03/M17-M18/ (.ows files)
+**Datasets** → Module folders + proyectos/
+**PowerBI Files** → s08-power-bi/ (m44-m50, one per module)
+**Orange Workflows** → s03-metodologia/ (m19-m20, .ows files)
 
 ---
 

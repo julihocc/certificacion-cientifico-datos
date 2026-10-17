@@ -2,6 +2,6 @@
 
 Author: Juliho Castillo Colmenares
 
-![mini-viz](screenshot-01.png) 
+![mini-viz](captura-01.png) 
 
-![drill-through](screenshot-02.png)
+![drill-through](captura-02.png)

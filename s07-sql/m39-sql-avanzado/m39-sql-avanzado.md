@@ -5,7 +5,7 @@ Usa la base de datos AdventureWorks2022 para completar los siguientes ejercicios
 
 1. Utiliza la tabla Production.Product para crear una consulta que muestre los nombres de los productos y los ID’s de productos que hayan sido ordenados. Utiliza una subconsulta para filtrar los productos ordenados en la tabla Sales.SalesOrderDetail. Ordena el resultado por nombre de manera ascendente.
 
-![alt text](request-01.png)
+![alt text](consulta-01.png)
 
 ```sql
 -- Utiliza la tabla Production.Product para crear una consulta que muestre los nombres de los productos y los ID’s de productos que hayan sido ordenados. Utiliza una subconsulta para filtrar los productos ordenados en la tabla Sales.SalesOrderDetail. Ordena el resultado por nombre de manera ascendente.
@@ -21,11 +21,11 @@ ORDER BY
     p.Name ASC;
 ```
 
-![alt text](response-01.png)
+![alt text](resultado-01.png)
 
 2. Utiliza las tablas HumanResources.Employee, HumanResources.EmployeeDepartmentHistory, HumanResources.Department y Person.Person para crear una consulta que muestre un listado de todos los empleados y el nombre de su departamento actual. Los campos a mostrar serán: BusinessEntityID, FirstName + ' ' + LastName como Nombre del Empleado, y Name como Nombre del Departamento.
 
-![alt text](request-01.png)
+![alt text](consulta-01.png)
 
 ```sql
 -- Utiliza las tablas HumanResources.Employee, HumanResources.EmployeeDepartmentHistory, HumanResources.Department y Person.Person para crear una consulta que muestre un listado de todos los empleados y el nombre de su departamento actual. Los campos a mostrar serán: BusinessEntityID, FirstName + ' ' + LastName como Nombre del Empleado, y Name como Nombre del Departamento.
@@ -48,7 +48,7 @@ ORDER BY
     e.BusinessEntityID ASC;
 ```
 
-![alt text](response-02.png)
+![alt text](resultado-02.png)
 
 
 3. Utiliza las tablas HumanResources.Employee, HumanResources.EmployeeDepartmentHistory y HumanResources.Department para crear una consulta que muestre el mismo resultado que en el ejercicio 2, pero utilizando un CTE. Los campos a mostrar serán: BusinessEntityID, FirstName + ' ' + LastName como Nombre del Empleado, y Name como Nombre del Departamento.
@@ -83,11 +83,11 @@ ORDER BY
     BusinessEntityID ASC;
 ```
 
-![alt text](response-03.png)
+![alt text](resultado-03.png)
 
 4. Crea una tabla temporal local y otra global para almacenar los productos ordenados. Utiliza la tabla Production.Product para insertar los datos en ambas tablas temporales. Los campos a incluir serán: ProductID y Name. Inserta los datos en la tabla temporal local.
 
-![alt text](request-04.png)
+![alt text](consulta-04.png)
 
 ```sql
 -- Crea una tabla temporal local y otra global para almacenar los productos ordenados. Utiliza la tabla Production.Product para insertar los datos en ambas tablas temporales. Los campos a incluir serán: ProductID y Name. Inserta los datos en la tabla temporal local.
@@ -115,11 +115,11 @@ SELECT ProductID, Name
 FROM [AdventureWorks2022].[Production].[Product];
 ```
 
-![alt text](response-04.png)
+![alt text](resultado-04.png)
 
 5. Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra solo para el año 2011.
 
-![alt text](request-05.png)
+![alt text](consulta-05.png)
 
 ```sql
 -- Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra solo para el año 2011.
@@ -133,11 +133,11 @@ WHERE
     YEAR(OrderDate) = 2011;
 ```
 
-![alt text](response-05.png)
+![alt text](resultado-05.png)
 
 6. Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra sin los 2 primeros caracteres y nombra los campos resultantes como NewSalesOrderNumber y NewPurchaseOrderNumber.
 
-![alt text](request-06.png)
+![alt text](consulta-06.png)
 
 ```sql
 -- 6.Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra sin los 2 primeros caracteres y nombra los campos resultantes como NewSalesOrderNumber y NewPurchaseOrderNumber.
@@ -149,4 +149,4 @@ FROM
     [AdventureWorks2022].[Sales].[SalesOrderHeader];
 ```
 
-![alt text](response-06.png)
+![alt text](resultado-06.png)

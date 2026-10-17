@@ -14,7 +14,7 @@
 
 ## Section 2: Ciencia de Datos (Data Science Fundamentals)
 
-**Directory:** `S02-Ciencia-de-datos/`
+**Directory:** `s02-ciencia-de-datos/`
 **Size:** 1.8 MB | **Modules:** 4 | **Duration:** Introductory
 
 ### Purpose
@@ -22,43 +22,43 @@ Establish foundational understanding of data science concepts, terminology, and 
 
 ### Modules
 
-#### M11: History and Definitions of Data Science
+#### M13: History and Definitions of Data Science
 - **Topics:**
   - Definition and scope of data science
   - Historical evolution of data science
   - Core concepts and terminology
 - **Resources:**
-  - Theory PDF: `M11-Data-Science-Definition.pdf`
-  - Markdown guide: `M11-Instructions.md`
+  - Theory PDF: `m13-historia-contexto-y-definiciones.pdf`
+  - Markdown guide: `m13-historia-contexto-y-definiciones.md`
 - **Learning Outcome:** Understand data science as discipline
 
-#### M12: Types of Analytics
+#### M14: Types of Analytics
 - **Topics:**
   - Descriptive analytics
   - Predictive analytics
   - Prescriptive analytics
   - Diagnostic analytics
 - **Resources:**
-  - Class material: `M12-Analytics-Types.pdf`
-  - Exercises: `M12-Exercises.md`
+  - Class material: `m14-tipos-de-analitica.pdf`
+  - Exercises: `m14-tipos-de-analitica.md`
 - **Learning Outcome:** Differentiate analytics types
 
-#### M13: Solution-Based Approaches
+#### M15: Solution-Based Approaches
 - **Topics:**
   - Problem-solving frameworks
   - Solution design methodologies
   - Business impact consideration
 - **Resources:**
-  - PDF guide: `M13-Solutions.pdf`
+  - PDF guide: `m15-soluciones-basadas-en-datos.pdf`
 - **Learning Outcome:** Apply data science to business problems
 
-#### M14: Analytics Applications & Case Studies
+#### M16: Analytics Applications & Case Studies
 - **Topics:**
   - Real-world analytics applications
   - Industry case studies
   - Spotify analytics example
 - **Resources:**
-  - Case study: `M14-Spotify-Case-Study.pdf`
+  - Case study: `m16-aplicacion-de-analitica.md`
   - Dataset: `spotify_data.csv`
 - **Learning Outcome:** Connect theory to real applications
 
@@ -66,7 +66,7 @@ Establish foundational understanding of data science concepts, terminology, and 
 
 ## Section 3: Metodología (Data Science Methodologies)
 
-**Directory:** `S03-Metodología/`
+**Directory:** `s03-metodologia/`
 **Size:** 2.6 MB | **Modules:** 4 | **Duration:** Intermediate
 
 ### Purpose
@@ -74,51 +74,51 @@ Master established data science frameworks and project methodologies.
 
 ### Modules
 
-#### M15: Data Science Methodology
+#### M17: Data Science Methodology
 - **Topics:**
   - Scientific method application
   - Hypothesis formulation
   - Experiment design
   - Validation approaches
 - **Resources:**
-  - `M15-Methodology.pdf`
-  - `M15-Framework-Guide.md`
-- **Prerequisites:** M11-M14
+  - `m17-metodologia.pdf`
+  - `m17-metodologia.md`
+- **Prerequisites:** M13-M16
 - **Learning Outcome:** Design data science projects methodically
 
-#### M16: KDD and CRISP-DM Frameworks
+#### M18: KDD and CRISP-DM Frameworks
 - **Topics:**
   - Knowledge Discovery in Databases (KDD)
   - CRISP-DM (Cross Industry Standard Process)
   - Framework comparison
   - Implementation steps
 - **Resources:**
-  - `M16-KDD-CRISP-DM.pdf` (comprehensive guide)
-  - `M16-Framework-Details.md`
+  - `m18-kdd-crisp-dm.pdf` (comprehensive guide)
+  - `m18-kdd-crisp-dm.md`
   - Visual diagrams and flowcharts
 - **Learning Outcome:** Apply industry-standard frameworks
 
-#### M17: TDSP (Team Data Science Process)
+#### M19: TDSP (Team Data Science Process)
 - **Topics:**
   - Microsoft TDSP framework
   - Team-based project structure
   - Lifecycle phases
   - Deliverables at each stage
 - **Resources:**
-  - `M17-TDSP-Framework.pdf`
+  - `m19-tdsp-bspf-y-orange-1.pdf`
   - Process documentation
 - **Learning Outcome:** Plan team data science projects
 
-#### M18: Data Mining with Orange
+#### M20: Data Mining with Orange
 - **Topics:**
   - Visual data mining concepts
   - Orange software introduction
   - Workflow design
   - Classification and clustering with Orange
 - **Resources:**
-  - `M18-Orange-Introduction.pdf`
-  - Orange workflow files: `workflow_1.ows`, `workflow_2.ows`
-  - Tutorial: `M18-Orange-Tutorial.md`
+  - `m20-agile-data-science-y-orange-2.pdf`
+  - Orange workflow files: `modelo.ows`, `m19-tdsp-bspf-y-orange-1.ows` (M19)
+  - Tutorial: `m20-agile-data-science-y-orange-2.md`
 - **Tools:** Orange ML platform
 - **Learning Outcome:** Use visual data mining tools
 
@@ -126,7 +126,7 @@ Master established data science frameworks and project methodologies.
 
 ## Section 4: Aprendizaje Supervisado (Supervised Learning)
 
-**Directory:** `S04-Aprendizaje-supervisado/`
+**Directory:** `s04-aprendizaje-supervisado/`
 **Size:** 6.7 MB | **Modules:** 7 | **Duration:** Intermediate-Advanced
 
 ### Purpose
@@ -134,88 +134,88 @@ Master machine learning algorithms for classification and regression tasks.
 
 ### Modules
 
-#### M19: Simple Linear Regression
+#### M21: Simple Linear Regression
 - **Topics:**
   - Regression fundamentals
   - Ordinary Least Squares (OLS)
   - Model interpretation
   - Assumption validation
 - **Resources:**
-  - `M19-Linear-Regression.pdf` (theory)
-  - `M19-Exercises.pdf`
-  - `M19-Analysis.ipynb` (Jupyter notebook)
-- **Dataset:** `gdp_data.csv`
+  - `m21-regresion-lineal-simple.pdf` (theory)
+  - `M21-Exercises.pdf`
+  - `m21-regresion-lineal-simple.ipynb` (Jupyter notebook)
+- **Dataset:** `data/pib-por-pais.csv`
 - **Tools:** Python, Scikit-learn, Pandas, Matplotlib
 - **Learning Outcome:** Implement and interpret linear regression
 
-#### M20: Regularized Regression
+#### M22: Regularized Regression
 - **Topics:**
   - Ridge regression (L2 regularization)
   - Lasso regression (L1 regularization)
   - Elastic Net
   - Hyperparameter tuning
 - **Resources:**
-  - `M20-Regularization.pdf`
-  - `M20-Exercise-Guide.md`
-- **Prerequisites:** M19
+  - `m22-regresion-regularizada.pdf`
+  - `M22-Exercise-Guide.md`
+- **Prerequisites:** M21
 - **Learning Outcome:** Apply regularization techniques
 
-#### M21: K-Nearest Neighbors (KNN)
+#### M23: K-Nearest Neighbors (KNN)
 - **Topics:**
   - KNN algorithm mechanics
   - Distance metrics
   - Hyperparameter selection (k value)
   - Classification and regression with KNN
 - **Resources:**
-  - `M21-KNN.pdf` (comprehensive guide)
-  - `M21-Implementation.md`
+  - `m23-knn.pdf` (comprehensive guide)
+  - `M23-Implementation.md`
 - **Tools:** Scikit-learn
 - **Learning Outcome:** Implement KNN classifier/regressor
 
-#### M22: Support Vector Machines (SVM)
+#### M24: Support Vector Machines (SVM)
 - **Topics:**
   - SVM theory and math
   - Kernel methods
   - Linear and non-linear SVM
   - Multi-class classification
 - **Resources:**
-  - `M22-SVM.pdf`
-  - `M22-Practical-Guide.md`
+  - `M24-SVM.pdf`
+  - `M24-Practical-Guide.md`
 - **Tools:** Scikit-learn
 - **Learning Outcome:** Apply SVM to classification problems
 
-#### M24: Ensemble Methods
+#### M25: Ensemble Methods
 - **Topics:**
   - Bagging and Bootstrap Aggregating
   - Random Forests
   - Boosting concepts
   - Gradient Boosting
 - **Resources:**
-  - `M24-Ensemble-Methods.pdf` (3 files)
-  - Python script: `M24-preprocess.py`
+  - `m25-metodos-de-ensamble.pdf` (3 files)
+  - Python script: `preprocess.py`
   - Exercises and examples
 - **Tools:** Scikit-learn, XGBoost
 - **Learning Outcome:** Build ensemble models
 
-#### M25: Logistic Regression
+#### M26: Logistic Regression
 - **Topics:**
   - Logistic function and odds ratios
   - Binary classification
   - Multi-class classification
   - Model evaluation for classification
 - **Resources:**
-  - `M25-Logistic-Regression.pdf`
-  - Python script: `M25-preprocess.py`
+  - `m26-regresion-logistica.pdf`
+  - Python script: `preprocess.py`
   - Practical examples
 - **Tools:** Scikit-learn
-- **Prerequisites:** M19 (recommended)
+- **Prerequisites:** M21 (recommended)
 - **Learning Outcome:** Implement logistic regression classifier
 
 ---
 
 ## Section 6: Estadística (Statistics)
 
-**Directory:** `S06-Estadística/`
+**Directory:** `s06-estadistica/`
 **Size:** 2.8 MB | **Modules:** 3 | **Duration:** Intermediate
 
 ### Purpose
@@ -223,18 +223,18 @@ Master statistical analysis and hypothesis testing for data-driven decisions.
 
 ### Modules
 
-#### M31: Descriptive Statistics
+#### M32: Descriptive Statistics
 - **Topics:**
   - Measures of central tendency
   - Measures of dispersion
   - Distribution analysis
   - Data summarization
 - **Resources:**
-  - `M31-Descriptive-Stats.pdf` (2 files)
-  - Markdown guide: `M31-Guide.md`
+  - `m32-estadistica-descriptiva.pdf` (2 files)
+  - Markdown guide: `m32-estadistica-descriptiva.md`
 - **Learning Outcome:** Summarize data statistically
 
-#### M32: Inferential Statistics & Hypothesis Testing
+#### M33: Inferential Statistics & Hypothesis Testing
 - **Topics:**
   - Probability distributions
   - Confidence intervals
@@ -242,32 +242,32 @@ Master statistical analysis and hypothesis testing for data-driven decisions.
   - P-values and significance
   - Type I and Type II errors
 - **Resources:**
-  - `M32-Inferential-Stats.pdf` (3 files)
-  - Jupyter notebook: `M32-Hypothesis-Testing.ipynb`
+  - `m33-estadistica-inferencial.pdf` (3 files)
+  - Jupyter notebook: `m33-estadistica-inferencial.ipynb`
 - **Dataset:** Marketing campaign data
 - **Tools:** SciPy, Statsmodels
-- **Prerequisites:** M31 (recommended)
+- **Prerequisites:** M32 (recommended)
 - **Learning Outcome:** Conduct hypothesis tests
 
-#### M33: Advanced Statistics & Regression Analysis
+#### M34: Advanced Statistics & Regression Analysis
 - **Topics:**
   - Multiple regression
   - ANOVA (Analysis of Variance)
   - Regression diagnostics
   - Model validation
 - **Resources:**
-  - `M33-Advanced-Stats.pdf` (2 files)
-  - Jupyter notebook: `M33-Regression-Analysis.ipynb`
+  - `m34-estadistica-avanzada.pdf` (2 files)
+  - Jupyter notebook: `m34-estadistica-avanzada.ipynb`
 - **Dataset:** Housing price data
 - **Tools:** Statsmodels, Scipy
-- **Prerequisites:** M32
+- **Prerequisites:** M33
 - **Learning Outcome:** Conduct advanced statistical analysis
 
 ---
 
 ## Section 7: SQL (Database & Queries)
 
-**Directory:** `S07-SQL/`
+**Directory:** `s07-sql/`
 **Size:** 16 MB | **Modules:** 9 | **Duration:** Intermediate-Advanced
 
 ### Purpose
@@ -386,7 +386,7 @@ Master SQL and database querying for data extraction and manipulation.
 ### Database: dvdrental
 **Description:** DVD rental database for SQL practice
 **Files:**
-- `dvdrental.sql` - Database schema and restore script
+- `proyectos/p04-analisis-de-peliculas-sql/dvdrental/restore.sql` - Database schema and restore script
 - 16 tables including: customers, films, actors, rentals, payments
 - ~3000+ records
 **Use Cases:** Inventory management, rental analysis, customer queries
@@ -395,7 +395,7 @@ Master SQL and database querying for data extraction and manipulation.
 
 ## Section 8: PowerBI (Business Intelligence)
 
-**Directory:** `S08-PowerBI/`
+**Directory:** `s08-power-bi/`
 **Size:** 146 MB | **Modules:** 7 + Practice | **Duration:** Advanced
 
 ### Purpose
@@ -403,44 +403,44 @@ Master business intelligence dashboarding and data visualization with Microsoft 
 
 ### Modules
 
-#### M45: Data Preparation
+#### M44: Data Preparation
 - **Topics:**
   - Data cleaning in PowerBI
   - Data transformation
   - Data quality checks
   - Power Query editor
 - **Resources:**
-  - `M45-Data-Prep.pdf` (2 files)
-  - `M45-Sample.pbix` (PowerBI file)
+  - `m44-preparacion-de-datos.pdf` (2 files)
+  - `M44-Sample.pbix` (PowerBI file)
   - Practical exercises
 - **Dataset:** Sales data sample
 - **Tools:** Microsoft PowerBI
 - **Learning Outcome:** Prepare data for visualization
 
-#### M46: Data Modelling
+#### M45: Data Modelling
 - **Topics:**
   - Star schema design
   - Fact and dimension tables
   - Relationships
   - Cardinality configuration
 - **Resources:**
-  - `M46-Modelling.pdf` (3 files)
-  - `M46-Sample.pbix` (PowerBI file with models)
-- **Prerequisites:** M45
+  - `m45-modelado-de-datos.pdf` (3 files)
+  - `M45-Sample.pbix` (PowerBI file with models)
+- **Prerequisites:** M44
 - **Learning Outcome:** Design data models
 
-#### M47: Conditional Formatting
+#### M46: Conditional Formatting
 - **Topics:**
   - Background color formatting
   - Font color rules
   - Data bars
   - Icon sets
 - **Resources:**
-  - `M47-Formatting.pdf` (2 files)
-  - `M47-Example.pbix`
+  - `m46-formato-condicional.pdf` (2 files)
+  - `M46-Example.pbix`
 - **Learning Outcome:** Apply conditional formatting
 
-#### M48: DAX (Data Analysis Expressions)
+#### M47: DAX (Data Analysis Expressions)
 - **Topics:**
   - DAX functions and syntax
   - Calculated columns
@@ -448,13 +448,13 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Time intelligence functions
   - Context and evaluation
 - **Resources:**
-  - `M48-DAX.pdf` (3 files - comprehensive)
-  - `M48-Examples.pbix` (DAX formulas)
+  - `m47-dax.pdf` (3 files - comprehensive)
+  - `M47-Examples.pbix` (DAX formulas)
   - Formula library
-- **Prerequisites:** M46
+- **Prerequisites:** M45
 - **Learning Outcome:** Write DAX formulas
 
-#### M49: Dynamic Objects
+#### M48: Dynamic Objects
 - **Topics:**
   - Dynamic titles and labels
   - Conditional visibility
@@ -462,11 +462,11 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Drill-through pages
   - Parameters and slicers
 - **Resources:**
-  - `M49-Dynamic.pdf` (2 files)
-  - `M49-Interactive.pbix`
+  - `m48-objetos-dinamicos.pdf` (2 files)
+  - `M48-Interactive.pbix`
 - **Learning Outcome:** Create interactive dashboards
 
-#### M50: Dashboard Design
+#### M49: Dashboard Design
 - **Topics:**
   - Visual hierarchy
   - Color theory
@@ -474,13 +474,13 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - User experience
   - Design best practices
 - **Resources:**
-  - `M50-Design.pdf` (3 files)
-  - `M50-Dashboard.pbix` (example dashboard)
+  - `m49-diseno-de-dashboards.pdf` (3 files)
+  - `M49-Dashboard.pbix` (example dashboard)
   - Design guidelines
-- **Prerequisites:** M47-M49 (recommended)
+- **Prerequisites:** M46-M48 (recommended)
 - **Learning Outcome:** Design professional dashboards
 
-#### M51: Publishing & Distribution
+#### M50: Publishing & Distribution
 - **Topics:**
   - PowerBI Service
   - App publishing
@@ -488,12 +488,12 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Row-level security (RLS)
   - Refresh scheduling
 - **Resources:**
-  - `M51-Publishing.pdf` (2 files)
+  - `m50-publicacion-de-dashboards.pdf` (2 files)
   - Deployment guides
 - **Learning Outcome:** Publish dashboards
 
 ### Practice & Datasets
-- **Sales Dataset:** 55 MB (wetransfer_sales-extract-dataset_2022-06-07_2023.zip)
+- **Sales Dataset:** 55 MB (`practica-ventas/datos-ventas/`)
   - Contains comprehensive sales data
   - Multiple tables and dimensions
   - Real-world complexity
@@ -504,7 +504,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
 
 ## Section 9: Advanced Modelling (Advanced Analytics)
 
-**Directory:** `S09-Modelling/`
+**Directory:** `s09-modelado/`
 **Size:** 17 MB | **Modules:** 6 | **Duration:** Advanced
 
 ### Purpose
@@ -520,8 +520,8 @@ Master advanced statistical and time series modelling techniques.
   - Model selection
   - Interpretation and inference
 - **Resources:**
-  - `M51-Regression.pdf` (2 files)
-  - Jupyter notebook: `M51-Analysis.ipynb`
+  - `m51-analisis-de-regresion.pdf` (2 files)
+  - Jupyter notebook: `m51-analisis-de-regresion.ipynb`
 - **Dataset:** Housing price data
 - **Tools:** Statsmodels, Scikit-learn
 - **Learning Outcome:** Conduct comprehensive regression analysis
@@ -533,10 +533,10 @@ Master advanced statistical and time series modelling techniques.
   - Power analysis
   - Multiple testing correction
 - **Resources:**
-  - `M52-Hypothesis.pdf` (2 files)
-  - Jupyter notebook: `M52-Testing.ipynb`
+  - `m52-pruebas-de-hipotesis.pdf` (2 files)
+  - Jupyter notebook: `m52-pruebas-de-hipotesis.ipynb`
 - **Dataset:** Housing data
-- **Prerequisites:** M31-M33
+- **Prerequisites:** M32-M34
 - **Learning Outcome:** Conduct rigorous hypothesis tests
 
 #### M53: Regression Models for Prediction
@@ -547,8 +547,8 @@ Master advanced statistical and time series modelling techniques.
   - Feature selection
   - Comparison of models
 - **Resources:**
-  - `M53-Predictive.pdf` (2 files)
-  - Jupyter notebook: `M53-Models.ipynb`
+  - `m53-modelos-de-regresion.pdf` (2 files)
+  - Jupyter notebook: `m53-modelos-de-regresion.ipynb`
 - **Dataset:** Advertising data
 - **Tools:** Scikit-learn
 - **Learning Outcome:** Build predictive regression models
@@ -560,8 +560,8 @@ Master advanced statistical and time series modelling techniques.
   - Autocorrelation and partial autocorrelation
   - Decomposition methods
 - **Resources:**
-  - `M54-TimeSeries.pdf` (2 files)
-  - Python script: `M54-TimeSeriesAnalysis.py`
+  - `m54-series-de-tiempo.pdf` (2 files)
+  - Python script: `m54-series-de-tiempo.py`
 - **Tools:** Statsmodels, Pandas
 - **Learning Outcome:** Analyze time series data
 
@@ -572,8 +572,8 @@ Master advanced statistical and time series modelling techniques.
   - Order selection
   - Model fitting and forecasting
 - **Resources:**
-  - `M55-ARIMA-Part1.pdf` (2 files)
-  - Jupyter notebook: `M55-AR-Models.ipynb`
+  - `m55-modelos-ar.pdf` (2 files)
+  - Jupyter notebook: `m55-modelos-ar.ipynb`
 - **Tools:** Statsmodels
 - **Prerequisites:** M54
 - **Learning Outcome:** Implement AR models
@@ -586,8 +586,8 @@ Master advanced statistical and time series modelling techniques.
   - ARIMA order selection
   - Forecasting with ARIMA
 - **Resources:**
-  - `M56-ARIMA-Part2.pdf` (2 files)
-  - Jupyter notebook: `M56-ARIMA-Models.ipynb`
+  - `m56-modelos-arima.pdf` (2 files)
+  - Jupyter notebook: `m56-modelos-arima.ipynb`
 - **Dataset:** New York temperature data
 - **Tools:** Statsmodels
 - **Prerequisites:** M54-M55
@@ -597,7 +597,7 @@ Master advanced statistical and time series modelling techniques.
 
 ## Module 57: Storytelling with Data
 
-**Directory:** `M57-Storytelling/`
+**Directory:** `s10-storytelling/m57-storytelling/`
 **Size:** 7.8 MB | **Duration:** 1 module
 
 ### Purpose
@@ -614,12 +614,12 @@ Master data storytelling and communication for business audiences.
 - Business storytelling
 
 #### Resources
-- Theory PDF: `M57-Storytelling-Essentials.pdf` (2 files)
-- Practical Jupyter notebook: `M57-Examples.ipynb`
+- Theory PDF: `m57-storytelling.pdf` (2 files)
+- Practical Jupyter notebook: `m57-storytelling.ipynb`
   - Real data examples
   - Visualization techniques
   - Storytelling patterns
-- UN Economic Activity Dataset: `un_economic_data.csv`
+- UN Economic Activity Dataset: `valor-agregado-bruto-por-actividad.csv`
 - Best practices guide: `M57-Guide.md`
 
 #### Key Concepts
@@ -683,12 +683,12 @@ Projects (Integration)
 
 | Module | Scope | Estimated Hours |
 |--------|-------|-----------------|
-| M11-M14 | Data Science Fundamentals | 8-12 |
-| M15-M18 | Methodology | 12-16 |
-| M19-M25 | Supervised Learning | 40-60 |
-| M31-M33 | Statistics | 20-30 |
+| M13-M16 | Data Science Fundamentals | 8-12 |
+| M17-M20 | Methodology | 12-16 |
+| M21-M26 | Supervised Learning | 40-60 |
+| M32-M34 | Statistics | 20-30 |
 | M35-M43 | SQL | 30-50 |
-| M45-M51 | PowerBI | 40-60 |
+| M44-M50 | PowerBI | 40-60 |
 | M51-M56 | Advanced Modelling | 40-60 |
 | M57 | Storytelling | 8-12 |
 | P01-P05 | Projects | 60-100 |

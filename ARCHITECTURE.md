@@ -16,72 +16,93 @@ certificacion-cientifico-datos/
 ├── .gitignore                     # Git ignore configuration
 ├── .gitattributes                 # Git attributes
 │
-├── S02-Ciencia-de-datos/          # Section 2: Data Science Fundamentals
-│   ├── M11/                       # Module 11: History & Definitions
-│   ├── M12/                       # Module 12: Types of Analytics
-│   ├── M13/                       # Module 13: Solution-Based Approaches
-│   └── M14/                       # Module 14: Analytics Applications (Spotify)
+├── s01-programacion/                         # Section 1: Python Programming (12 modules)
+│   ├── m01-introduccion-a-python/           # Module 1: Introduction to Python
+│   ├── m02-estructuras-y-tipos-de-datos/    # Module 2: Data Structures & Types
+│   ├── m03-instrucciones-de-control/        # Module 3: Control Statements
+│   ├── m04-ciclos/                          # Module 4: Loops
+│   ├── m05-funciones/                       # Module 5: Functions
+│   ├── m06-programacion-orientada-a-objetos/ # Module 6: Object-Oriented Programming
+│   ├── m07-pandas/                          # Module 7: Pandas
+│   ├── m08-numpy/                           # Module 8: NumPy
+│   ├── m09-visualizacion-1/                 # Module 9: Visualization I
+│   ├── m10-visualizacion-2/                 # Module 10: Visualization II
+│   ├── m11-funciones-avanzadas/             # Module 11: Advanced Functions
+│   └── m12-modulos-y-paquetes/              # Module 12: Modules & Packages
 │
-├── S03-Metodología/               # Section 3: Methodologies & Frameworks
-│   ├── M15/                       # Module 15: Data Science Methodology
-│   ├── M16/                       # Module 16: KDD & CRISP-DM
-│   ├── M17/                       # Module 17: TDSP Framework
-│   └── M18/                       # Module 18: Data Mining with Orange
+├── s02-ciencia-de-datos/                    # Section 2: Data Science Fundamentals
+│   ├── m13-historia-contexto-y-definiciones/ # Module 13: History & Definitions
+│   ├── m14-tipos-de-analitica/              # Module 14: Types of Analytics
+│   ├── m15-soluciones-basadas-en-datos/     # Module 15: Solution-Based Approaches
+│   └── m16-aplicacion-de-analitica/         # Module 16: Analytics Applications (Spotify)
 │
-├── S04-Aprendizaje-supervisado/   # Section 4: Supervised Learning (7 modules)
-│   ├── M19/                       # Simple Linear Regression
-│   ├── M20/                       # Regularized Regression
-│   ├── M21/                       # K-Nearest Neighbors (KNN)
-│   ├── M22/                       # Support Vector Machines (SVM)
-│   ├── M23/                       # Ensemble Methods (Bagging, Boosting)
-│   ├── M24/                       # Advanced Ensemble Methods
-│   └── M25/                       # Logistic Regression
+├── s03-metodologia/                         # Section 3: Methodologies & Frameworks
+│   ├── m17-metodologia/                     # Module 17: Data Science Methodology
+│   ├── m18-kdd-crisp-dm/                    # Module 18: KDD & CRISP-DM
+│   ├── m19-tdsp-bspf-y-orange-1/            # Module 19: TDSP Framework
+│   └── m20-agile-data-science-y-orange-2/   # Module 20: Data Mining with Orange
 │
-├── S06-Estadística/               # Section 6: Statistics (3 modules)
-│   ├── M31/                       # Descriptive Statistics
-│   ├── M32/                       # Inferential Statistics (Hypothesis Testing)
-│   └── M33/                       # Advanced Statistics (Regression)
+├── s04-aprendizaje-supervisado/             # Section 4: Supervised Learning (7 modules)
+│   ├── m21-regresion-lineal-simple/         # Simple Linear Regression
+│   ├── m22-regresion-regularizada/          # Regularized Regression
+│   ├── m23-knn/                             # K-Nearest Neighbors (KNN)
+│   ├── m24-svm/                             # Support Vector Machines (SVM)
+│   ├── m25-metodos-de-ensamble/             # Ensemble Methods (Bagging, Boosting)
+│   └── m26-regresion-logistica/             # Logistic Regression
 │
-├── S07-SQL/                       # Section 7: SQL & Databases (9 modules, 52 scripts)
-│   ├── M35/                       # SQL Introduction
-│   ├── M36/                       # Table Operations (10 scripts)
-│   ├── M37/                       # Multi-table Operations (8 scripts)
-│   ├── M38/                       # Aggregation & Partitioning
-│   ├── M39/                       # Advanced SQL (6 scripts)
-│   ├── M40/                       # SQLite with Python
-│   ├── M41/                       # SQL Import & Queries
-│   ├── M42/                       # Advanced SQL Queries
-│   └── M43/                       # Advanced Topics
+├── s05-aprendizaje-no-supervisado/          # Section 5: Unsupervised Learning (5 modules)
+│   ├── m27-clustering-jerarquico/           # Hierarchical Clustering
+│   ├── m28-kmeans/                          # K-Means
+│   ├── m29-pca/                             # Principal Component Analysis (PCA)
+│   ├── m30-svd/                             # Singular Value Decomposition (SVD)
+│   └── m31-agrupamiento-knn/                # KNN-based Clustering
 │
-├── S08-PowerBI/                   # Section 8: Business Intelligence (146 MB)
-│   ├── M45/                       # Data Preparation
-│   ├── M46/                       # Data Modelling
-│   ├── M47/                       # Conditional Formatting
-│   ├── M48/                       # DAX (Data Analysis Expressions)
-│   ├── M49/                       # Dynamic Objects
-│   ├── M50/                       # Dashboard Design
-│   ├── M51/                       # Publishing Dashboards
-│   ├── Practice/                  # Practice dashboards & datasets
-│   └── wetransfer_sales-*.zip     # 55 MB sales dataset
+├── s06-estadistica/                         # Section 6: Statistics (3 modules)
+│   ├── m32-estadistica-descriptiva/         # Descriptive Statistics
+│   ├── m33-estadistica-inferencial/         # Inferential Statistics (Hypothesis Testing)
+│   └── m34-estadistica-avanzada/            # Advanced Statistics (Regression)
 │
-├── S09-Modelling/                 # Section 9: Advanced Modelling (6 modules)
-│   ├── M51/                       # Regression Analysis
-│   ├── M52/                       # Hypothesis Testing
-│   ├── M53/                       # Regression Models
-│   ├── M54/                       # Time Series Analysis
-│   ├── M55/                       # AR(p) Models (AutoRegressive)
-│   └── M56/                       # ARIMA Models
+├── s07-sql/                                 # Section 7: SQL & Databases (9 modules, 52 scripts)
+│   ├── m35-introduccion-a-sql/              # SQL Introduction
+│   ├── m36-operaciones-en-tablas/           # Table Operations (10 scripts)
+│   ├── m37-operaciones-con-multiples-tablas/ # Multi-table Operations (8 scripts)
+│   ├── m38-agrupacion-y-particionamiento/   # Aggregation & Partitioning
+│   ├── m39-sql-avanzado/                    # Advanced SQL (6 scripts)
+│   ├── m40-sqlite-con-python/               # SQLite with Python
+│   ├── m41-importacion-y-consultas-sql/     # SQL Import & Queries
+│   ├── m42-consultas-avanzadas-sql/         # Advanced SQL Queries
+│   └── m43-temas-avanzados-sql/             # Advanced Topics
 │
-├── M57-Storytelling/              # Module 57: Data Storytelling (7.8 MB)
-│   ├── Notebook/                  # Jupyter notebooks with examples
-│   └── Data/                      # UN economic activity datasets
+├── s08-power-bi/                            # Section 8: Business Intelligence (146 MB)
+│   ├── m44-preparacion-de-datos/            # Data Preparation
+│   ├── m45-modelado-de-datos/               # Data Modelling
+│   ├── m46-formato-condicional/             # Conditional Formatting
+│   ├── m47-dax/                             # DAX (Data Analysis Expressions)
+│   ├── m48-objetos-dinamicos/               # Dynamic Objects
+│   ├── m49-diseno-de-dashboards/            # Dashboard Design
+│   ├── m50-publicacion-de-dashboards/       # Publishing Dashboards
+│   └── practica-ventas/                     # Practice dashboard & sales datasets
 │
-└── Projects/                      # Capstone Projects (95 MB)
-    ├── P01-User-Reviews/          # User clustering analysis (7.7 MB)
-    ├── P02-Heart-Attack/          # Prediction modeling (76+ MB)
-    ├── P04-Movie-Data/            # Movie database analysis (1.5+ MB)
-    └── P05-PowerBI-COVID19/       # COVID-19 dashboard
+├── s09-modelado/                            # Section 9: Advanced Modelling (6 modules)
+│   ├── m51-analisis-de-regresion/           # Regression Analysis
+│   ├── m52-pruebas-de-hipotesis/            # Hypothesis Testing
+│   ├── m53-modelos-de-regresion/            # Regression Models
+│   ├── m54-series-de-tiempo/                # Time Series Analysis
+│   ├── m55-modelos-ar/                      # AR(p) Models (AutoRegressive)
+│   └── m56-modelos-arima/                   # ARIMA Models
+│
+├── s10-storytelling/                        # Section 10: Data Storytelling (7.8 MB)
+│   └── m57-storytelling/                    # Module 57: notebook + UN economic activity dataset
+│
+└── proyectos/                               # Capstone Projects (95 MB)
+    ├── p01-resenas-de-apps/                 # User clustering analysis (7.7 MB)
+    ├── p02-aprendizaje-supervisado/         # Prediction modeling (76+ MB)
+    ├── p03-segmentacion-de-clientes/        # Customer segmentation (unsupervised learning)
+    ├── p04-analisis-de-peliculas-sql/       # Movie database analysis (1.5+ MB)
+    └── p05-dashboard-covid/                 # COVID-19 dashboard
 ```
+
+**Naming convention:** all folders and files use lowercase ASCII kebab-case Spanish names. Sections are `sNN-tema/`, modules are `mNN-tema/` (numbered globally M01–M57), projects are `proyectos/pNN-tema/`, and each module's main deliverable is named after its folder: `mNN-tema.{ipynb,pdf,md}`.
 
 ---
 
@@ -119,48 +140,48 @@ certificacion-cientifico-datos/
 
 ## Module Organization
 
-### Section S02: Ciencia de Datos (1.8 MB, 4 modules)
+### Section S02 `s02-ciencia-de-datos/` (1.8 MB, 4 modules)
 **Focus:** Foundational concepts and theory
 
 | Module | Topic | Resources | Datasets |
 |--------|-------|-----------|----------|
-| M11 | Data Science History & Definitions | 1-2 PDFs, 1 Markdown | - |
-| M12 | Types of Analytics | PDF guide, exercises | - |
-| M13 | Solution-Based Approaches | PDF, theory | - |
-| M14 | Analytics Applications | PDF, case study | Spotify data |
+| M13 | Data Science History & Definitions | 1-2 PDFs, 1 Markdown | - |
+| M14 | Types of Analytics | PDF guide, exercises | - |
+| M15 | Solution-Based Approaches | PDF, theory | - |
+| M16 | Analytics Applications | PDF, case study | Spotify data |
 
-### Section S03: Metodología (2.6 MB, 4 modules)
+### Section S03 `s03-metodologia/` (2.6 MB, 4 modules)
 **Focus:** Data science frameworks and workflows
 
 | Module | Topic | Resources | Tools |
 |--------|-------|-----------|-------|
-| M15 | Data Science Methodology | 2 PDFs, markdown | - |
-| M16 | KDD & CRISP-DM | 2 PDFs, theory | - |
-| M17 | TDSP Framework | 1 PDF | - |
-| M18 | Data Mining | Orange workflows (.ows), PDF | Orange ML |
+| M17 | Data Science Methodology | 2 PDFs, markdown | - |
+| M18 | KDD & CRISP-DM | 2 PDFs, theory | - |
+| M19 | TDSP Framework | 1 PDF | - |
+| M20 | Data Mining | Orange workflows (.ows), PDF | Orange ML |
 
-### Section S04: Aprendizaje Supervisado (6.7 MB, 7 modules)
+### Section S04 `s04-aprendizaje-supervisado/` (6.7 MB, 7 modules)
 **Focus:** Machine learning algorithms
 
 | Module | Algorithm | Resources | Datasets |
 |--------|-----------|-----------|----------|
-| M19 | Simple Linear Regression | 2 PDFs, jupyter notebook | GDP data |
-| M20 | Regularized Regression | 2 PDFs, exercises | - |
-| M21 | K-Nearest Neighbors | 2 PDFs, documentation | Various |
-| M22 | Support Vector Machines | 2 PDFs | - |
-| M24 | Ensemble Methods | 3 PDFs, python script | - |
-| M25 | Logistic Regression | 2 PDFs, python script | - |
+| M21 | Simple Linear Regression | 2 PDFs, jupyter notebook | GDP data |
+| M22 | Regularized Regression | 2 PDFs, exercises | - |
+| M23 | K-Nearest Neighbors | 2 PDFs, documentation | Various |
+| M24 | Support Vector Machines | 2 PDFs | - |
+| M25 | Ensemble Methods | 3 PDFs, python script | - |
+| M26 | Logistic Regression | 2 PDFs, python script | - |
 
-### Section S06: Estadística (2.8 MB, 3 modules)
+### Section S06 `s06-estadistica/` (2.8 MB, 3 modules)
 **Focus:** Statistical analysis and hypothesis testing
 
 | Module | Topic | Resources | Datasets |
 |--------|-------|-----------|----------|
-| M31 | Descriptive Statistics | 2 PDFs | - |
-| M32 | Inferential Statistics | 3 PDFs, jupyter notebook | Marketing data |
-| M33 | Advanced Statistics | 2 PDFs, jupyter notebook | Housing price data |
+| M32 | Descriptive Statistics | 2 PDFs | - |
+| M33 | Inferential Statistics | 3 PDFs, jupyter notebook | Marketing data |
+| M34 | Advanced Statistics | 2 PDFs, jupyter notebook | Housing price data |
 
-### Section S07: SQL (16 MB, 9 modules)
+### Section S07 `s07-sql/` (16 MB, 9 modules)
 **Focus:** Database and SQL expertise
 
 | Module | Topic | SQL Scripts | Exercises | Solutions |
@@ -178,23 +199,23 @@ certificacion-cientifico-datos/
 
 **Database:** DVD Rental Database (dvdrental) with SQL restore scripts
 
-### Section S08: PowerBI (146 MB, 7 modules + Practice)
+### Section S08 `s08-power-bi/` (146 MB, 7 modules + `practica-ventas/`)
 **Focus:** Business intelligence and dashboard development
 
 | Module | Topic | Resources | File Size |
 |--------|-------|-----------|-----------|
-| M45 | Data Preparation | 2 PDFs, .pbix file | 5-10 MB |
-| M46 | Data Modelling | 3 PDFs, .pbix file | 8-12 MB |
-| M47 | Conditional Formatting | 2 PDFs, .pbix file | 5 MB |
-| M48 | DAX (Expressions) | 3 PDFs, .pbix file | 8 MB |
-| M49 | Dynamic Objects | 2 PDFs, .pbix file | 6 MB |
-| M50 | Dashboard Design | 3 PDFs, .pbix file | 10 MB |
-| M51 | Publishing | 2 PDFs | 2 MB |
-| Practice | Sample Dashboards | .pbix files, sales data | 55 MB (ZIP) |
+| M44 | Data Preparation | 2 PDFs, .pbix file | 5-10 MB |
+| M45 | Data Modelling | 3 PDFs, .pbix file | 8-12 MB |
+| M46 | Conditional Formatting | 2 PDFs, .pbix file | 5 MB |
+| M47 | DAX (Expressions) | 3 PDFs, .pbix file | 8 MB |
+| M48 | Dynamic Objects | 2 PDFs, .pbix file | 6 MB |
+| M49 | Dashboard Design | 3 PDFs, .pbix file | 10 MB |
+| M50 | Publishing | 2 PDFs | 2 MB |
+| `practica-ventas/` | Sample Dashboards | .pbix files, sales data | 55 MB (ZIP) |
 
 **Datasets:** Sales Extract Dataset (55 MB compressed), various analysis data
 
-### Section S09: Modelling (17 MB, 6 modules)
+### Section S09 `s09-modelado/` (17 MB, 6 modules)
 **Focus:** Advanced statistical and time series modelling
 
 | Module | Topic | Resources | Datasets |
@@ -206,7 +227,7 @@ certificacion-cientifico-datos/
 | M55 | AR(p) Models | 2 PDFs, jupyter | Time series data |
 | M56 | ARIMA Models | 2 PDFs, jupyter | NY temperature data |
 
-### Module M57: Storytelling (7.8 MB, 1 module)
+### Section S10 `s10-storytelling/`: Module M57 Storytelling (7.8 MB, 1 module)
 **Focus:** Data visualization and presentation
 
 | Component | Content | Resources |
@@ -223,12 +244,11 @@ certificacion-cientifico-datos/
 **Objective:** Unsupervised learning - clustering analysis
 **Structure:**
 ```
-P01-User-Reviews/
-├── README.md                      # Project documentation
-├── User-Reviews.csv               # 7.7 MB review dataset
-├── Analysis-Jupyter.ipynb         # Clustering analysis
-├── Project-Report.pdf             # Formal report
-└── Visualizations/                # PNG charts and graphs
+proyectos/p01-resenas-de-apps/
+├── apps.csv                       # App metadata dataset
+├── user-reviews.csv               # 7.7 MB review dataset
+├── p01-resenas-de-apps.ipynb      # Clustering analysis
+└── p01-resenas-de-apps.pdf        # Formal report
 ```
 **Technologies:** Python, Pandas, Scikit-learn, Matplotlib
 **Key Skills:** Data clustering, dimensionality reduction, pattern recognition
@@ -237,13 +257,12 @@ P01-User-Reviews/
 **Objective:** Supervised learning - medical risk prediction
 **Structure:**
 ```
-P02-Heart-Attack/
-├── README.md                      # Project guide
-├── medical_dataset.csv            # 11 KB medical data
-├── mnist_data/                    # 76 MB MNIST digits
-├── Prediction-Model.ipynb         # ML model development
-├── Project-Report.pdf             # Analysis & results
-└── Model-Evaluation/              # Performance metrics
+proyectos/p02-aprendizaje-supervisado/
+├── heart-attack.csv               # 11 KB medical data
+├── mnist.csv                      # 76 MB MNIST digits
+├── imagen-muestra.png             # Sample digit image
+├── p02-aprendizaje-supervisado.ipynb  # ML model development
+└── p02-aprendizaje-supervisado.pdf    # Analysis & results
 ```
 **Technologies:** Python, Scikit-learn, TensorFlow, XGBoost
 **Key Skills:** Feature engineering, model selection, classification, cross-validation
@@ -252,17 +271,14 @@ P02-Heart-Attack/
 **Objective:** SQL and data analytics - relational database analysis
 **Structure:**
 ```
-P04-Movie-Data/
-├── README.md                      # Project documentation
+proyectos/p04-analisis-de-peliculas-sql/
 ├── dvdrental/                     # DVD rental database files
-│   ├── dvdrental.sql              # Database restore script
-│   └── backup/                    # Database backup
-├── queries/                       # SQL analysis scripts
-│   ├── inventory-analysis.sql     # Inventory queries
-│   └── revenue-analysis.sql       # Financial queries
-├── Analysis-Report.pdf            # 1.5 MB comprehensive report
-├── Visualizations/                # 15+ PNG screenshots
-└── Analysis-Markdown.md           # Detailed documentation
+│   └── restore.sql                # Database restore script
+├── p04-analisis-de-peliculas-sql.sql  # SQL analysis queries
+├── p04-avance-parte-4.sql         # SQL analysis queries (part 4 progress)
+├── p04-analisis-de-peliculas-sql.pdf  # 1.5 MB comprehensive report
+├── ejercicio-01.png … ejercicio-15.png  # 15 PNG screenshots
+└── p04-analisis-de-peliculas-sql.md   # Detailed documentation
 ```
 **Technologies:** SQL, SQLite, Database design, Data visualization
 **Key Skills:** Complex SQL queries, data aggregation, reporting, visualization
@@ -271,12 +287,9 @@ P04-Movie-Data/
 **Objective:** Business intelligence - pandemic data dashboard
 **Structure:**
 ```
-P05-PowerBI-COVID19/
-├── README.md                      # Project overview
-├── covid_dashboard.pbix           # PowerBI file
-├── covid_data.csv                 # COVID-19 statistics
-├── Dashboard-Report.pdf           # Analysis report
-└── Screenshots/                   # Dashboard visualizations
+proyectos/p05-dashboard-covid/
+├── p05-dashboard-covid.pbix       # PowerBI file (data embedded)
+└── p05-dashboard-covid.pdf        # Analysis report
 ```
 **Technologies:** Microsoft PowerBI, DAX, Data modeling
 **Key Skills:** Dashboard design, KPI design, interactive visualization, storytelling
@@ -366,11 +379,11 @@ P05-PowerBI-COVID19/
 
 | Component | Size | % of Total |
 |-----------|------|-----------|
-| S08-PowerBI (BI & dashboards) | 146 MB | 49.5% |
-| P02-Heart-Attack (Project) | 76 MB | 25.8% |
+| s08-power-bi (BI & dashboards) | 146 MB | 49.5% |
+| p02-aprendizaje-supervisado (Project) | 76 MB | 25.8% |
 | PDF Documentation | ~50 MB | 17% |
-| S07-SQL (Database & scripts) | 16 MB | 5.4% |
-| S09-Modelling | 17 MB | 5.8% |
+| s07-sql (Database & scripts) | 16 MB | 5.4% |
+| s09-modelado | 17 MB | 5.8% |
 | CSV Datasets | Variable | ~3-4% |
 | PNG Images | ~20 MB | 6.8% |
 | Other Modules | ~15 MB | 5% |
@@ -380,7 +393,7 @@ P05-PowerBI-COVID19/
 
 ## Learning Progression
 
-### Phase 1: Foundation (S02-S03)
+### Phase 1: Foundation (S02–S03)
 **Concepts & Frameworks**
 - Data science fundamentals
 - Analytics types and methodologies
@@ -392,13 +405,13 @@ P05-PowerBI-COVID19/
 - Statistical analysis and testing
 - SQL and database querying
 
-### Phase 3: Advanced Tools (S08-S09)
+### Phase 3: Advanced Tools (S08–S09)
 **Professional & Advanced Topics**
 - Business intelligence dashboarding
 - Advanced time series modelling
 - DAX and data modelling
 
-### Phase 4: Integration & Specialization (M57, Projects)
+### Phase 4: Integration & Specialization (S10/M57, Projects)
 **Capstone & Specialization**
 - Data storytelling
 - End-to-end project delivery

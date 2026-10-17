@@ -47,7 +47,7 @@ El BSPF se presenta como un marco metodológico útil para la definición y reso
 
 
 
-![img01](./assets/img01.png)
+![img01](./assets/figura-01.png)
 
 Para esta tarea, utilizaremos el banco de datos `heart_disease.tab`, disponible en `Orange`. Elaboraremos los siguientes tres gráficos:
 
@@ -57,7 +57,7 @@ Para esta tarea, utilizaremos el banco de datos `heart_disease.tab`, disponible 
 
 ## `Violin Plot`
 
-![image-20240428135336632](./assets/image-20240428135336632.png)
+![image-20240428135336632](./assets/figura-02.png)
 
 ### Hallazgos clave
 
@@ -71,7 +71,7 @@ El gráfico de violín en la imagen sugiere que puede haber diferencias en la di
 
 ## `Box plot`
 
-![image-20240428135509246](./assets/image-20240428135509246.png)
+![image-20240428135509246](./assets/figura-03.png)
 
 ### Intepretación de los resultados
 
@@ -126,7 +126,7 @@ Los datos presentados sugieren que puede haber una asociación entre la edad y e
 
 ## `Distributions`
 
-![image-20240428142011665](./assets/image-20240428142011665.png)
+![image-20240428142011665](./assets/figura-04.png)
 
 El gráfico muestra un histograma de la variable "rest SBP" (presión arterial sistólica en reposo) de un conjunto de datos de pacientes con enfermedad cardíaca. El histograma está superpuesto a una curva de distribución normal.
 

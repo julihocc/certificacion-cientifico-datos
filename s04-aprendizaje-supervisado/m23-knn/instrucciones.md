@@ -12,7 +12,7 @@ Entregable: Un Jupyter Notebook (archivo de extensión .ipynb), archivo PDF y ca
 
 - Considere la base de datos “[recursos_humanos.csv](https://drive.google.com/file/d/1NlY7I_XVgZWCj6A-BJKlL2076WKOyPqc/view?usp=sharing)” sobre empleados que abandonan una empresa.
 
-﻿![img](./assets/original.png)
+﻿![img](./assets/instrucciones-01.png)
 
 El objetivo es analizar porqué los empleados deciden irse con la competencia y éste podría ser un desafío serio para un departamento de recursos humanos, el cual se podría abordar mediante modelos predictivos de Machine Learning. Las variables manejadas son: 
 
