@@ -15,9 +15,15 @@ CREATE TABLE ##TempGlobalProducts (
 -- Insertar datos en la tabla temporal local
 INSERT INTO #TempLocalProducts (ProductID, Name)
 SELECT [ProductID], Name
-FROM [AdventureWorks2022].[Production].[Product];
+FROM [AdventureWorks2022].[Production].[Product]
+WHERE ProductID IN (SELECT sod.ProductID FROM [AdventureWorks2022].[Sales].[SalesOrderDetail] sod);
 
 -- Insertar datos en la tabla temporal global
 INSERT INTO ##TempGlobalProducts (ProductID, Name)
 SELECT ProductID, Name
-FROM [AdventureWorks2022].[Production].[Product];
+FROM [AdventureWorks2022].[Production].[Product]
+WHERE ProductID IN (SELECT sod.ProductID FROM [AdventureWorks2022].[Sales].[SalesOrderDetail] sod);
+
+-- Revisión posterior (2026-10): se añadió el filtro con subconsulta sobre Sales.SalesOrderDetail
+-- para insertar solo los productos que han sido ordenados, como pide el enunciado; la versión
+-- entregada insertaba todos los productos de Production.Product.

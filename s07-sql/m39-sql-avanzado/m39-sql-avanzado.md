@@ -107,12 +107,14 @@ CREATE TABLE ##TempGlobalProducts (
 -- Insertar datos en la tabla temporal local
 INSERT INTO #TempLocalProducts (ProductID, Name)
 SELECT [ProductID], Name
-FROM [AdventureWorks2022].[Production].[Product];
+FROM [AdventureWorks2022].[Production].[Product]
+WHERE ProductID IN (SELECT sod.ProductID FROM [AdventureWorks2022].[Sales].[SalesOrderDetail] sod);
 
 -- Insertar datos en la tabla temporal global
 INSERT INTO ##TempGlobalProducts (ProductID, Name)
 SELECT ProductID, Name
-FROM [AdventureWorks2022].[Production].[Product];
+FROM [AdventureWorks2022].[Production].[Product]
+WHERE ProductID IN (SELECT sod.ProductID FROM [AdventureWorks2022].[Sales].[SalesOrderDetail] sod);
 ```
 
 ![alt text](resultado-04.png)
@@ -125,7 +127,7 @@ FROM [AdventureWorks2022].[Production].[Product];
 -- Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra solo para el año 2011.
 
 SELECT 
-    SalesOrderID,
+    SalesOrderNumber,
     PurchaseOrderNumber
 FROM 
     [AdventureWorks2022].[Sales].[SalesOrderHeader]
@@ -143,10 +145,12 @@ WHERE
 -- 6.Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra sin los 2 primeros caracteres y nombra los campos resultantes como NewSalesOrderNumber y NewPurchaseOrderNumber.
 
 SELECT 
-    SUBSTRING(CAST(SalesOrderID AS NVARCHAR), 3, LEN(CAST(SalesOrderID AS NVARCHAR))) AS NewSalesOrderNumber,
+    SUBSTRING(SalesOrderNumber, 3, LEN(SalesOrderNumber)) AS NewSalesOrderNumber,
     SUBSTRING(PurchaseOrderNumber, 3, LEN(PurchaseOrderNumber)) AS NewPurchaseOrderNumber
 FROM 
     [AdventureWorks2022].[Sales].[SalesOrderHeader];
 ```
 
 ![alt text](resultado-06.png)
+
+*Revisión posterior (2026-10): en el ejercicio 4 las tablas temporales ahora reciben solo los productos que aparecen en Sales.SalesOrderDetail (productos ordenados). En los ejercicios 5 y 6 el número de orden es SalesOrderNumber (por ejemplo 'SO43659') en lugar de SalesOrderID, que es un entero; en el 6 se recortan sus 2 primeros caracteres. Las capturas muestran los resultados de la versión entregada.*

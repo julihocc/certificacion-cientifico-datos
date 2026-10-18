@@ -1,14 +1,18 @@
 USE AdventureWorks2022;
 GO
 
+-- RevisiÃ³n posterior (2026-10): la clave primaria se declara con nombre explÃ­cito
+-- (PK_Ventas) para que script-07.sql pueda eliminarla en cualquier instalaciÃ³n;
+-- antes SQL Server le asignaba un nombre autogenerado (PK__Ventas__...).
+
 CREATE TABLE dbo.Ventas (
-    NumeroOrden INT PRIMARY KEY,
+    NumeroOrden INT NOT NULL,
     FechaOrden DATETIME,
     FechaEntrega DATE,
     EstatusOrden VARCHAR(50),
     NombreCliente NVARCHAR(100),
     DomicilioEntrega NVARCHAR(255),
-    CompraOnline CHAR(1), -- 'S' para Sí, 'N' para No
+    CompraOnline CHAR(1), -- 'S' para SÃ­, 'N' para No
     MetodoPago NVARCHAR(50),
     MetodoEnvio NVARCHAR(50),
     Subtotal DECIMAL(10, 2),
@@ -16,7 +20,8 @@ CREATE TABLE dbo.Ventas (
     CostoEnvio DECIMAL(10, 2),
     Total DECIMAL(10, 2),
     Moneda CHAR(3),
-    Observaciones NVARCHAR(MAX)
+    Observaciones NVARCHAR(MAX),
+    CONSTRAINT PK_Ventas PRIMARY KEY (NumeroOrden)
 );
 
 -- Insertando el primer registro
@@ -25,10 +30,10 @@ INSERT INTO dbo.Ventas (
     DomicilioEntrega, CompraOnline, MetodoPago, MetodoEnvio, Subtotal, 
     Impuestos, CostoEnvio, Total, Moneda, Observaciones
 ) VALUES (
-    12345, '2022-08-05 18:58:46.867', '2022-08-15', 'Pendiente', 'Juan Pérez', 
-    'Avenida Siempre Viva 742 Springfield', 'S', 'Tarjeta de Crédito', 'Express', 
+    12345, '2022-08-05 18:58:46.867', '2022-08-15', 'Pendiente', 'Juan PÃ©rez', 
+    'Avenida Siempre Viva 742 Springfield', 'S', 'Tarjeta de CrÃ©dito', 'Express', 
     20565.62, 1971.51, 616.09, 23153.22, 'MXN', 
-    'El cliente indica que solo puede recibir el envío entre semana'
+    'El cliente indica que solo puede recibir el envÃ­o entre semana'
 );
 
 -- Insertando el segundo registro
@@ -37,17 +42,17 @@ INSERT INTO dbo.Ventas (
     DomicilioEntrega, CompraOnline, MetodoPago, MetodoEnvio, Subtotal, 
     Impuestos, CostoEnvio, Total, Moneda, Observaciones
 ) VALUES (
-    12346, '2022-08-06 10:24:30.123', '2022-08-16', 'En Proceso', 'Ana López', 
-    'Calle de la Rosa 15, Ciudad de México', 'N', 'Efectivo', 'Terrestre', 
+    12346, '2022-08-06 10:24:30.123', '2022-08-16', 'En Proceso', 'Ana LÃ³pez', 
+    'Calle de la Rosa 15, Ciudad de MÃ©xico', 'N', 'Efectivo', 'Terrestre', 
     15200.00, 1368.00, 500.00, 17068.00, 'MXN', 
-    'Preferible entregar por la mañana'
+    'Preferible entregar por la maÃ±ana'
 );
 
--- Actualizar el estatus de la orden con el Número de Orden 12345
+-- Actualizar el estatus de la orden con el NÃºmero de Orden 12345
 UPDATE dbo.Ventas
 SET EstatusOrden = 'Completada'
 WHERE NumeroOrden = 12345;
 
--- Eliminar la orden con el Número de Orden 12346
+-- Eliminar la orden con el NÃºmero de Orden 12346
 DELETE FROM dbo.Ventas
 WHERE NumeroOrden = 12346;

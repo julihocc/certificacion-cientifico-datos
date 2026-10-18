@@ -2,7 +2,7 @@ USE AdventureWorks2022;
 GO
 
 UPDATE dbo.Ordenes
-SET MetodoPago = 'Pago Móvil'
+SET MetodoPago = 'Pago MÃ³vil'
 WHERE NumeroOrden = 12347;
 
 UPDATE dbo.Ordenes
