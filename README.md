@@ -197,7 +197,20 @@ Data visualization and presentation techniques
 
 ---
 
+## Submitted work and lessons
+
 Every module holds my submitted work, except [M01 Introducción a Python](s01-programacion/m01-introduccion-a-python/m01-introduccion-a-python.ipynb). M01 is a complementary lesson written later to complete S01.
+
+Modules whose folders contained only solved exercises also include a complementary lesson. The lesson covers the theory behind the exercise, with worked examples, common mistakes, a new exercise with its solution, and a summary. It sits next to the exercise, named after the module with a `-leccion` suffix:
+
+| Sections | Format | Example |
+| --- | --- | --- |
+| S01 (M02–M12), S07 (M35–M43), S09 (M51–M56), M24, M27, M30, M57 | Executed notebook | [m07-pandas-leccion.ipynb](s01-programacion/m07-pandas/m07-pandas-leccion.ipynb) |
+| S08 (M44–M50) | Markdown, with Power Query (M) and DAX code | [m47-dax-leccion.md](s08-power-bi/m47-dax/m47-dax-leccion.md) |
+
+Lessons are not part of the submitted work. They run offline, using the datasets in each folder or simulated data. The SQL lessons use an in-memory SQLite database and show the SQL Server syntax used in the course wherever it differs.
+
+Some submitted exercises were corrected after review. For example, M51 had a singular matrix caused by collinear columns, and in M55 the forecast intervals were never drawn. Each corrected notebook or script ends with a **Revisión posterior (2026-10)** note describing the change. The accompanying PDFs keep the version that was originally submitted.
 
 ## Running the notebooks
 
