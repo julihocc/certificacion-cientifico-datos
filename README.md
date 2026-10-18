@@ -49,8 +49,15 @@ certificacion-cientifico-datos/
 
 - All names are lowercase ASCII kebab-case in Spanish (no accents, spaces or underscores).
 - Sections are `sNN-tema/`, modules `mNN-tema/` and projects `proyectos/pNN-tema/`. Modules are numbered sequentially from M01 to M57 across the whole program.
-- The main deliverable of each module is named after it: `mNN-tema.ipynb`, plus its `.pdf` or `.md` exports. Assignment statements are in `instrucciones.md`.
-- For example, `s04-aprendizaje-supervisado/m21-regresion-lineal-simple/m21-regresion-lineal-simple-solucion.ipynb`.
+- Each module folder holds files named after the module, distinguished by a suffix:
+
+| File | Content |
+| --- | --- |
+| `mNN-tema-guia.ipynb` | Student guide: context, data, instructions and empty answer cells |
+| `mNN-tema-solucion.*` | The solved exercise (`.ipynb`, `.md`, `.sql`, `.pdf`, `.pbix`…) |
+| `mNN-tema-leccion.*` | Complementary lesson (only in some modules) |
+
+- For example, `s04-aprendizaje-supervisado/m21-regresion-lineal-simple/` contains `m21-regresion-lineal-simple-guia.ipynb` and `m21-regresion-lineal-simple-solucion.ipynb`.
 
 ---
 
@@ -197,9 +204,13 @@ Data visualization and presentation techniques
 
 ---
 
-## Submitted work and lessons
+## Submitted work, guides and lessons
 
-Every module holds my submitted work, except [M01 Introducción a Python](s01-programacion/m01-introduccion-a-python/m01-introduccion-a-python.ipynb). M01 is a complementary lesson written later to complete S01.
+Every module holds my submitted work in its `-solucion` files, except [M01 Introducción a Python](s01-programacion/m01-introduccion-a-python/m01-introduccion-a-python.ipynb). M01 is a complementary lesson written later to complete S01.
+
+Every exercise, projects included, also has a student guide (`-guia.ipynb`). The guide is a notebook with the context, the data, the numbered tasks and empty cells to answer them, so the exercise can be worked from scratch before you open the solution. Each solution starts with the same context and instructions, and its work is organized by task.
+
+Some modules had no surviving original statement. For those, the instructions were reconstructed from the solution, and the solution says so.
 
 Modules whose folders contained only solved exercises also include a complementary lesson. The lesson covers the theory behind the exercise, with worked examples, common mistakes, a new exercise with its solution, and a summary. It sits next to the exercise, named after the module with a `-leccion` suffix:
 
