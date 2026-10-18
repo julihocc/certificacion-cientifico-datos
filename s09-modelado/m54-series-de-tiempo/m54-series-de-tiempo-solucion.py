@@ -1,7 +1,31 @@
 # %% [markdown]
-# # Module 54: Time Series
+# # Módulo 54: Series de tiempo — Solución
 #
 # Author: Juliho Castillo Colmenares Ph.D.
+#
+# Enunciado para estudiantes: [m54-series-de-tiempo-guia.ipynb](m54-series-de-tiempo-guia.ipynb) · Lección: [m54-series-de-tiempo-leccion.ipynb](m54-series-de-tiempo-leccion.ipynb)
+#
+# ## Contexto
+#
+# Un fondo de inversión tiene posiciones en **IBM** y **Walmart** y quiere entender cómo se han comportado sus acciones de 2019 a 2023: si sus precios se mueven juntos, si muestran tendencia o estacionalidad, si las series son estacionarias y cuál sería un pronóstico ingenuo para el siguiente día de negociación basado en promedios móviles.
+#
+# ## Datos
+#
+# Precios diarios de `IBM` y `WMT` del 2019-01-01 al 2023-12-31, descargados de Yahoo Finance con `yfinance` (requiere internet). `Close` es el cierre ajustado (`auto_adjust=True`); las columnas tienen dos niveles (campo y ticker).
+#
+# ## Instrucciones
+#
+# 1. **Correlación entre IBM y Walmart:** precios de cierre alineados, correlación y diagrama de dispersión; correlación de los rendimientos diarios.
+# 2. **Descomposición y autocorrelación:** descomposición aditiva con periodo de 252 días hábiles y correlograma con 40 rezagos.
+# 3. **Prueba de estacionariedad de Dickey–Fuller** para cada precio de cierre.
+# 4. **Promedio móvil de 30 días** y su gráfica junto al precio.
+# 5. **Pronóstico a un día** con el último promedio móvil.
+#
+# *El enunciado original del curso no se conserva; estas instrucciones se reconstruyeron a partir de la solución.* El material del módulo (Buenas prácticas) confirma que la tarea asignada consistía en analizar y pronosticar con promedios móviles el precio de las acciones de IBM y Walmart.
+#
+
+# %% [markdown]
+# ### Descarga de los datos
 
 # %%
 import yfinance as yf
@@ -23,6 +47,9 @@ ibm_data
 # %%
 walmart_data = yf.download("WMT", start=start_date, end=end_date)
 walmart_data
+
+# %% [markdown]
+# ### Tarea 1. Correlación entre IBM y Walmart
 
 # %%
 # Step 2: Correlation Analysis
@@ -62,6 +89,9 @@ daily_returns = aligned_data.pct_change().dropna()
 returns_correlation = daily_returns["Close_IBM"].corr(daily_returns["Close_WMT"])
 returns_correlation
 
+# %% [markdown]
+# ### Tarea 2. Descomposición y autocorrelación
+
 # %%
 # Step 3: Time Series Decomposition
 # Decompose both time series and plot
@@ -81,6 +111,9 @@ for stock_data, name in zip([ibm_data, walmart_data], ["IBM", "Walmart"]):
     plt.show()
 
 
+# %% [markdown]
+# ### Tarea 3. Prueba de estacionariedad de Dickey–Fuller
+
 # %%
 # Step 4: Dickey-Fuller Test for stationarity
 def adf_test(series, name):
@@ -97,6 +130,9 @@ def adf_test(series, name):
 adf_test(ibm_data["Close"], "IBM")
 adf_test(walmart_data["Close"], "Walmart")
 
+# %% [markdown]
+# ### Tarea 4. Promedio móvil de 30 días
+
 # %%
 # Step 5: Moving Average Analysis
 # Calculate 30-day moving average for both stocks
@@ -112,6 +148,9 @@ for stock_data, name in zip([ibm_data, walmart_data], ["IBM", "Walmart"]):
     plt.ylabel("Price")
     plt.legend()
     plt.show()
+
+# %% [markdown]
+# ### Tarea 5. Pronóstico a un día
 
 # %%
 # Step 6: One-Day Forecast (simple projection using last moving average value)

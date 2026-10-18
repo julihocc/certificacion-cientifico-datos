@@ -1,4 +1,38 @@
 -- Active: 1730414369362@@127.0.0.1@5432@dvdrental@public
+-- =============================================================================
+-- Proyecto P04: Análisis de películas con SQL — Solución
+-- Enunciado para estudiantes: p04-analisis-de-peliculas-sql-guia.ipynb
+-- Capturas de los resultados: p04-analisis-de-peliculas-sql-solucion.md
+-- Plantilla original del curso: p04-avance-parte-4.sql
+-- (La línea "-- Active:" de arriba es la conexión de la extensión Database
+--  Client de VS Code y debe quedar en la primera línea.)
+-- =============================================================================
+--
+-- Contexto:
+--   Una cadena de tiendas de renta de DVD quiere conocer su catálogo, a sus
+--   clientes y sus ventas. La información está en dvdrental, la base de datos
+--   de ejemplo de PostgreSQL (tablas actor, film, film_actor, inventory,
+--   rental, payment, customer y store; ver dvdrental/restore.sql).
+--
+-- Instrucciones:
+--   PostgreSQL con la base dvdrental restaurada. Una consulta por pregunta:
+--   1. Nombre y apellido de los actores.
+--   2. Nombre completo en una sola columna.
+--   3. Actores cuyo nombre empieza con "D".
+--   4. Actores con el mismo nombre.
+--   5. Costo máximo de renta.
+--   6. Películas con el costo máximo.
+--   7. Películas por tipo de audiencia.
+--   8. Películas sin clasificación R ni NC-17.
+--   9. Clientes por tienda.
+--   10. Película más rentada.
+--   11. Películas que no se han rentado.
+--   12. Clientes sin rentas.
+--   13. Actores con más de 30 películas.
+--   14. Ventas totales por tienda.
+--   15. Clientes que rentaron una película más de una vez.
+-- =============================================================================
+
 -- 1. Vamos a seleccionar el nombre y apellido de los actores
 SELECT first_name, last_name FROM actor;
 
