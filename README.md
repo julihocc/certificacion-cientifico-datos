@@ -218,8 +218,11 @@ Modules whose folders contained only solved exercises also include a complementa
 | --- | --- | --- |
 | S01 (M02–M12), S07 (M35–M43), S09 (M51–M56), M24, M27, M30, M57 | Executed notebook | [m07-pandas-leccion.ipynb](s01-programacion/m07-pandas/m07-pandas-leccion.ipynb) |
 | S08 (M44–M50) | Markdown, with Power Query (M) and DAX code | [m47-dax-leccion.md](s08-power-bi/m47-dax/m47-dax-leccion.md) |
+| S02 (M13–M16), S03 (M17–M18) | Markdown: the module's original text, written during the course | [m18-kdd-crisp-dm-leccion.md](s03-metodologia/m18-kdd-crisp-dm/m18-kdd-crisp-dm-leccion.md) |
 
-Lessons are not part of the submitted work. They run offline, using the datasets in each folder or simulated data. The SQL lessons use an in-memory SQLite database and show the SQL Server syntax used in the course wherever it differs.
+In M13–M18 the exercise is new: the guide poses an applied case with written questions plus a Python practice on synthetic data, and the solution is a reference notebook written for it.
+
+Apart from the M13–M18 texts, lessons are not part of the submitted work. The notebook lessons run offline, using the datasets in each folder or simulated data. The SQL lessons use an in-memory SQLite database and show the SQL Server syntax used in the course wherever it differs.
 
 Some submitted exercises were corrected after review. For example, M51 had a singular matrix caused by collinear columns, and in M55 the forecast intervals were never drawn. Each corrected notebook or script ends with a **Revisión posterior (2026-10)** note describing the change. The accompanying PDFs keep the version that was originally submitted.
 

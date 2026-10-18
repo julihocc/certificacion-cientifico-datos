@@ -28,8 +28,8 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Historical evolution of data science
   - Core concepts and terminology
 - **Resources:**
-  - Theory PDF: `m13-historia-contexto-y-definiciones-solucion.pdf`
-  - Markdown guide: `m13-historia-contexto-y-definiciones-solucion.md`
+  - Theory PDF: `m13-historia-contexto-y-definiciones-leccion.pdf`
+  - Markdown guide: `m13-historia-contexto-y-definiciones-leccion.md`
 - **Learning Outcome:** Understand data science as discipline
 
 #### M14: Types of Analytics
@@ -39,8 +39,8 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Prescriptive analytics
   - Diagnostic analytics
 - **Resources:**
-  - Class material: `m14-tipos-de-analitica-solucion.pdf`
-  - Exercises: `m14-tipos-de-analitica-solucion.md`
+  - Class material: `m14-tipos-de-analitica-leccion.pdf`
+  - Exercises: `m14-tipos-de-analitica-leccion.md`
 - **Learning Outcome:** Differentiate analytics types
 
 #### M15: Solution-Based Approaches
@@ -49,7 +49,7 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Solution design methodologies
   - Business impact consideration
 - **Resources:**
-  - PDF guide: `m15-soluciones-basadas-en-datos-solucion.pdf`
+  - PDF guide: `m15-soluciones-basadas-en-datos-leccion.pdf`
 - **Learning Outcome:** Apply data science to business problems
 
 #### M16: Analytics Applications & Case Studies
@@ -58,7 +58,7 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Industry case studies
   - Spotify analytics example
 - **Resources:**
-  - Case study: `m16-aplicacion-de-analitica-solucion.md`
+  - Case study: `m16-aplicacion-de-analitica-leccion.md`
   - Dataset: `spotify_data.csv`
 - **Learning Outcome:** Connect theory to real applications
 
@@ -81,8 +81,8 @@ Master established data science frameworks and project methodologies.
   - Experiment design
   - Validation approaches
 - **Resources:**
-  - `m17-metodologia-solucion.pdf`
-  - `m17-metodologia-solucion.md`
+  - `m17-metodologia-leccion.pdf`
+  - `m17-metodologia-leccion.md`
 - **Prerequisites:** M13-M16
 - **Learning Outcome:** Design data science projects methodically
 
@@ -93,8 +93,8 @@ Master established data science frameworks and project methodologies.
   - Framework comparison
   - Implementation steps
 - **Resources:**
-  - `m18-kdd-crisp-dm-solucion.pdf` (comprehensive guide)
-  - `m18-kdd-crisp-dm-solucion.md`
+  - `m18-kdd-crisp-dm-leccion.pdf` (comprehensive guide)
+  - `m18-kdd-crisp-dm-leccion.md`
   - Visual diagrams and flowcharts
 - **Learning Outcome:** Apply industry-standard frameworks
 
