@@ -1,3 +1,8 @@
+-- Tarea 6. Actualizar registros
+-- Actualiza al menos 5 registros; por ejemplo, el método de pago o el
+-- domicilio de entrega de alguna orden en particular.
+-- Enunciado completo: m36-operaciones-en-tablas-guia.ipynb
+
 USE AdventureWorks2022;
 GO
 

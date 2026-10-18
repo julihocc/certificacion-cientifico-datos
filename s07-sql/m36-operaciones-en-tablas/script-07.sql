@@ -1,3 +1,10 @@
+-- Tarea 7. Prefijo de estado en el número de orden
+-- Antepón al número de orden un código de 2 letras (catálogo RENAPO) del
+-- estado de la sucursal: modifica la definición de la columna para admitir
+-- letras y guion, y actualiza todos los registros con "XX-" si la compra fue
+-- en línea (BanderaCompraOnline = 'S') o con "DF-" (Ciudad de México) si no.
+-- Enunciado completo: m36-operaciones-en-tablas-guia.ipynb
+
 USE AdventureWorks2022;
 GO
 

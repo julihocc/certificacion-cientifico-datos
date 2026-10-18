@@ -1,3 +1,8 @@
+-- Tarea 5. Renombrar una columna
+-- Cambia el nombre (no el tipo de dato) de la columna "CompraOnline" a
+-- "BanderaCompraOnline" mediante código SQL.
+-- Enunciado completo: m36-operaciones-en-tablas-guia.ipynb
+
 USE AdventureWorks2022;
 GO
 

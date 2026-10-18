@@ -1,3 +1,7 @@
+-- Tarea 2. Insertar órdenes
+-- Inserta al menos 20 órdenes de ejemplo en la tabla mediante código SQL.
+-- Enunciado completo: m36-operaciones-en-tablas-guia.ipynb
+
 USE AdventureWorks2022;
 GO
 

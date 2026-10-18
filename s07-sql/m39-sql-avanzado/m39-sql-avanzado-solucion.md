@@ -1,7 +1,28 @@
-# SQL Avanzado
+# Módulo 39: SQL avanzado — Solución
 Presenta: Juliho Castillo Colmenares
 
+Enunciado para estudiantes: [m39-sql-avanzado-guia.ipynb](m39-sql-avanzado-guia.ipynb) · Lección: [m39-sql-avanzado-leccion.ipynb](m39-sql-avanzado-leccion.ipynb)
+
+## Contexto
+
+Las preguntas de negocio rara vez se responden con una consulta sobre una sola tabla. En AdventureWorks, saber qué productos se han vendido exige mirar las líneas de venta; saber en qué departamento trabaja hoy cada empleado exige recorrer su historial de departamentos y quedarse con el registro vigente (`EndDate` nulo); y preparar un listado de órdenes exige filtrar por año y recortar códigos. Se resuelven con subconsultas, CTE, tablas temporales y funciones integradas de SQL Server.
+
+## Instrucciones
+
+SQL Server con la base de ejemplo `AdventureWorks2022` restaurada; una consulta por tarea (archivos [consulta-01.sql](consulta-01.sql) a [consulta-06.sql](consulta-06.sql)).
+
+1. **Productos ordenados con una subconsulta:** nombre e ID de los productos que aparecen en `Sales.SalesOrderDetail`, ordenados por nombre.
+2. **Departamento actual de cada empleado:** `BusinessEntityID`, nombre completo y departamento actual.
+3. **La misma consulta con un CTE.**
+4. **Tablas temporales local y global** con `ProductID` y `Name` de los productos ordenados.
+5. **Órdenes de 2011:** `SalesOrderNumber` y `PurchaseOrderNumber` de las órdenes de ese año.
+6. **Recortar los números de orden y de compra** sin sus 2 primeros caracteres, como `NewSalesOrderNumber` y `NewPurchaseOrderNumber`.
+
+## Solución
+
 Usa la base de datos AdventureWorks2022 para completar los siguientes ejercicios. Cada ejercicio se basa en las lecciones que has visto en el curso. Asegúrate de seguir las instrucciones cuidadosamente y aplicar el tipo de unión adecuado para cada caso.
+
+### Tarea 1. Productos ordenados con una subconsulta
 
 1. Utiliza la tabla Production.Product para crear una consulta que muestre los nombres de los productos y los ID’s de productos que hayan sido ordenados. Utiliza una subconsulta para filtrar los productos ordenados en la tabla Sales.SalesOrderDetail. Ordena el resultado por nombre de manera ascendente.
 
@@ -22,6 +43,8 @@ ORDER BY
 ```
 
 ![alt text](resultado-01.png)
+
+### Tarea 2. Departamento actual de cada empleado
 
 2. Utiliza las tablas HumanResources.Employee, HumanResources.EmployeeDepartmentHistory, HumanResources.Department y Person.Person para crear una consulta que muestre un listado de todos los empleados y el nombre de su departamento actual. Los campos a mostrar serán: BusinessEntityID, FirstName + ' ' + LastName como Nombre del Empleado, y Name como Nombre del Departamento.
 
@@ -50,6 +73,8 @@ ORDER BY
 
 ![alt text](resultado-02.png)
 
+
+### Tarea 3. La misma consulta con un CTE
 
 3. Utiliza las tablas HumanResources.Employee, HumanResources.EmployeeDepartmentHistory y HumanResources.Department para crear una consulta que muestre el mismo resultado que en el ejercicio 2, pero utilizando un CTE. Los campos a mostrar serán: BusinessEntityID, FirstName + ' ' + LastName como Nombre del Empleado, y Name como Nombre del Departamento.
 
@@ -85,6 +110,8 @@ ORDER BY
 
 ![alt text](resultado-03.png)
 
+### Tarea 4. Tablas temporales local y global
+
 4. Crea una tabla temporal local y otra global para almacenar los productos ordenados. Utiliza la tabla Production.Product para insertar los datos en ambas tablas temporales. Los campos a incluir serán: ProductID y Name. Inserta los datos en la tabla temporal local.
 
 ![alt text](consulta-04.png)
@@ -119,6 +146,8 @@ WHERE ProductID IN (SELECT sod.ProductID FROM [AdventureWorks2022].[Sales].[Sale
 
 ![alt text](resultado-04.png)
 
+### Tarea 5. Órdenes de 2011
+
 5. Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra solo para el año 2011.
 
 ![alt text](consulta-05.png)
@@ -136,6 +165,8 @@ WHERE
 ```
 
 ![alt text](resultado-05.png)
+
+### Tarea 6. Recortar los números de orden y de compra
 
 6. Utiliza la tabla Sales.SalesOrderHeader para crear una consulta que muestre los números de orden y números de compra sin los 2 primeros caracteres y nombra los campos resultantes como NewSalesOrderNumber y NewPurchaseOrderNumber.
 

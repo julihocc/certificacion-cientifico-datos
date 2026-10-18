@@ -1,0 +1,24 @@
+-- =============================================================================
+-- Módulo 38: Agrupación y particionamiento — Solución
+-- Enunciado para estudiantes: m38-agrupacion-y-particionamiento-guia.ipynb
+-- Lección: m38-agrupacion-y-particionamiento-leccion.ipynb
+-- =============================================================================
+--
+-- Contexto:
+--   El equipo comercial de AdventureWorks quiere saber qué productos se venden
+--   más y cuánto pesa cada línea dentro de su pedido. Todo se responde con la
+--   tabla Sales.SalesOrderDetail de la base AdventureWorks2022.
+--
+-- Instrucciones:
+--   1. Totales por producto con GROUP BY (suma de OrderQty y de LineTotal).
+--   2. Filtrar grupos con HAVING: productos con más de 50 unidades vendidas.
+--   3. Total por pedido con OVER (PARTITION BY SalesOrderID).
+--   4. Numerar líneas con ROW_NUMBER() dentro de cada SalesOrderID.
+--   5. Rangos con RANK() por LineTotal dentro de cada SalesOrderID.
+--   6. Rangos densos con DENSE_RANK() por LineTotal dentro de cada SalesOrderID.
+--   7. Filtrar y ordenar por valor de ventas: productos con LineTotal total
+--      superior a 5000, en orden descendente.
+--
+--   Las consultas de cada tarea están en consulta-01.sql a consulta-07.sql; la
+--   solución comentada, con capturas, en m38-agrupacion-y-particionamiento-solucion.md.
+-- =============================================================================

@@ -1,3 +1,12 @@
+-- Tarea 1. Crear la tabla Ventas
+-- Crea la tabla dbo.Ventas para almacenar las ventas de una tienda: número de
+-- orden, fecha de orden, fecha de entrega, estatus, nombre del cliente,
+-- domicilio de entrega, compra en línea (S/N), método de pago, método de envío,
+-- subtotal, impuestos, costo de envío, total, moneda y observaciones, con el
+-- tipo de dato adecuado para cada campo. Define el número de orden como clave
+-- primaria con un nombre explícito.
+-- Enunciado completo: m36-operaciones-en-tablas-guia.ipynb
+
 USE AdventureWorks2022;
 GO
 

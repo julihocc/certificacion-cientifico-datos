@@ -1,3 +1,33 @@
+-- =============================================================================
+-- Módulo 36: Operaciones en tablas — Solución
+-- Enunciado para estudiantes: m36-operaciones-en-tablas-guia.ipynb
+-- Lección: m36-operaciones-en-tablas-leccion.ipynb
+-- =============================================================================
+--
+-- Contexto:
+--   Una tienda en línea quiere registrar sus ventas en una tabla propia de
+--   SQL Server (base AdventureWorks2022, esquema dbo). La tabla se crea desde
+--   cero y después se renombra, gana columnas y cambia el formato del número de
+--   orden para incluir la clave del estado de la sucursal.
+--
+-- Instrucciones (tareas secuenciales; ver la guía para el detalle):
+--   1. Crear la tabla Ventas.
+--   2. Insertar órdenes.
+--   3. Renombrar la tabla.
+--   4. Agregar la fecha de envío.
+--   5. Renombrar una columna.
+--   6. Actualizar registros.
+--   7. Prefijo de estado en el número de orden.
+--   8. Crear la tabla Prueba.
+--   9. TRUNCATE y DROP.
+--   10. Eliminar órdenes canceladas.
+--
+--   Este archivo reúne una versión resumida: crea la tabla (Tarea 1), inserta
+--   dos órdenes y muestra un UPDATE y un DELETE. La solución completa de cada
+--   tarea está en script-01.sql a script-10.sql; las capturas de comprobación,
+--   en evidencia-NN.png y en m36-operaciones-en-tablas-solucion.pdf/.pptx.
+-- =============================================================================
+
 USE AdventureWorks2022;
 GO
 
