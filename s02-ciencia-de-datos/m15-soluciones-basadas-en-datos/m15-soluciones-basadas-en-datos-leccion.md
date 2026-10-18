@@ -1,34 +1,22 @@
-# Módulo 15: Soluciones basadas en datos — Solución
+# Módulo 15: Soluciones basadas en datos — Lección
+
+> Lección del módulo, escrita a partir del trabajo entregado en el curso. Para practicar: [enunciado](m15-soluciones-basadas-en-datos-guia.ipynb) · [solución](m15-soluciones-basadas-en-datos-solucion.ipynb).
+
+## Caso de estudio: lienzo de modelo de negocios de Netflix
 
 **Juliho David Castillo Colmenares**
-
-Enunciado para estudiantes: [m15-soluciones-basadas-en-datos-guia.ipynb](m15-soluciones-basadas-en-datos-guia.ipynb)
-
-## Contexto
-
-Muchas empresas no podrían operar sin la ciencia de datos: la usan para recomendar productos, decidir qué contenido producir o fijar precios. El Business Model Canvas resume un modelo de negocio en nueve bloques y permite ver dónde aporta valor la ciencia de datos y razonar sobre el futuro de la empresa.
-
-## Instrucciones
-
-1. **Selección de la empresa.** Elegir una empresa cuyo modelo de negocio dependa del uso exitoso de la ciencia de datos en su operación diaria, justificando la decisión.
-2. **Lienzo del modelo de negocio.** Completar de manera breve y concisa los bloques del Business Model Canvas (socios clave, actividades clave, propuesta de valor, relaciones con clientes, canales, segmentos de clientes, flujos de ingresos, recursos clave y estructura de costos).
-3. **Conclusiones: oportunidades y amenazas.** Desarrollar conclusiones finales sobre el futuro de la empresa como resultado de su modelo de negocio actual, contrastando sus oportunidades a largo plazo con sus amenazas potenciales.
-
-El entregable original es un PDF titulado `Tarea M13-CD – TU NOMBRE`.
-
-## Tarea M13-CD
 
 **Introducción**
 
 El objetivo de esta actividad es desarrollar un Lienzo de modelo de negocios (Business Model Canvas) para una empresa de tu elección donde la Ciencia de Datos aporta soluciones importantes en su operación diaria. 
 
-### Tarea 1. Selección de la empresa
+**Paso 1: Selección de la empresa**
 
 **Empresa:** Netflix
 
 **Justificación:** Netflix es una empresa de entretenimiento en streaming que se ha convertido en un líder global en la industria. Su éxito se basa en gran medida en el uso de la ciencia de datos para comprender mejor a sus clientes, personalizar sus experiencias y desarrollar contenido atractivo.
 
-### Tarea 2. Lienzo del modelo de negocio
+**Paso 2: Lienzo del modelo de negocios**
 
 | Elemento                    | Descripción                                                  |
 | --------------------------- | ------------------------------------------------------------ |
@@ -41,7 +29,7 @@ El objetivo de esta actividad es desarrollar un Lienzo de modelo de negocios (Bu
 | **Recursos clave**          | - Contenido: La biblioteca de contenido de Netflix es su recurso clave, ya que es lo que atrae y retiene a los clientes. <br/> - Tecnología: La plataforma de streaming de Netflix, los sistemas de análisis de datos y la infraestructura de TI son esenciales para su operación. <br/> - Talento: Netflix depende de empleados talentosos en áreas como ingeniería, análisis de datos, marketing y desarrollo de contenido. |
 | **Estructura de costos**    | - Adquisición de contenido: Los costos de adquisición de contenido son uno de los principales gastos de Netflix. <br/> - Desarrollo de tecnología: La inversión en tecnología es otro gasto importante para Netflix. <br/> - Marketing: Netflix gasta en publicidad y marketing para atraer nuevos clientes y retener a los existentes. |
 
-### Tarea 3. Conclusiones: oportunidades y amenazas
+**Paso 3: Conclusiones finales**
 
 El modelo de negocios de Netflix ha sido muy exitoso hasta ahora. La empresa ha logrado un crecimiento constante en su base de suscriptores y sus ingresos. Sin embargo, el futuro de Netflix no está exento de desafíos.
 

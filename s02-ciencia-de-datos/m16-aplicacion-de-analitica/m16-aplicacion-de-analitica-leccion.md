@@ -1,29 +1,14 @@
-# Módulo 16: Aplicación de analítica — Solución
+# Módulo 16: Aplicación de la analítica — Lección
 
-Enunciado para estudiantes: [m16-aplicacion-de-analitica-guia.ipynb](m16-aplicacion-de-analitica-guia.ipynb)
-
-## Contexto
-
-Las aplicaciones de la analítica en una empresa —recomendaciones, precios, publicidad, detección de fraude— exigen perfiles complementarios. Este documento propone cómo organizar el equipo de ciencia de datos de una empresa cuyo negocio depende de los datos, partiendo de las aplicaciones concretas que ese equipo tendría que atender.
-
-## Instrucciones
-
-1. **Selección de la empresa.** Presentar la empresa y explicar cómo usa los datos en su negocio.
-2. **Aplicaciones potenciales de la ciencia de datos.** Enumerar al menos cinco aplicaciones y qué problema resuelve cada una.
-3. **Propuesta de equipo de trabajo.** Proponer los roles del equipo y las responsabilidades específicas de cada uno.
-4. **Conclusión.** Explicar qué ganaría la empresa al invertir en el equipo.
-
-*El enunciado original del curso no se conserva; estas instrucciones se reconstruyeron a partir de la solución.*
+> Lección del módulo, escrita a partir del trabajo entregado en el curso. Para practicar: [enunciado](m16-aplicacion-de-analitica-guia.ipynb) · [solución](m16-aplicacion-de-analitica-solucion.ipynb).
 
 ## Propuesta de equipo de Ciencia de Datos para Spotify
 
-### Tarea 1. Selección de la empresa
+**1. Selección de la empresa:**
 
 Spotify, una de las plataformas de streaming de música más populares del mundo, utiliza la Ciencia de Datos para mejorar la experiencia del usuario, descubrir nuevas tendencias musicales y optimizar sus operaciones. La empresa se basa en gran medida en los datos para comprender las preferencias de los usuarios, recomendar música relevante y generar ingresos a través de publicidad y suscripciones.
 
-### Tarea 2. Aplicaciones potenciales de la ciencia de datos
-
-**Aplicaciones potenciales de la Ciencia de Datos en Spotify:**
+**2. Aplicaciones potenciales de la Ciencia de Datos en Spotify:**
 
 - **Personalización de la música:** Spotify utiliza datos de escucha de usuarios para crear listas de reproducción personalizadas, recomendar artistas y álbumes, y predecir qué música le gustará a un usuario.
 - **Descubrimiento de música:** Spotify utiliza algoritmos de aprendizaje automático para identificar nuevas tendencias musicales, descubrir artistas emergentes y recomendar música a los usuarios que probablemente les gustará.
@@ -31,7 +16,7 @@ Spotify, una de las plataformas de streaming de música más populares del mundo
 - **Optimización de precios:** Spotify utiliza datos de mercado y comportamiento de usuarios para optimizar los precios de sus suscripciones y planes de publicidad.
 - **Análisis de fraude:** Spotify utiliza Ciencia de Datos para detectar y prevenir el fraude en su plataforma.
 
-### Tarea 3. Propuesta de equipo de trabajo
+**3. Propuesta de equipo de trabajo:**
 
 Para atender las aplicaciones de Ciencia de Datos mencionadas anteriormente, Spotify necesitaría un equipo de científicos de datos con diversas habilidades y experiencia. A continuación, se presenta una propuesta de equipo de trabajo:
 
@@ -69,6 +54,6 @@ Para atender las aplicaciones de Ciencia de Datos mencionadas anteriormente, Spo
 
 Este es solo un ejemplo de un equipo de Ciencia de Datos que Spotify podría necesitar. La estructura y el tamaño del equipo variarán según las necesidades específicas de la empresa.
 
-### Tarea 4. Conclusión
+**Conclusión:**
 
 La Ciencia de Datos es una herramienta esencial para el éxito continuo de Spotify en la industria del streaming de música altamente competitiva. Al invertir en un equipo de Ciencia de Datos sólido, Spotify puede mejorar la experiencia del usuario, descubrir nuevas oportunidades de negocio y optimizar sus operaciones.

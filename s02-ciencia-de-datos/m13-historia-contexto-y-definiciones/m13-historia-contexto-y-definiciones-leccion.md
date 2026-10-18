@@ -1,19 +1,12 @@
-# Módulo 13: Historia, contexto y definiciones — Solución
+# Módulo 13: Historia, contexto y definiciones — Lección
+
+> Lección del módulo, escrita a partir del trabajo entregado en el curso. Para practicar: [enunciado](m13-historia-contexto-y-definiciones-guia.ipynb) · [solución](m13-historia-contexto-y-definiciones-solucion.ipynb).
 
 ## Análisis del artículo "Minería de datos: Conceptos y tendencias"
 
 - Presenta: Juliho David Castillo Colmenares
 
-Enunciado para estudiantes: [m13-historia-contexto-y-definiciones-guia.ipynb](m13-historia-contexto-y-definiciones-guia.ipynb)
-
-## Contexto
-
-La minería de datos y el proceso de descubrimiento de conocimiento en bases de datos (KDD) son la base de muchas de las metodologías de ciencia de datos. Este documento resume un artículo clásico en español sobre el tema, respondiendo a tres preguntas: qué es el proceso KDD, para qué se usa la minería de datos y qué retos tiene hoy.
-
-## Instrucciones
-
-Cada pregunta corresponde a una tarea de la guía: **Tarea 1. El proceso KDD**, **Tarea 2. Aplicaciones de la minería de datos** y **Tarea 3. Retos actuales**.
-
+**Preguntas que responde esta lección**
 - Lee el artículo “Minería de datos: Conceptos y tendencias” de José Riquelme, Roberto Ruiz y Karina Gilbert (publicado en la Revista Iberoamericana de Inteligencia Artificial)
 - Contesta a las siguientes preguntas:
   - ¿En qué consiste el proceso denominado “KDD” (Descubrimiento de conocimiento en  bases de datos). Explique cada uno de los pasos que lo componen.
@@ -21,10 +14,6 @@ Cada pregunta corresponde a una tarea de la guía: **Tarea 1. El proceso KDD**, 
   - ¿Cuáles son los principales retos a los que se enfrentan los profesionistas en minería de datos actualmente?
 
 ----- 
-
-## Respuestas
-
-### Tarea 1. El proceso KDD
 
 El proceso de Descubrimiento de Conocimiento en Bases de Datos (KDD, por sus siglas en inglés) comprende varios pasos esenciales para transformar información de bajo nivel en conocimiento de alto nivel de forma efectiva y sistemática :
 
@@ -35,8 +24,6 @@ El proceso de Descubrimiento de Conocimiento en Bases de Datos (KDD, por sus sig
 5. **Interpretación y evaluación**: Los patrones descubiertos son interpretados y evaluados para asegurarse de que son útiles y comprensibles para el usuario.
 6. **Uso del conocimiento descubierto**: El conocimiento obtenido se aplica para tomar decisiones o mejorar procesos según los objetivos del proyecto.
 
-### Tarea 2. Aplicaciones de la minería de datos
-
 En cuanto a las aplicaciones de la minería de datos, se pueden mencionar al menos cinco que cubren una amplia gama de industrias: :
 
 1. **Comercio y banca**: Segmentación de clientes, previsión de ventas y análisis de riesgo.
@@ -44,8 +31,6 @@ En cuanto a las aplicaciones de la minería de datos, se pueden mencionar al men
 3. **Seguridad y detección de fraude**: Reconocimiento facial y detección de accesos no autorizados a redes.
 4. **Ciencias ambientales**: Modelado de ecosistemas para mejorar su gestión y control.
 5. **Ciencias sociales**: Análisis de flujos de opinión pública y planificación urbana.
-
-### Tarea 3. Retos actuales
 
 Los principales retos en la minería de datos actualmente incluyen :
 

@@ -1,24 +1,10 @@
-# Módulo 14: Tipos de analítica — Solución
+# Módulo 14: Tipos de analítica — Lección
 
-Enunciado para estudiantes: [m14-tipos-de-analitica-guia.ipynb](m14-tipos-de-analitica-guia.ipynb)
-
-## Contexto
-
-Los distintos tipos de analítica (descriptiva, diagnóstica, predictiva y prescriptiva) se reparten entre perfiles con responsabilidades, herramientas y salarios muy diferentes. Este documento distingue al analista de datos, al científico de datos y al ingeniero de datos, y describe la formación y las aptitudes que necesita cada uno.
-
-## Instrucciones
-
-1. **Tabla comparativa de roles.** Comparar los tres roles en responsabilidades principales, herramientas y tecnologías, y compensación promedio.
-2. **Aptitudes necesarias para cada rol.** Describir las aptitudes académicas y al menos tres aptitudes personales por rol.
-3. **Fuentes consultadas.** Citar las fuentes usadas y cerrar con la diferencia fundamental entre los roles.
-
-*El enunciado original del curso no se conserva; estas instrucciones se reconstruyeron a partir de la solución.*
+> Lección del módulo, escrita a partir del trabajo entregado en el curso. Para practicar: [enunciado](m14-tipos-de-analitica-guia.ipynb) · [solución](m14-tipos-de-analitica-solucion.ipynb).
 
 ## Tabla Comparativa entre Analistas de Datos, Científicos de Datos e Ingenieros de Datos
 
-### Tarea 1. Tabla comparativa de roles
-
-#### Tabla 1: Comparación de Responsabilidades, Herramientas y Compensación
+### Tabla 1: Comparación de Responsabilidades, Herramientas y Compensación
 
 | **Rol**                 | **Responsabilidades Principales**                            | **Herramientas y Tecnologías**                               | **Compensación Promedio** |
 | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------- |
@@ -26,9 +12,7 @@ Los distintos tipos de analítica (descriptiva, diagnóstica, predictiva y presc
 | **Científico de Datos** | - Desarrollar modelos estadísticos y de aprendizaje automático.<br>- Realizar análisis predictivos y prescriptivos.<br>- Extraer insights de grandes volúmenes de datos. | - Python<br>- R<br>- TensorFlow<br>- PyTorch<br>- SQL        | $90,000 - $150,000 USD    |
 | **Ingeniero de Datos**  | - Diseñar y construir infraestructuras de almacenamiento de datos.<br>- Implementar y mantener pipelines de datos.<br>- Optimizar infraestructuras para análisis. | - Hadoop<br>- Spark<br>- AWS/GCP/Azure<br>- Kafka<br>- Airflow | $100,000 - $160,000 USD   |
 
-### Tarea 2. Aptitudes necesarias para cada rol
-
-Análisis de las aptitudes necesarias para cada rol:
+### Análisis de Aptitudes Necesarias para Cada Rol
 
 #### Analista de Datos
 **Aptitudes Académicas:** Idealmente, un analista de datos debería poseer una formación en estadística, economía, o administración de empresas, con un fuerte enfoque en análisis cuantitativo.
@@ -54,9 +38,7 @@ Análisis de las aptitudes necesarias para cada rol:
 - **Habilidades Organizativas:** Cruciales para gestionar y priorizar múltiples proyectos.
 - **Capacidad para Resolver Problemas:** Esencial para optimizar y solucionar problemas en sistemas complejos.
 
-### Tarea 3. Fuentes consultadas
-
-#### Referencias Adicionales Utilizadas
+### Referencias Adicionales Utilizadas
 
 Para realizar esta tabla y análisis se consultaron las siguientes fuentes adicionales para asegurar la precisión y actualidad de la información:
 
