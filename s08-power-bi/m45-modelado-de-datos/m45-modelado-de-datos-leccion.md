@@ -2,7 +2,7 @@
 
 Autor: Juliho Castillo Colmenares
 
-> Lección complementaria del ejercicio [m45-modelado-de-datos-solucion.md](m45-modelado-de-datos-solucion.md). No es una tarea entregada del programa.
+> Lección complementaria del ejercicio de este módulo: [enunciado](m45-modelado-de-datos-guia.ipynb) y [solución](m45-modelado-de-datos-solucion.md). No es una tarea entregada del programa.
 
 En el Módulo 44 dejamos limpias cinco tablas: las ventas y cuatro catálogos. Por separado no responden preguntas como "¿cuánto vendió cada categoría en Canadá?". Para eso hay que **relacionarlas**, y la forma de hacerlo determina si los totales salen bien, si los filtros se propagan como esperamos y si el informe es rápido. Esta lección explica cómo diseñar ese modelo.
 

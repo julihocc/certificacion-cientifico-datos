@@ -2,7 +2,7 @@
 
 Autor: Juliho Castillo Colmenares
 
-> Lección complementaria del ejercicio [m50-publicacion-de-dashboards-solucion.md](m50-publicacion-de-dashboards-solucion.md). No es una tarea entregada del programa.
+> Lección complementaria del ejercicio de este módulo: [enunciado](m50-publicacion-de-dashboards-guia.ipynb) y [solución](m50-publicacion-de-dashboards-solucion.md). No es una tarea entregada del programa.
 
 Un informe que solo existe en un archivo `.pbix` en el equipo del autor no lo usa nadie más. Para que llegue a su público hay que publicarlo en **Power BI Service**, mantener sus datos al día y decidir quién ve qué. Esta lección recorre ese último tramo: los elementos del servicio, la publicación, la actualización programada, las formas de compartir y la seguridad de nivel de fila, que permite que un mismo informe muestre a cada usuario solo los datos que le corresponden.
 

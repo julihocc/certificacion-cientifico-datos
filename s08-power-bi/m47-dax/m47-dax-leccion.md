@@ -2,7 +2,7 @@
 
 Autor: Juliho Castillo Colmenares
 
-> Lección complementaria del ejercicio [m47-dax-solucion.pdf](m47-dax-solucion.pdf). No es una tarea entregada del programa.
+> Lección complementaria del ejercicio de este módulo: [enunciado](m47-dax-guia.ipynb) y [solución](m47-dax-solucion.pdf). No es una tarea entregada del programa.
 
 Arrastrar un campo numérico a un visual produce una suma automática. Pero las preguntas de negocio rara vez son una suma: "¿cuánto crecimos frente al mismo mes del año pasado?", "¿qué parte del total aporta cada país?", "¿cuánto llevamos vendido en el año?". Para responderlas Power BI usa **DAX** (Data Analysis Expressions), un lenguaje de fórmulas que trabaja sobre el modelo. Esta lección presenta las ideas que hacen falta para escribir DAX correcto, con resultados calculados sobre las ventas reales de la práctica (`Sales`, 1 499 000 filas de 2019 a 2021).
 

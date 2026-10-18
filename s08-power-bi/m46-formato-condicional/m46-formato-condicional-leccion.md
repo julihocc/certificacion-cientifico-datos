@@ -2,7 +2,7 @@
 
 Autor: Juliho Castillo Colmenares
 
-> Lección complementaria del ejercicio [m46-formato-condicional-solucion.pdf](m46-formato-condicional-solucion.pdf). No es una tarea entregada del programa.
+> Lección complementaria del ejercicio de este módulo: [enunciado](m46-formato-condicional-guia.ipynb) y [solución](m46-formato-condicional-solucion.pdf). No es una tarea entregada del programa.
 
 Una tabla con diez países y cuatro métricas tiene cuarenta números. Nadie los lee todos: el lector busca el más alto, el más bajo o el que se sale de lo normal. El **formato condicional** (conditional formatting) colorea las celdas según su valor para que esa búsqueda la haga el ojo, no la cabeza. Bien usado, ahorra segundos en cada lectura; mal usado, convierte la tabla en un mosaico que distrae. Esta lección muestra las opciones de Power BI con los datos de ventas por país.
 

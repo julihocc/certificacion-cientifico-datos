@@ -2,7 +2,7 @@
 
 Autor: Juliho Castillo Colmenares
 
-> Lección complementaria del ejercicio [m49-diseno-de-dashboards-solucion.pdf](m49-diseno-de-dashboards-solucion.pdf). No es una tarea entregada del programa.
+> Lección complementaria del ejercicio de este módulo: [enunciado](m49-diseno-de-dashboards-guia.ipynb) y [solución](m49-diseno-de-dashboards-solucion.pdf). No es una tarea entregada del programa.
 
 Con los módulos anteriores ya podemos limpiar datos, modelarlos, calcular medidas y hacer visuales interactivos. Falta lo que decide si alguien usará el informe: que se entienda. Un dashboard compite por unos segundos de atención, y en ese tiempo el lector tiene que encontrar la respuesta a su pregunta. Esta lección reúne los principios de diseño y las herramientas de Power BI para organizar páginas, guiar la navegación y mantener un estilo coherente.
 

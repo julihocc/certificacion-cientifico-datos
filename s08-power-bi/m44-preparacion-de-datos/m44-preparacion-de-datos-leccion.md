@@ -2,7 +2,7 @@
 
 Autor: Juliho Castillo Colmenares
 
-> Lección complementaria del ejercicio [m44-preparacion-de-datos-solucion.md](m44-preparacion-de-datos-solucion.md). No es una tarea entregada del programa.
+> Lección complementaria del ejercicio de este módulo: [enunciado](m44-preparacion-de-datos-guia.ipynb) y [solución](m44-preparacion-de-datos-solucion.md). No es una tarea entregada del programa.
 
 Un informe de Power BI solo es tan bueno como los datos que lo alimentan. Antes de dibujar un solo gráfico hay que importar los archivos, darles la forma correcta y limpiar lo que viene mal. En Power BI esa tarea la hace **Power Query**, y en esta lección la recorremos con los datos de ventas de la práctica de la sección (`../practica-ventas/datos-ventas/`), que traen casi todos los problemas típicos de un extracto real.
 
