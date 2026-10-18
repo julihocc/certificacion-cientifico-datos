@@ -1,6 +1,26 @@
+# Módulo 18: KDD y CRISP-DM — Solución
+
+Enunciado para estudiantes: [m18-kdd-crisp-dm-guia.ipynb](m18-kdd-crisp-dm-guia.ipynb)
+
+## Contexto
+
+KDD y CRISP-DM describen el camino que va de los datos en bruto al conocimiento útil, pero con énfasis distintos: KDD se centra en el proceso de descubrimiento a partir de los datos y CRISP-DM parte de la comprensión del negocio y termina en el despliegue. Este documento las compara sobre un caso concreto: la predicción del abandono de clientes en una empresa de telecomunicaciones.
+
+## Instrucciones
+
+Desarrollar un caso real o hipotético del área de trabajo y explicar las fases del ciclo de ciencia de datos que habría que llevar a cabo, completando lo siguiente:
+
+1. **Caso de estudio y fases del ciclo de ciencia de datos.** Explicar el caso de estudio y sus fases.
+2. **Ventajas y desventajas de KDD** en el caso de estudio.
+3. **Ventajas y desventajas de CRISP-DM** en el caso de estudio.
+
+El entregable original es un PDF con las respuestas, de ser posible con imágenes o diagramas que las apoyen.
+
 ## Actividad práctica del módulo:
 
-### **Caso de estudio: Predicción de la tasa de abandono de clientes en una empresa de telecomunicaciones**
+### Tarea 1. Caso de estudio y fases del ciclo de ciencia de datos
+
+#### **Caso de estudio: Predicción de la tasa de abandono de clientes en una empresa de telecomunicaciones**
 
 **Explicación del caso de estudio:**
 
@@ -45,7 +65,9 @@ Una empresa de telecomunicaciones se enfrenta a un problema de alta tasa de aban
 - **Monitoreo del modelo:** Monitorear el rendimiento del modelo en producción y realizar ajustes si es necesario.
 - **Comunicación de resultados:** Comunicar los resultados del proyecto a las partes interesadas.
 
-### **Ventajas y desventajas de la metodología KDD en el caso de estudio:**
+### Tarea 2. Ventajas y desventajas de KDD
+
+#### **Ventajas y desventajas de la metodología KDD en el caso de estudio:**
 
 **Ventajas:**
 
@@ -59,7 +81,9 @@ Una empresa de telecomunicaciones se enfrenta a un problema de alta tasa de aban
 - **Falta de enfoque en el negocio:** La metodología KDD no se centra específicamente en los objetivos del negocio, lo que puede llevar a resultados que no sean relevantes para la empresa.
 - **Dificultad para la replicación:** La metodología KDD puede ser difícil de replicar en otros proyectos, ya que no hay una guía paso a paso clara.
 
-### **Ventajas y desventajas de la metodología CRISP-DM en el caso de estudio:**
+### Tarea 3. Ventajas y desventajas de CRISP-DM
+
+#### **Ventajas y desventajas de la metodología CRISP-DM en el caso de estudio:**
 
 **Ventajas:**
 

@@ -1,8 +1,30 @@
-# Actividad práctica del módulo de Ciencia de Datos
+# Módulo 17: Metodología — Solución
 
 ## Presenta Juliho Castillo Colmenares
 
+Enunciado para estudiantes: [m17-metodologia-guia.ipynb](m17-metodologia-guia.ipynb)
+
+## Contexto
+
+Un proyecto de ciencia de datos empieza por entender el negocio: qué se quiere lograr, qué datos hacen falta, cómo se procesan, qué técnicas son adecuadas y qué obstáculos habrá para ponerlo en marcha y para que la gente lo use. Este documento plantea, siguiendo esas etapas, un caso de estudio de una empresa de reparto que quiere optimizar sus rutas de entrega.
+
+## Instrucciones
+
+1. **Caso de estudio y objetivos.** Introducir el problema de negocio y enumerar objetivos verificables.
+2. **Importancia de la minería de datos.** Explicar qué datos se analizarían, qué patrones se buscarían y qué modelos podrían construirse.
+3. **Comprensión del negocio.** Describir los elementos del negocio que hay que comprender a fondo.
+4. **Datos necesarios y procesamiento.** Enumerar los conjuntos de datos y cómo se procesarían.
+5. **Herramientas y algoritmos de modelado.** Proponer técnicas viables y justificarlas.
+6. **Retos de implementación.** Identificar los principales obstáculos para implementar la solución.
+7. **Aceptación del cliente y conclusión.** Enumerar los puntos clave para la adopción y cerrar con el valor de la solución.
+
+*El enunciado original del curso no se conserva; estas instrucciones se reconstruyeron a partir de la solución.*
+
+## Actividad práctica del módulo de Ciencia de Datos
+
 **Caso de estudio: Optimización de rutas de entrega en una empresa de reparto**
+
+### Tarea 1. Caso de estudio y objetivos
 
 **Introducción**
 
@@ -17,13 +39,15 @@ Este caso de estudio tiene como objetivos principales:
 3. **Integrar el modelo de optimización con el sistema de gestión de pedidos de la empresa.**
 4. **Evaluar el impacto de la optimización de rutas en la eficiencia y la rentabilidad del servicio de entrega.**
 
-**Importancia de la minería de datos**
+### Tarea 2. Importancia de la minería de datos
 
 La minería de datos desempeña un papel fundamental en este caso de estudio, al permitir:
 
 - **Analizar grandes volúmenes de datos históricos de entregas, incluyendo direcciones de clientes, tiempos de entrega y tráfico.**
 - **Identificar patrones y tendencias que puedan influir en la eficiencia de las rutas.**
 - **Desarrollar modelos predictivos que estimen el tiempo de entrega para cada ruta potencial.**
+
+### Tarea 3. Comprensión del negocio
 
 **Elementos de comprensión del negocio**
 
@@ -34,7 +58,7 @@ Para construir un modelo de optimización efectivo, es fundamental comprender a 
 - **Capacidad de la flota de vehículos:** Considerar el tamaño, la capacidad de carga y las restricciones de velocidad de los vehículos.
 - **Costos operativos:** Estimar los costos asociados a la distancia recorrida, el tiempo de entrega y el uso de combustible.
 
-**Datos necesarios y procesamiento**
+### Tarea 4. Datos necesarios y procesamiento
 
 El desarrollo del modelo requerirá la adquisición y el procesamiento de diversos conjuntos de datos, incluyendo:
 
@@ -45,13 +69,15 @@ El desarrollo del modelo requerirá la adquisición y el procesamiento de divers
 
 Los datos recopilados serán procesados mediante técnicas de limpieza, transformación y normalización para garantizar su calidad y consistencia.
 
-**Herramientas y algoritmos de modelado**
+### Tarea 5. Herramientas y algoritmos de modelado
 
 La elección de las herramientas y algoritmos adecuados para el modelado dependerá de la naturaleza de los datos y los objetivos específicos del proyecto. Entre las opciones viables se encuentran:
 
 - **Algoritmos de enrutamiento heurístico:** Métodos como la búsqueda en anchura y la búsqueda en profundidad primero que exploran de manera eficiente posibles rutas.
 - **Optimización basada en metaheurísticas:** Algoritmos como la recocido simulado y las hormigas artificiales que buscan soluciones óptimas o casi óptimas.
 - **Programación lineal:** Un método matemático para optimizar una función objetivo sujeta a restricciones.
+
+### Tarea 6. Retos de implementación
 
 **Retos potenciales de implementación**
 
@@ -61,6 +87,8 @@ La implementación exitosa del modelo de optimización de rutas de entrega puede
 - **Capacitación del personal para utilizar el nuevo sistema de optimización de rutas.**
 - **Comunicación efectiva de los beneficios del modelo a los conductores y clientes.**
 - **Monitoreo y actualización constante del modelo para adaptarlo a los cambios en la demanda y las condiciones del tráfico.**
+
+### Tarea 7. Aceptación del cliente y conclusión
 
 **Puntos clave para la aceptación del cliente**
 

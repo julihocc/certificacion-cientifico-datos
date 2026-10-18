@@ -1,8 +1,25 @@
-# Cálculos estadísticos para el módulo 2 - Juliho David Castillo Colmenares
+# Módulo 32: Estadística descriptiva — Solución
 
-## Ejercicio uno
+Enunciado para estudiantes: [m32-estadistica-descriptiva-guia.ipynb](m32-estadistica-descriptiva-guia.ipynb)
 
-### Planteamiento
+## Contexto
+
+Antes de aplicar cualquier modelo hay que resumir y describir los datos: dónde se concentran, cuánto varían, si hay valores atípicos y cómo se relacionan dos variables. Este documento resuelve cuatro situaciones breves: un diagrama de caja de las estaturas de los habitantes de una ciudad, un pequeño conjunto de datos para resumir, cinco gráficos de dispersión y una recta de regresión con su coeficiente de determinación.
+
+## Instrucciones
+
+1. **Partes de un diagrama de caja.** Relacionar cada número del diagrama con su parte (1er cuartil, mínimo, mediana, 2.º cuartil, máximo, *outlier*, 3er cuartil; solo seis opciones son correctas).
+2. **Medidas descriptivas.** Calcular media, moda, mediana, máximo, mínimo, varianza y desviación típica de $\{10, 15, 12, 8, 17, 14, 20, 8, 12, 16, 14\}$.
+3. **Tipos de correlación.** Clasificar cinco gráficos de dispersión (correlación nula, ideal negativa, negativa, ideal positiva o positiva).
+4. **Interpretar una regresión lineal.** Identificar el modelo y el indicador de un gráfico con línea de tendencia e interpretarlos.
+
+## Cálculos estadísticos para el módulo 2 - Juliho David Castillo Colmenares
+
+### Tarea 1. Partes de un diagrama de caja
+
+Ejercicio uno.
+
+#### Planteamiento
 
 Dado el siguiente gráfico, escribe para cada número con qué parte está relacionado.
 
@@ -10,7 +27,7 @@ Las opciones son: 1er Cuartil, Mínimo, Mediana, 2o Cuartil, Máximo, Outlier, 3
 
 ![img](https://static.lms.ebac.mx/embeds/a7a0fb88-8eca-420b-bd1a-7c8ef775d9fc/original.png)
 
-### Solución
+#### Solución
 
 A fin de utilizar de manera única las 6 posibles respuestas, las etiquetas se asignarían de la siguiente manera:
 
@@ -21,12 +38,14 @@ A fin de utilizar de manera única las 6 posibles respuestas, las etiquetas se a
 5.   Primer cuartil
 6.   Mínimo
 
-### Observaciones
+#### Observaciones
 
 Sin embargo, es claro que punto con valor de `2.1` es mayor que cualquier otro en el diagrama de caja mostrado. Por tanto podríamos decir que es el máximo. Sin embargo, al estar fuera de los “bigotes”, en particular del bigote superior, se consideraría un valor atípico (‘outlier’). 
-## Ejercicio 2
+### Tarea 2. Medidas descriptivas
 
-### Planteamiento
+Ejercicio 2.
+
+#### Planteamiento
 
 Dado el siguiente set de datos, {10,15,12,8,17,14,20,8,12,16,14} calcula:
 
@@ -40,7 +59,7 @@ Dado el siguiente set de datos, {10,15,12,8,17,14,20,8,12,16,14} calcula:
 
 Anota los resultados de cada cálculo.
 
-### Solución
+#### Solución
 
 Resultados de los cálculos estadísticos:
 
@@ -52,13 +71,15 @@ Resultados de los cálculos estadísticos:
 -   **Varianza**: 14.02
 -   **Desviación Típica**: 3.74
 
-### Observaciones
+#### Observaciones
 
 La distribución es multimodal, ya que los datos 8, 12 y 14 se repiten dos veces cada uno, pero elegimos `8` por ser la moda al centro.
 
-## Ejercicio 3
+### Tarea 3. Tipos de correlación
 
-### Planteamiento
+Ejercicio 3.
+
+#### Planteamiento
 
 Con cada gráfico, menciona que tipo de correlación se tiene en los datos.
 
@@ -70,7 +91,7 @@ Las opciones son: correlación nula, correlación ideal negativa, correlación n
 4.   ![](./assets/original-1702922543620-13.png)
 5.   ![img](./assets/original.png)
 
-### Respuestas
+#### Respuestas
 
 1.   Correlación positiva
 2.   Correlación nula
@@ -78,9 +99,11 @@ Las opciones son: correlación nula, correlación ideal negativa, correlación n
 4.   Correlación ideal positiva 
 5.   Correlación ideal negativa
 
-## Ejercicio 4
+### Tarea 4. Interpretar una regresión lineal
 
-### Planteamiento
+Ejercicio 4.
+
+#### Planteamiento
 
 Ante el siguiente gráfico, considere lo siguiente: 
 
@@ -90,7 +113,7 @@ Ante el siguiente gráfico, considere lo siguiente:
 
 ![Cómo se relaciona el Coeficiente de Correlación de Pearson (r) y el  Coeficiente de Determinación r Cuadrado (r²)](./assets/original.jpeg)
 
-### Solución
+#### Solución
 
 Interpretación del Gráfico de Dispersión
 

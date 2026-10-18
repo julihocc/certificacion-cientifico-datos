@@ -1,12 +1,33 @@
-# Primera parte
+# Módulo 19: TDSP, BSPF y Orange (1) — Solución
 
 *Presenta: Juliho David Castillo Colmenares*
 
-**Instrucciones**
+Enunciado para estudiantes: [m19-tdsp-bspf-y-orange-1-guia.ipynb](m19-tdsp-bspf-y-orange-1-guia.ipynb) · Gráficos reproducidos en Python: [m19-tdsp-bspf-y-orange-1-solucion.ipynb](m19-tdsp-bspf-y-orange-1-solucion.ipynb) · Flujo de Orange: [m19-tdsp-bspf-y-orange-1-solucion.ows](m19-tdsp-bspf-y-orange-1-solucion.ows)
 
-1. Lea el caso aplicativo “How To Use The 7 Step BSPF: A Customer Churn Example”
-2. Explique con sus palabras de forma breve en qué consisten cada uno de los siete pasos planteados para crear un “Business Science Problem Framework (BSPF)” en este caso.
-3. Comente si es aplicable a su entorno laboral y por qué. 
+## Contexto
+
+Metodologías como TDSP o BSPF ayudan a que un proyecto de ciencia de datos empiece por el problema de negocio y no por el algoritmo. La primera parte resume los siete pasos del *Business Science Problem Framework* con el caso de abandono de clientes de Business Science. En la segunda, un equipo médico quiere explorar los datos de pacientes evaluados por enfermedad cardíaca antes de construir cualquier modelo, con gráficos que revelen diferencias entre grupos y la forma de las distribuciones.
+
+## Datos
+
+`heart_disease.tab`, conjunto de ejemplo incluido en Orange: 303 pacientes con variables como `age`, `gender`, `chest pain`, `rest SBP` y `cholesterol`, y la variable objetivo `diameter narrowing`.
+
+## Instrucciones
+
+Primera parte: leer el caso aplicativo “How To Use The 7 Step BSPF: A Customer Churn Example”.
+
+1. **Los siete pasos del BSPF.** Explicar con tus palabras, de forma breve, en qué consiste cada uno de los siete pasos para crear un *Business Science Problem Framework* en este caso.
+2. **Aplicabilidad en tu entorno laboral.** Comentar si es aplicable al entorno laboral propio y por qué.
+
+Segunda parte: con `heart_disease.tab` en Orange, elaborar tres tipos de gráficos distintos a los vistos en el módulo (sección *Visualize*), aplicando diversas condiciones y comentando el uso práctico que podría dárseles.
+
+3. **Violin Plot:** colesterol por género.
+4. **Box Plot:** edad por tipo de dolor torácico.
+5. **Distributions:** presión arterial sistólica en reposo.
+
+## Primera parte
+
+### Tarea 1. Los siete pasos del BSPF
 
 El artículo "How To Use The 7 Step BSPF: A Customer Churn Example" ([https://www.business-science.io/business/2018/06/19/business-science-problem-framework.html](https://www.business-science.io/business/2018/06/19/business-science-problem-framework.html)) presenta un marco metodológico de siete pasos para la definición y resolución de problemas empresariales mediante la aplicación de la ciencia de datos. Estos pasos son los siguientes:
 
@@ -24,26 +45,21 @@ El artículo "How To Use The 7 Step BSPF: A Customer Churn Example" ([https://ww
 
 **7. Implementación de la solución:** Si el modelo demuestra un rendimiento satisfactorio, se procede a la implementación de la solución en el contexto empresarial. Esto puede implicar cambios en los procesos, productos o servicios ofrecidos.
 
-## Aplicabilidad en el entorno laboral
+### Tarea 2. Aplicabilidad en el entorno laboral
 
 La aplicabilidad del BSPF en un entorno laboral específico dependerá de diversos factores, tales como la disponibilidad de datos, la cultura organizacional y las habilidades del equipo de ciencia de datos. En general, el BSPF se presenta como una herramienta valiosa para aquellas empresas que buscan utilizar la ciencia de datos para resolver problemas empresariales de manera efectiva. El marco metodológico proporciona una guía clara y estructurada para el proceso de resolución de problemas, desde la definición inicial del problema hasta la implementación de la solución.
 
 En un entorno laboral como el mío, el BSPF podría ser aplicado a una amplia gama de problemas, como la predicción de la rotación de empleados, la optimización de campañas de marketing o la mejora de la eficiencia operativa. La aplicabilidad específica dependería del acceso a los datos y de las prioridades estratégicas de la empresa.
 
-## Conclusiones
+#### Conclusiones
 
 El BSPF se presenta como un marco metodológico útil para la definición y resolución de problemas empresariales mediante la aplicación de la ciencia de datos. Es un enfoque sistemático que puede ayudar a las empresas a tomar decisiones basadas en datos y mejorar sus resultados.
 
-## Referencia
+#### Referencia
 
 * How To Use The 7 Step BSPF: A Customer Churn Example: [https://www.business-science.io/business/2018/06/19/business-science-problem-framework.html](https://www.business-science.io/business/2018/06/19/business-science-problem-framework.html)
 
-# Segunda Parte
-
-**Instrucciones**
-
-1. Considere la base de datos de muestra “heart_disease.tab“ disponible en Orange.
-2. Elabore 3 tipos de gráficos distintos a los vistos en este módulo (disponibles en la sección “Visualize”) aplicando diversas condiciones y comentando sobre el uso práctico que podría darles. 
+## Segunda Parte
 
 
 
@@ -55,25 +71,25 @@ Para esta tarea, utilizaremos el banco de datos `heart_disease.tab`, disponible 
 - `Blox Plot`, en el que analizaremos la distribución de las edades, dependiendo del nivel del dolor pectoral. 
 - `Distributions`, en el que analizaremos la presión arterial sistólica en reposo. 
 
-## `Violin Plot`
+### Tarea 3. Violin Plot: colesterol por género
 
 ![image-20240428135336632](./assets/figura-02.png)
 
-### Hallazgos clave
+#### Hallazgos clave
 
 - **Distribución general del colesterol:** La distribución general de los niveles de colesterol parece estar ligeramente sesgada hacia la derecha, lo que indica que hay más individuos con niveles de colesterol más altos.
 - **Diferencias de género en la distribución del colesterol:** Los gráficos de violín sugieren que puede haber diferencias en la distribución de los niveles de colesterol entre hombres y mujeres. El gráfico de violín femenino parece ser ligeramente más estrecho y simétrico que el gráfico de violín masculino, lo que sugiere que los niveles de colesterol se distribuyen de manera más uniforme entre las mujeres. Además, el nivel de colesterol medio para las mujeres parece ser más bajo que el nivel de colesterol medio para los hombres.
 - **Interpretación:** Estos hallazgos sugieren que las mujeres pueden tener niveles de colesterol más bajos en promedio que los hombres. Sin embargo, es importante tener en cuenta que esta es solo una observación de un solo conjunto de datos, y se necesitaría más investigación para confirmar este hallazgo y explorar las causas subyacentes de cualquier diferencia de género en los niveles de colesterol.
 
-### Conclusión
+#### Conclusión
 
 El gráfico de violín en la imagen sugiere que puede haber diferencias en la distribución de los niveles de colesterol entre hombres y mujeres, con las mujeres teniendo niveles de colesterol más bajos en promedio. Sin embargo, es importante tener en cuenta que esta es solo una observación de un solo conjunto de datos, y se necesitaría más investigación para confirmar este hallazgo y explorar las causas subyacentes de cualquier diferencia de género en los niveles de colesterol.
 
-## `Box plot`
+### Tarea 4. Box Plot: edad por tipo de dolor torácico
 
 ![image-20240428135509246](./assets/figura-03.png)
 
-### Intepretación de los resultados
+#### Intepretación de los resultados
 
 De acuerdo a los diagramas de caja, podemos recoger la siguiente información estádistica de la variable `age` (edades), donde las unidades son años. 
 
@@ -91,7 +107,7 @@ Los niveles de dolor tienen las siguientes características
 - Anginoso atípico: El dolor atípico presenta características que lo diferencian del dolor típico. Puede manifestarse como una molestia o presión menos intensa, un dolor punzante, ardor o incluso una sensación de indigestión. Este tipo de dolor puede ser más difícil de identificar como un problema cardíaco, ya que sus características varían y pueden confundirse con otras afecciones. Sin embargo, es importante no ignorarlo, ya que aún puede indicar un problema cardíaco subyacente.
 - Dolor no anginoso: El dolor no anginoso se refiere a cualquier dolor en el pecho que no esté relacionado con la angina de pecho. Puede tener diversas causas, como problemas digestivos, musculares, óseos o incluso ansiedad. 
 
-### Conclusiones estadísticas válidas a partir de los resultados presentados:
+#### Conclusiones estadísticas válidas a partir de los resultados presentados:
 
 Con base en la información proporcionada y los diagramas de caja, podemos extraer las siguientes conclusiones estadísticas válidas:
 
@@ -124,13 +140,13 @@ Con base en la información proporcionada y los diagramas de caja, podemos extra
 
 Los datos presentados sugieren que puede haber una asociación entre la edad y el tipo de dolor en el pecho, con individuos con dolor típico que tienden a ser un poco mayores que aquellos que son asintomáticos. Sin embargo, se necesitan más investigaciones con una muestra más grande y representativa para confirmar esta tendencia y comprender mejor la relación entre estas variables.
 
-## `Distributions`
+### Tarea 5. Distributions: presión arterial sistólica en reposo
 
 ![image-20240428142011665](./assets/figura-04.png)
 
 El gráfico muestra un histograma de la variable "rest SBP" (presión arterial sistólica en reposo) de un conjunto de datos de pacientes con enfermedad cardíaca. El histograma está superpuesto a una curva de distribución normal.
 
-### Análisis estadístico
+#### Análisis estadístico
 
 **Medidas de tendencia central**
 
@@ -144,7 +160,7 @@ La desviación estándar de la variable "rest SBP" es de 17,57. El rango de la v
 
 La curva de distribución normal sugiere que la variable "rest SBP" sigue una distribución normal. El histograma confirma esta observación, ya que los valores de la variable se distribuyen de manera simétrica alrededor de la media.
 
-### Interpretación
+#### Interpretación
 
 Los resultados del análisis estadístico sugieren que la variable "rest SBP" sigue una distribución normal. Esto significa que la mayoría de los pacientes tienen una presión arterial sistólica en reposo que se encuentra cerca de la media (131,69 mmHg). Los valores extremos (presión arterial sistólica en reposo muy alta o muy baja) son menos frecuentes.
 
