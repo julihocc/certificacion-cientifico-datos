@@ -56,10 +56,18 @@ plt.title(f"Correlation between IBM and Walmart Prices: {correlation:.2f}")
 plt.show()
 
 # %%
+# Correlation of daily returns: two trending price series can look correlated just
+# because both drift over time, so we also compare their day-to-day changes
+daily_returns = aligned_data.pct_change().dropna()
+returns_correlation = daily_returns["Close_IBM"].corr(daily_returns["Close_WMT"])
+returns_correlation
+
+# %%
 # Step 3: Time Series Decomposition
 # Decompose both time series and plot
+# period=252: the index only has trading days, about 252 per year (not 365)
 for stock_data, name in zip([ibm_data, walmart_data], ["IBM", "Walmart"]):
-    decomposed = seasonal_decompose(stock_data["Close"], model="additive", period=365)
+    decomposed = seasonal_decompose(stock_data["Close"], model="additive", period=252)
     decomposed.plot()
     plt.suptitle(f"{name} Stock Price Decomposition")
     plt.show()
@@ -113,3 +121,6 @@ for stock_data, name in zip([ibm_data, walmart_data], ["IBM", "Walmart"]):
     print(
         f"One-day forecast for {name} based on the 30-day moving average: {last_moving_avg}"
     )
+
+# %% [markdown]
+# **Revisión posterior (2026-10):** se añadió la correlación de los rendimientos diarios, además de la de los precios, y la descomposición estacional usa `period=252` (días hábiles por año) en lugar de 365, porque la serie solo tiene días de negociación. Al re-ejecutar, yfinance devuelve precios `Close` ya ajustados (`auto_adjust`), así que las cifras difieren de la versión entregada: la correlación de precios pasa de 0.25 a 0.67 (la de rendimientos es 0.32) y la prueba ADF ya no rechaza la raíz unitaria para IBM. El PDF conserva la versión entregada.
