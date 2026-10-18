@@ -50,7 +50,7 @@ certificacion-cientifico-datos/
 - All names are lowercase ASCII kebab-case in Spanish (no accents, spaces or underscores).
 - Sections are `sNN-tema/`, modules `mNN-tema/` and projects `proyectos/pNN-tema/`. Modules are numbered sequentially from M01 to M57 across the whole program.
 - The main deliverable of each module is named after it: `mNN-tema.ipynb`, plus its `.pdf` or `.md` exports. Assignment statements are in `instrucciones.md`.
-- For example, `s04-aprendizaje-supervisado/m21-regresion-lineal-simple/m21-regresion-lineal-simple.ipynb`.
+- For example, `s04-aprendizaje-supervisado/m21-regresion-lineal-simple/m21-regresion-lineal-simple-solucion.ipynb`.
 
 ---
 

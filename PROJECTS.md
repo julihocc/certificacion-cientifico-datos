@@ -85,13 +85,13 @@ This project demonstrates unsupervised learning techniques through clustering an
 
 ### Deliverables
 
-1. **Jupyter Notebook:** `p01-resenas-de-apps.ipynb`
+1. **Jupyter Notebook:** `p01-resenas-de-apps-solucion.ipynb`
    - Full analysis workflow
    - Code and explanations
    - Visualizations embedded
    - Results and findings
 
-2. **Project Report:** `p01-resenas-de-apps.pdf`
+2. **Project Report:** `p01-resenas-de-apps-solucion.pdf`
    - Executive summary
    - Methodology explanation
    - Key findings
@@ -229,7 +229,7 @@ This project demonstrates supervised learning techniques for medical prediction 
 
 ### Deliverables
 
-1. **Jupyter Notebook:** `p02-aprendizaje-supervisado.ipynb`
+1. **Jupyter Notebook:** `p02-aprendizaje-supervisado-solucion.ipynb`
    - Complete analysis workflow
    - Medical data analysis
    - Multiple model implementations
@@ -237,7 +237,7 @@ This project demonstrates supervised learning techniques for medical prediction 
    - Model evaluation and comparison
    - Visualizations and results
 
-2. **Project Report:** `p02-aprendizaje-supervisado.pdf`
+2. **Project Report:** `p02-aprendizaje-supervisado-solucion.pdf`
    - Executive summary
    - Medical background and dataset description
    - Methodology and modeling approach
@@ -430,7 +430,7 @@ Staff (2 staff members)
    - `customer-analysis.sql` - 14+ queries
    - `advanced-queries.sql` - 10+ complex queries
 
-2. **Comprehensive Report:** `p04-analisis-de-peliculas-sql.pdf` (1.5 MB)
+2. **Comprehensive Report:** `p04-analisis-de-peliculas-sql-solucion.pdf` (1.5 MB)
    - Executive summary
    - Key findings by analysis area
    - Recommendations
@@ -445,7 +445,7 @@ Staff (2 staff members)
    - Customer demographic distributions
    - Year-over-year comparisons
 
-4. **Technical Documentation:** `p04-analisis-de-peliculas-sql.md`
+4. **Technical Documentation:** `p04-analisis-de-peliculas-sql-solucion.md`
    - SQL techniques used
    - Query explanations
    - Performance notes
@@ -616,14 +616,14 @@ This project demonstrates advanced business intelligence techniques using Micros
 
 ### Deliverables
 
-1. **PowerBI File:** `p05-dashboard-covid.pbix`
+1. **PowerBI File:** `p05-dashboard-covid-solucion.pbix`
    - Complete interactive dashboard
    - Multiple pages/views
    - All calculations and formatting
    - Ready for publication
    - File size: 10-20 MB (including embedded data)
 
-2. **Dashboard Report:** `p05-dashboard-covid.pdf`
+2. **Dashboard Report:** `p05-dashboard-covid-solucion.pdf`
    - Executive summary
    - Key findings and insights
    - Dashboard navigation guide

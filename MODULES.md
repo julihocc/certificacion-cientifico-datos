@@ -28,8 +28,8 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Historical evolution of data science
   - Core concepts and terminology
 - **Resources:**
-  - Theory PDF: `m13-historia-contexto-y-definiciones.pdf`
-  - Markdown guide: `m13-historia-contexto-y-definiciones.md`
+  - Theory PDF: `m13-historia-contexto-y-definiciones-solucion.pdf`
+  - Markdown guide: `m13-historia-contexto-y-definiciones-solucion.md`
 - **Learning Outcome:** Understand data science as discipline
 
 #### M14: Types of Analytics
@@ -39,8 +39,8 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Prescriptive analytics
   - Diagnostic analytics
 - **Resources:**
-  - Class material: `m14-tipos-de-analitica.pdf`
-  - Exercises: `m14-tipos-de-analitica.md`
+  - Class material: `m14-tipos-de-analitica-solucion.pdf`
+  - Exercises: `m14-tipos-de-analitica-solucion.md`
 - **Learning Outcome:** Differentiate analytics types
 
 #### M15: Solution-Based Approaches
@@ -49,7 +49,7 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Solution design methodologies
   - Business impact consideration
 - **Resources:**
-  - PDF guide: `m15-soluciones-basadas-en-datos.pdf`
+  - PDF guide: `m15-soluciones-basadas-en-datos-solucion.pdf`
 - **Learning Outcome:** Apply data science to business problems
 
 #### M16: Analytics Applications & Case Studies
@@ -58,7 +58,7 @@ Establish foundational understanding of data science concepts, terminology, and 
   - Industry case studies
   - Spotify analytics example
 - **Resources:**
-  - Case study: `m16-aplicacion-de-analitica.md`
+  - Case study: `m16-aplicacion-de-analitica-solucion.md`
   - Dataset: `spotify_data.csv`
 - **Learning Outcome:** Connect theory to real applications
 
@@ -81,8 +81,8 @@ Master established data science frameworks and project methodologies.
   - Experiment design
   - Validation approaches
 - **Resources:**
-  - `m17-metodologia.pdf`
-  - `m17-metodologia.md`
+  - `m17-metodologia-solucion.pdf`
+  - `m17-metodologia-solucion.md`
 - **Prerequisites:** M13-M16
 - **Learning Outcome:** Design data science projects methodically
 
@@ -93,8 +93,8 @@ Master established data science frameworks and project methodologies.
   - Framework comparison
   - Implementation steps
 - **Resources:**
-  - `m18-kdd-crisp-dm.pdf` (comprehensive guide)
-  - `m18-kdd-crisp-dm.md`
+  - `m18-kdd-crisp-dm-solucion.pdf` (comprehensive guide)
+  - `m18-kdd-crisp-dm-solucion.md`
   - Visual diagrams and flowcharts
 - **Learning Outcome:** Apply industry-standard frameworks
 
@@ -105,7 +105,7 @@ Master established data science frameworks and project methodologies.
   - Lifecycle phases
   - Deliverables at each stage
 - **Resources:**
-  - `m19-tdsp-bspf-y-orange-1.pdf`
+  - `m19-tdsp-bspf-y-orange-1-solucion.pdf`
   - Process documentation
 - **Learning Outcome:** Plan team data science projects
 
@@ -116,9 +116,9 @@ Master established data science frameworks and project methodologies.
   - Workflow design
   - Classification and clustering with Orange
 - **Resources:**
-  - `m20-agile-data-science-y-orange-2.pdf`
-  - Orange workflow files: `modelo.ows`, `m19-tdsp-bspf-y-orange-1.ows` (M19)
-  - Tutorial: `m20-agile-data-science-y-orange-2.md`
+  - `m20-agile-data-science-y-orange-2-solucion.pdf`
+  - Orange workflow files: `modelo.ows`, `m19-tdsp-bspf-y-orange-1-solucion.ows` (M19)
+  - Tutorial: `m20-agile-data-science-y-orange-2-solucion.md`
 - **Tools:** Orange ML platform
 - **Learning Outcome:** Use visual data mining tools
 
@@ -141,9 +141,9 @@ Master machine learning algorithms for classification and regression tasks.
   - Model interpretation
   - Assumption validation
 - **Resources:**
-  - `m21-regresion-lineal-simple.pdf` (theory)
+  - `m21-regresion-lineal-simple-solucion.pdf` (theory)
   - `M21-Exercises.pdf`
-  - `m21-regresion-lineal-simple.ipynb` (Jupyter notebook)
+  - `m21-regresion-lineal-simple-solucion.ipynb` (Jupyter notebook)
 - **Dataset:** `data/pib-por-pais.csv`
 - **Tools:** Python, Scikit-learn, Pandas, Matplotlib
 - **Learning Outcome:** Implement and interpret linear regression
@@ -155,7 +155,7 @@ Master machine learning algorithms for classification and regression tasks.
   - Elastic Net
   - Hyperparameter tuning
 - **Resources:**
-  - `m22-regresion-regularizada.pdf`
+  - `m22-regresion-regularizada-solucion.pdf`
   - `M22-Exercise-Guide.md`
 - **Prerequisites:** M21
 - **Learning Outcome:** Apply regularization techniques
@@ -167,7 +167,7 @@ Master machine learning algorithms for classification and regression tasks.
   - Hyperparameter selection (k value)
   - Classification and regression with KNN
 - **Resources:**
-  - `m23-knn.pdf` (comprehensive guide)
+  - `m23-knn-solucion.pdf` (comprehensive guide)
   - `M23-Implementation.md`
 - **Tools:** Scikit-learn
 - **Learning Outcome:** Implement KNN classifier/regressor
@@ -191,7 +191,7 @@ Master machine learning algorithms for classification and regression tasks.
   - Boosting concepts
   - Gradient Boosting
 - **Resources:**
-  - `m25-metodos-de-ensamble.pdf` (3 files)
+  - `m25-metodos-de-ensamble-solucion.pdf` (3 files)
   - Python script: `preprocess.py`
   - Exercises and examples
 - **Tools:** Scikit-learn, XGBoost
@@ -204,7 +204,7 @@ Master machine learning algorithms for classification and regression tasks.
   - Multi-class classification
   - Model evaluation for classification
 - **Resources:**
-  - `m26-regresion-logistica.pdf`
+  - `m26-regresion-logistica-solucion.pdf`
   - Python script: `preprocess.py`
   - Practical examples
 - **Tools:** Scikit-learn
@@ -230,8 +230,8 @@ Master statistical analysis and hypothesis testing for data-driven decisions.
   - Distribution analysis
   - Data summarization
 - **Resources:**
-  - `m32-estadistica-descriptiva.pdf` (2 files)
-  - Markdown guide: `m32-estadistica-descriptiva.md`
+  - `m32-estadistica-descriptiva-solucion.pdf` (2 files)
+  - Markdown guide: `m32-estadistica-descriptiva-solucion.md`
 - **Learning Outcome:** Summarize data statistically
 
 #### M33: Inferential Statistics & Hypothesis Testing
@@ -242,8 +242,8 @@ Master statistical analysis and hypothesis testing for data-driven decisions.
   - P-values and significance
   - Type I and Type II errors
 - **Resources:**
-  - `m33-estadistica-inferencial.pdf` (3 files)
-  - Jupyter notebook: `m33-estadistica-inferencial.ipynb`
+  - `m33-estadistica-inferencial-solucion.pdf` (3 files)
+  - Jupyter notebook: `m33-estadistica-inferencial-solucion.ipynb`
 - **Dataset:** Marketing campaign data
 - **Tools:** SciPy, Statsmodels
 - **Prerequisites:** M32 (recommended)
@@ -256,8 +256,8 @@ Master statistical analysis and hypothesis testing for data-driven decisions.
   - Regression diagnostics
   - Model validation
 - **Resources:**
-  - `m34-estadistica-avanzada.pdf` (2 files)
-  - Jupyter notebook: `m34-estadistica-avanzada.ipynb`
+  - `m34-estadistica-avanzada-solucion.pdf` (2 files)
+  - Jupyter notebook: `m34-estadistica-avanzada-solucion.ipynb`
 - **Dataset:** Housing price data
 - **Tools:** Statsmodels, Scipy
 - **Prerequisites:** M33
@@ -410,7 +410,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Data quality checks
   - Power Query editor
 - **Resources:**
-  - `m44-preparacion-de-datos.pdf` (2 files)
+  - `m44-preparacion-de-datos-solucion.pdf` (2 files)
   - `M44-Sample.pbix` (PowerBI file)
   - Practical exercises
 - **Dataset:** Sales data sample
@@ -424,7 +424,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Relationships
   - Cardinality configuration
 - **Resources:**
-  - `m45-modelado-de-datos.pdf` (3 files)
+  - `m45-modelado-de-datos-solucion.pdf` (3 files)
   - `M45-Sample.pbix` (PowerBI file with models)
 - **Prerequisites:** M44
 - **Learning Outcome:** Design data models
@@ -436,7 +436,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Data bars
   - Icon sets
 - **Resources:**
-  - `m46-formato-condicional.pdf` (2 files)
+  - `m46-formato-condicional-solucion.pdf` (2 files)
   - `M46-Example.pbix`
 - **Learning Outcome:** Apply conditional formatting
 
@@ -448,7 +448,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Time intelligence functions
   - Context and evaluation
 - **Resources:**
-  - `m47-dax.pdf` (3 files - comprehensive)
+  - `m47-dax-solucion.pdf` (3 files - comprehensive)
   - `M47-Examples.pbix` (DAX formulas)
   - Formula library
 - **Prerequisites:** M45
@@ -462,7 +462,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Drill-through pages
   - Parameters and slicers
 - **Resources:**
-  - `m48-objetos-dinamicos.pdf` (2 files)
+  - `m48-objetos-dinamicos-solucion.pdf` (2 files)
   - `M48-Interactive.pbix`
 - **Learning Outcome:** Create interactive dashboards
 
@@ -474,7 +474,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - User experience
   - Design best practices
 - **Resources:**
-  - `m49-diseno-de-dashboards.pdf` (3 files)
+  - `m49-diseno-de-dashboards-solucion.pdf` (3 files)
   - `M49-Dashboard.pbix` (example dashboard)
   - Design guidelines
 - **Prerequisites:** M46-M48 (recommended)
@@ -488,7 +488,7 @@ Master business intelligence dashboarding and data visualization with Microsoft 
   - Row-level security (RLS)
   - Refresh scheduling
 - **Resources:**
-  - `m50-publicacion-de-dashboards.pdf` (2 files)
+  - `m50-publicacion-de-dashboards-solucion.pdf` (2 files)
   - Deployment guides
 - **Learning Outcome:** Publish dashboards
 
@@ -520,8 +520,8 @@ Master advanced statistical and time series modelling techniques.
   - Model selection
   - Interpretation and inference
 - **Resources:**
-  - `m51-analisis-de-regresion.pdf` (2 files)
-  - Jupyter notebook: `m51-analisis-de-regresion.ipynb`
+  - `m51-analisis-de-regresion-solucion.pdf` (2 files)
+  - Jupyter notebook: `m51-analisis-de-regresion-solucion.ipynb`
 - **Dataset:** Housing price data
 - **Tools:** Statsmodels, Scikit-learn
 - **Learning Outcome:** Conduct comprehensive regression analysis
@@ -533,8 +533,8 @@ Master advanced statistical and time series modelling techniques.
   - Power analysis
   - Multiple testing correction
 - **Resources:**
-  - `m52-pruebas-de-hipotesis.pdf` (2 files)
-  - Jupyter notebook: `m52-pruebas-de-hipotesis.ipynb`
+  - `m52-pruebas-de-hipotesis-solucion.pdf` (2 files)
+  - Jupyter notebook: `m52-pruebas-de-hipotesis-solucion.ipynb`
 - **Dataset:** Housing data
 - **Prerequisites:** M32-M34
 - **Learning Outcome:** Conduct rigorous hypothesis tests
@@ -547,8 +547,8 @@ Master advanced statistical and time series modelling techniques.
   - Feature selection
   - Comparison of models
 - **Resources:**
-  - `m53-modelos-de-regresion.pdf` (2 files)
-  - Jupyter notebook: `m53-modelos-de-regresion.ipynb`
+  - `m53-modelos-de-regresion-solucion.pdf` (2 files)
+  - Jupyter notebook: `m53-modelos-de-regresion-solucion.ipynb`
 - **Dataset:** Advertising data
 - **Tools:** Scikit-learn
 - **Learning Outcome:** Build predictive regression models
@@ -560,8 +560,8 @@ Master advanced statistical and time series modelling techniques.
   - Autocorrelation and partial autocorrelation
   - Decomposition methods
 - **Resources:**
-  - `m54-series-de-tiempo.pdf` (2 files)
-  - Python script: `m54-series-de-tiempo.py`
+  - `m54-series-de-tiempo-solucion.pdf` (2 files)
+  - Python script: `m54-series-de-tiempo-solucion.py`
 - **Tools:** Statsmodels, Pandas
 - **Learning Outcome:** Analyze time series data
 
@@ -572,8 +572,8 @@ Master advanced statistical and time series modelling techniques.
   - Order selection
   - Model fitting and forecasting
 - **Resources:**
-  - `m55-modelos-ar.pdf` (2 files)
-  - Jupyter notebook: `m55-modelos-ar.ipynb`
+  - `m55-modelos-ar-solucion.pdf` (2 files)
+  - Jupyter notebook: `m55-modelos-ar-solucion.ipynb`
 - **Tools:** Statsmodels
 - **Prerequisites:** M54
 - **Learning Outcome:** Implement AR models
@@ -586,8 +586,8 @@ Master advanced statistical and time series modelling techniques.
   - ARIMA order selection
   - Forecasting with ARIMA
 - **Resources:**
-  - `m56-modelos-arima.pdf` (2 files)
-  - Jupyter notebook: `m56-modelos-arima.ipynb`
+  - `m56-modelos-arima-solucion.pdf` (2 files)
+  - Jupyter notebook: `m56-modelos-arima-solucion.ipynb`
 - **Dataset:** New York temperature data
 - **Tools:** Statsmodels
 - **Prerequisites:** M54-M55
@@ -614,8 +614,8 @@ Master data storytelling and communication for business audiences.
 - Business storytelling
 
 #### Resources
-- Theory PDF: `m57-storytelling.pdf` (2 files)
-- Practical Jupyter notebook: `m57-storytelling.ipynb`
+- Theory PDF: `m57-storytelling-solucion.pdf` (2 files)
+- Practical Jupyter notebook: `m57-storytelling-solucion.ipynb`
   - Real data examples
   - Visualization techniques
   - Storytelling patterns

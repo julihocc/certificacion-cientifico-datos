@@ -247,8 +247,8 @@ certificacion-cientifico-datos/
 proyectos/p01-resenas-de-apps/
 ├── apps.csv                       # App metadata dataset
 ├── user-reviews.csv               # 7.7 MB review dataset
-├── p01-resenas-de-apps.ipynb      # Clustering analysis
-└── p01-resenas-de-apps.pdf        # Formal report
+├── p01-resenas-de-apps-solucion.ipynb      # Clustering analysis
+└── p01-resenas-de-apps-solucion.pdf        # Formal report
 ```
 **Technologies:** Python, Pandas, Scikit-learn, Matplotlib
 **Key Skills:** Data clustering, dimensionality reduction, pattern recognition
@@ -261,8 +261,8 @@ proyectos/p02-aprendizaje-supervisado/
 ├── heart-attack.csv               # 11 KB medical data
 ├── mnist.csv                      # 76 MB MNIST digits
 ├── imagen-muestra.png             # Sample digit image
-├── p02-aprendizaje-supervisado.ipynb  # ML model development
-└── p02-aprendizaje-supervisado.pdf    # Analysis & results
+├── p02-aprendizaje-supervisado-solucion.ipynb  # ML model development
+└── p02-aprendizaje-supervisado-solucion.pdf    # Analysis & results
 ```
 **Technologies:** Python, Scikit-learn, TensorFlow, XGBoost
 **Key Skills:** Feature engineering, model selection, classification, cross-validation
@@ -274,11 +274,11 @@ proyectos/p02-aprendizaje-supervisado/
 proyectos/p04-analisis-de-peliculas-sql/
 ├── dvdrental/                     # DVD rental database files
 │   └── restore.sql                # Database restore script
-├── p04-analisis-de-peliculas-sql.sql  # SQL analysis queries
+├── p04-analisis-de-peliculas-sql-solucion.sql  # SQL analysis queries
 ├── p04-avance-parte-4.sql         # SQL analysis queries (part 4 progress)
-├── p04-analisis-de-peliculas-sql.pdf  # 1.5 MB comprehensive report
+├── p04-analisis-de-peliculas-sql-solucion.pdf  # 1.5 MB comprehensive report
 ├── ejercicio-01.png … ejercicio-15.png  # 15 PNG screenshots
-└── p04-analisis-de-peliculas-sql.md   # Detailed documentation
+└── p04-analisis-de-peliculas-sql-solucion.md   # Detailed documentation
 ```
 **Technologies:** SQL, SQLite, Database design, Data visualization
 **Key Skills:** Complex SQL queries, data aggregation, reporting, visualization
@@ -288,8 +288,8 @@ proyectos/p04-analisis-de-peliculas-sql/
 **Structure:**
 ```
 proyectos/p05-dashboard-covid/
-├── p05-dashboard-covid.pbix       # PowerBI file (data embedded)
-└── p05-dashboard-covid.pdf        # Analysis report
+├── p05-dashboard-covid-solucion.pbix       # PowerBI file (data embedded)
+└── p05-dashboard-covid-solucion.pdf        # Analysis report
 ```
 **Technologies:** Microsoft PowerBI, DAX, Data modeling
 **Key Skills:** Dashboard design, KPI design, interactive visualization, storytelling

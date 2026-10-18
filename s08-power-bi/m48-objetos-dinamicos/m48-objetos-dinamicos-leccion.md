@@ -2,7 +2,7 @@
 
 Autor: Juliho Castillo Colmenares
 
-> Lección complementaria del ejercicio [m48-objetos-dinamicos.md](m48-objetos-dinamicos.md). No es una tarea entregada del programa.
+> Lección complementaria del ejercicio [m48-objetos-dinamicos-solucion.md](m48-objetos-dinamicos-solucion.md). No es una tarea entregada del programa.
 
 Un informe estático responde las preguntas que su autor previó. Un informe **interactivo** deja que el lector haga las suyas: elegir un país, acotar un rango de fechas, pasar el cursor sobre un punto del mapa para ver el detalle o saltar a una página con la ficha completa de un producto. Power BI ofrece varias herramientas para eso, y esta lección explica cuándo usar cada una, con el modelo de ventas de la práctica.
 
