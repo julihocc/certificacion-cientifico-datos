@@ -1,6 +1,6 @@
-# EBAC Data Scientist Program - Comprehensive Portfolio
+# Data Scientist Program - Comprehensive Portfolio
 
-A complete learning and project repository documenting the EBAC Data Scientist Professional Certification Program journey. This repository showcases progression through 56+ modules across 7 major data science domains, culminating in 4 capstone projects.
+A complete learning and project repository documenting the Data Scientist Professional Certification Program journey. This repository showcases progression through 56+ modules across 7 major data science domains, culminating in 4 capstone projects.
 
 **Author:** Juliho Castillo Colmenares
 
@@ -252,7 +252,7 @@ Power BI files (`*.pbix`), zip archives and the large datasets are stored with [
 ## Not included
 
 - The `dvdrental` data files for P04 come from the PostgreSQL `dvdrental` sample database. To rebuild it, edit the file paths in [restore.sql](proyectos/p04-analisis-de-peliculas-sql/dvdrental/restore.sql) to point at your local copy.
-- EBAC course material (class guides, glossaries, FAQs and assignment PDFs) is not included.
+- Course material (class guides, glossaries, FAQs and assignment PDFs) is not included.
 
 ---
 

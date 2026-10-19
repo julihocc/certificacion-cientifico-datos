@@ -1,4 +1,4 @@
-# EBAC Data Scientist Program - Quick Reference
+# Data Scientist Program - Quick Reference
 
 **Last Updated:** 2026-06-25 | **Status:** Complete | **Sections:** 9 | **Modules:** 56+ | **Projects:** 4
 
@@ -351,7 +351,7 @@ Git: Version control
 
 ## 🎓 Certification Path
 
-This repository documents the complete **EBAC Data Scientist Professional Certification** program including:
+This repository documents the complete **Data Scientist Professional Certification** program including:
 
 1. **Foundation:** 8 modules (Sections 2-3)
 2. **Technical Core:** 19 modules (Sections 4, 6-7)

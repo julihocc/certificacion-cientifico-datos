@@ -44,8 +44,6 @@ Usa la base de datos AdventureWorks2022 para completar los siguientes ejercicios
 
 10) Titula el documento como 'Tarea M9 – TU NOMBRE'.
 
-11) Envía tu archivo al tutor a través de la plataforma EBAC.
-
 
 
 ¿Cómo presentar su entrega?

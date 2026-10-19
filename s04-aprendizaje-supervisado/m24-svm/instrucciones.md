@@ -1,5 +1,5 @@
 
-# Práctica — EBAC LMS
+# Práctica
 
 ### 3-4 minutos
 

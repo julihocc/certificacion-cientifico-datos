@@ -25,7 +25,7 @@ Dado el siguiente gráfico, escribe para cada número con qué parte está relac
 
 Las opciones son: 1er Cuartil, Mínimo, Mediana, 2o Cuartil, Máximo, Outlier, 3er Cuartil. (Sólo 6 opciones son correctas).
 
-![img](https://static.lms.ebac.mx/embeds/a7a0fb88-8eca-420b-bd1a-7c8ef775d9fc/original.png)
+![Diagrama de caja con seis elementos numerados](./assets/diagrama-de-caja.png)
 
 #### Solución
 

@@ -1,8 +1,8 @@
-# EBAC Data Scientist Program - Capstone Projects Guide
+# Data Scientist Program - Capstone Projects Guide
 
 ## Overview
 
-This document provides detailed documentation of all capstone projects in the EBAC Data Scientist Program. Each project represents a complete end-to-end data science workflow demonstrating real-world applications.
+This document provides detailed documentation of all capstone projects in the Data Scientist Program. Each project represents a complete end-to-end data science workflow demonstrating real-world applications.
 
 **Total Projects:** 4 | **Total Size:** 95 MB | **Completion Status:** All delivered
 

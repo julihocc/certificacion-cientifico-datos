@@ -9,7 +9,7 @@ En este archivo pondrás en práctica algunos de los conceptos aprendidos de est
 - Descarga el archivo House Pricing.csv. En la sección de Anexos.
 - Verifica por medio de pruebas analíticas y visuales como es la distribución de las diferentes variables númericas que se encuentran en el dataset como “Salesprice”, “GrLivArea”, “'2ndFlrSF”. Calculando algunas métricas importantes como la media, la desviación estándar y sus cuártiles.
 
-![img](https://static.lms.ebac.mx/content-files/03329cf7-ad71-4d68-b258-f443a233445a/original.png)
+![Histograma de SalePrice](histograma-saleprice.png)
 
 - Calcula las correlaciones entre estás variables y visualiza el resultado en un heatmap, ¿Qué variables correlacionan más con el Precio de Venta?
 - Configura un modelo de regresión con todas las variables numéricas por medio de la función OLS de la librería *sm*

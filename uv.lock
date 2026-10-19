@@ -960,7 +960,7 @@ wheels = [
 ]
 
 [[package]]
-name = "ebac-cientifico-datos"
+name = "certificacion-cientifico-datos"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

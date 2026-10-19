@@ -17,6 +17,6 @@ En este archivo pondrás en práctica algunos de los conceptos aprendidos de est
 
 Un Jupyter Notebook (archivo de extensión .ipynb), archivo PDF y capturas de pantallas en espacio de respuesta que muestran tanto el código desarrollado como la solución al problema planteado, incluyendo los comentarios que sean pertinentes a las preguntas que se plantean. 
 
-Las entregas sin estos elementos no serán calificadas. Envía tu archivo al tutor a través de la plataforma EBAC.
+Las entregas sin estos elementos no serán calificadas.
 
 **Tiempo estimado de resolución: 40 minutos**

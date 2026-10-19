@@ -1,7 +1,7 @@
 [project]
-name = "ebac-cientifico-datos"
+name = "certificacion-cientifico-datos"
 version = "0.1.0"
-description = "Projects and exercises from the EBAC Data Scientist Program"
+description = "Projects and exercises from the Data Scientist certification program"
 requires-python = ">=3.11"
 dependencies = [
     "feature-engine>=1.9.4",

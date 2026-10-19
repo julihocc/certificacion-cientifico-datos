@@ -34,8 +34,6 @@ Usa la base de datos AdventureWorks2022 para completar los siguientes ejercicios
 
 8.Titula el documento como 'Tarea M11 – TU NOMBRE'.
 
-9.Envía tu archivo al tutor a través de la plataforma EBAC.
-
 ¿Cómo presentar su entrega?
 
 Script de SQL (archivo .sql) con las respuestas de cada una de las preguntas del ejercicio.

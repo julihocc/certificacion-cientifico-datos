@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides a comprehensive technical overview of the EBAC Data Scientist Program repository structure, organization, and content details.
+This document provides a comprehensive technical overview of the Data Scientist Program repository structure, organization, and content details.
 
 ---
 

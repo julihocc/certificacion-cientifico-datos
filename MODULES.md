@@ -1,4 +1,4 @@
-# EBAC Data Scientist Program - Complete Module Guide
+# Data Scientist Program - Complete Module Guide
 
 ## Table of Contents
 - [Section 2: Data Science Fundamentals](#section-2-data-science-fundamentals)

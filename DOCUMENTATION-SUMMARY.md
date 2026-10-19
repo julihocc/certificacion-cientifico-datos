@@ -6,7 +6,7 @@
 
 ## Overview
 
-This document summarizes the comprehensive documentation created for the EBAC Data Scientist Program repository. A complete codebase exploration and technical documentation package has been created to provide clear understanding of the repository structure, contents, and resources.
+This document summarizes the comprehensive documentation created for the Data Scientist Program repository. A complete codebase exploration and technical documentation package has been created to provide clear understanding of the repository structure, contents, and resources.
 
 ---
 
@@ -403,7 +403,7 @@ A comprehensive, multi-perspective documentation package has been created that p
 3. **Educational Documentation (MODULES.md):** For course structure and learning
 4. **Project Documentation (PROJECTS.md):** For understanding capstone projects
 
-Total: **4 coordinated documentation files** providing **complete coverage** of the EBAC Data Scientist Program repository with **2,937+ lines** of organized, cross-referenced information.
+Total: **4 coordinated documentation files** providing **complete coverage** of the Data Scientist Program repository with **2,937+ lines** of organized, cross-referenced information.
 
 ---
 

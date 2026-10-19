@@ -22,8 +22,6 @@ Archivo final
 
 Un Jupyter Notebook (archivo de extensión .ipynb), los archivos CSV utilizados y un archivo PDF con capturas de pantalla que muestren tanto el código desarrollado como la solución al problema planteado, incluyendo los comentarios que sean pertinentes a las preguntas que se plantean. Entregas sin estos elementos no serán calificadas.
 
-Envía tu archivo al tutor a través de la plataforma EBAC.
-
 
 
 Tiempo estimado de resolución: 40 minutos
