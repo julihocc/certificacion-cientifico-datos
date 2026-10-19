@@ -6,7 +6,7 @@
 - [Section 4: Supervised Learning](#section-4-supervised-learning)
 - [Section 6: Statistics](#section-6-statistics)
 - [Section 7: SQL & Databases](#section-7-sql--databases)
-- [Section 8: PowerBI & Business Intelligence](#section-8-powerbi--business-intelligence)
+- [Section 8: Dashboards (Business Intelligence)](#section-8-dashboards-business-intelligence)
 - [Section 9: Advanced Modelling](#section-9-advanced-modelling)
 - [Module 57: Storytelling with Data](#module-57-storytelling-with-data)
 
@@ -393,112 +393,65 @@ Master SQL and database querying for data extraction and manipulation.
 
 ---
 
-## Section 8: PowerBI (Business Intelligence)
+## Section 8: Dashboards (Business Intelligence)
 
-**Directory:** `s08-power-bi/`
-**Size:** 146 MB | **Modules:** 7 + Practice | **Duration:** Advanced
+**Directory:** `s08-dashboards/`
+**Size:** 68 MB (57 MB of it is the raw sales extract) | **Modules:** 7 + Practice | **Duration:** Advanced
 
 ### Purpose
-Master business intelligence dashboarding and data visualization with Microsoft PowerBI.
+Build a business intelligence dashboard end to end with free, open-source tools: prepare the data with pandas, model it as a star schema in DuckDB, compute measures in SQL, chart it with Plotly and serve it as an interactive Streamlit app.
+
+The section was originally done in Power BI. It was redone in Python so it does not depend on paid or Windows-only software; the Power BI files remain in the git history.
+
+### Module structure
+Every module has a guide (`-guia.ipynb`), an executed lesson (`-leccion.ipynb`) and an executed solution (`-solucion.ipynb`). From M46 on, each module also ships a Streamlit app; M49 and M50 build the section's final app in `practica-ventas/`.
 
 ### Modules
 
 #### M44: Data Preparation
-- **Topics:**
-  - Data cleaning in PowerBI
-  - Data transformation
-  - Data quality checks
-  - Power Query editor
-- **Resources:**
-  - `m44-preparacion-de-datos-solucion.pdf` (2 files)
-  - `M44-Sample.pbix` (PowerBI file)
-  - Practical exercises
-- **Dataset:** Sales data sample
-- **Tools:** Microsoft PowerBI
-- **Learning Outcome:** Prepare data for visualization
+- **Topics:** reading CSV (with BOM), pipe-separated TXT, a folder of yearly files and Excel sheets; column profiling; the five real cleaning cases of the extract (duplicate countries, trailing-comma ghost column, junk rows above the header, packed customer field, Open/Closed store duplicates); append vs merge; calculated columns; saving to Parquet
+- **Tools:** pandas, DuckDB (`read_csv` with a glob)
+- **Learning Outcome:** Write a reproducible cleaning recipe that never touches the source files
 
 #### M45: Data Modelling
-- **Topics:**
-  - Star schema design
-  - Fact and dimension tables
-  - Relationships
-  - Cardinality configuration
-- **Resources:**
-  - `m45-modelado-de-datos-solucion.pdf` (3 files)
-  - `M45-Sample.pbix` (PowerBI file with models)
-- **Prerequisites:** M44
-- **Learning Outcome:** Design data models
+- **Topics:** fact vs dimension tables, star vs snowflake schema, keys and cardinality, fan-out from duplicated keys, filter direction (joins and semi-joins), role-playing dates, measures as functions
+- **Tools:** DuckDB, SQL
+- **Learning Outcome:** Design and validate a star schema
 
 #### M46: Conditional Formatting
-- **Topics:**
-  - Background color formatting
-  - Font color rules
-  - Data bars
-  - Icon sets
-- **Resources:**
-  - `m46-formato-condicional-solucion.pdf` (2 files)
-  - `M46-Example.pbix`
-- **Learning Outcome:** Apply conditional formatting
+- **Topics:** preattentive attributes, sequential and diverging colour scales, rules, colour computed by a function, data bars, icons, accessibility
+- **Tools:** pandas `Styler`, `st.dataframe` with `column_config`, Plotly
+- **App:** `m46-formato-condicional-app.py`, a first dashboard with KPIs, bubble map, donut, trend line and a formatted country table
+- **Learning Outcome:** Make the important values of a table visible at a glance
 
-#### M47: DAX (Data Analysis Expressions)
-- **Topics:**
-  - DAX functions and syntax
-  - Calculated columns
-  - Measures
-  - Time intelligence functions
-  - Context and evaluation
-- **Resources:**
-  - `m47-dax-solucion.pdf` (3 files - comprehensive)
-  - `M47-Examples.pbix` (DAX formulas)
-  - Formula library
-- **Prerequisites:** M45
-- **Learning Outcome:** Write DAX formulas
+#### M47: Measures and KPIs
+- **Topics:** measures vs calculated columns, filter context, sum of products vs product of sums, share of total with window functions, safe division, calendar table, time intelligence (previous month, same month last year, year to date) and month-over-month and year-over-year changes
+- **Tools:** DuckDB window functions, pandas
+- **App:** `m47-medidas-y-kpis-app.py`, with a summary tab and a measure-validation tab
+- **Learning Outcome:** Write correct business measures
 
-#### M48: Dynamic Objects
-- **Topics:**
-  - Dynamic titles and labels
-  - Conditional visibility
-  - Bookmarks and navigation
-  - Drill-through pages
-  - Parameters and slicers
-- **Resources:**
-  - `m48-objetos-dinamicos-solucion.pdf` (2 files)
-  - `M48-Interactive.pbix`
-- **Learning Outcome:** Create interactive dashboards
+#### M48: Interactivity
+- **Topics:** Streamlit's execution model and session state, sidebar filters, date ranges, cross-filtering with chart selections, drill-down (treemap), drill-through (dialog), tooltips, dynamic titles
+- **Tools:** Streamlit, Plotly
+- **App:** `m48-interactividad-app.py`
+- **Learning Outcome:** Build interactive reports
 
 #### M49: Dashboard Design
-- **Topics:**
-  - Visual hierarchy
-  - Color theory
-  - Layout principles
-  - User experience
-  - Design best practices
-- **Resources:**
-  - `m49-diseno-de-dashboards-solucion.pdf` (3 files)
-  - `M49-Dashboard.pbix` (example dashboard)
-  - Design guidelines
-- **Prerequisites:** M46-M48 (recommended)
-- **Learning Outcome:** Design professional dashboards
+- **Topics:** visual hierarchy, grid layout, the five-second rule, choosing the chart, themes, presets ("bookmarks"), multipage navigation, narrow screens
+- **Tools:** `st.navigation`, `.streamlit/config.toml`, Plotly templates
+- **Learning Outcome:** Design a clear, navigable dashboard
 
-#### M50: Publishing & Distribution
-- **Topics:**
-  - PowerBI Service
-  - App publishing
-  - Sharing and permissions
-  - Row-level security (RLS)
-  - Refresh scheduling
-- **Resources:**
-  - `m50-publicacion-de-dashboards-solucion.pdf` (2 files)
-  - Deployment guides
-- **Learning Outcome:** Publish dashboards
+#### M50: Publishing Dashboards
+- **Topics:** Streamlit Community Cloud, dependency files, secrets, data refresh, sharing, static and dynamic row-level security, free-tier limits vs self-hosting
+- **Tools:** Streamlit Community Cloud, `st.secrets`, `st.login`/`st.user`
+- **Learning Outcome:** Publish a dashboard and control who sees which rows
 
-### Practice & Datasets
-- **Sales Dataset:** 55 MB (`practica-ventas/datos-ventas/`)
-  - Contains comprehensive sales data
-  - Multiple tables and dimensions
-  - Real-world complexity
-- **Sample Dashboards:** Multiple .pbix files with examples
-- **Practice Exercises:** Guided dashboard creation
+### Practice & Datasets (`practica-ventas/`)
+- **Raw extract (`datos-ventas/`, 57 MB, Git LFS):** 1 499 000 sales from 2019 to 2021 in three CSV files, a countries TXT and an Excel catalogue (customers, stores, products)
+- **Clean model (`datos-modelo/`, 8.6 MB of Parquet):** one fact table and four dimensions, rebuilt by `preparar_datos.py`
+- **`ventas.py`:** shared cleaning steps, DuckDB model and measures, used by the notebooks of M45–M50 and by every app
+- **Final app:** `app.py` with the pages in `paginas/` (home, summary, time measures, country analysis, about), `estilo.py`, `seguridad.py` and `requirements.txt` for Streamlit Community Cloud
+- **Smoke test:** `s08-dashboards/verificar_apps.py` runs every app headless
 
 ---
 
@@ -645,7 +598,7 @@ S04 (Supervised Learning) + S06 (Statistics) parallel
     ↓
 S07 (SQL)
     ↓
-S08 (PowerBI)
+S08 (Dashboards)
     ↓
 S09 (Advanced Modelling)
     ↓
@@ -669,7 +622,7 @@ Projects (Integration)
 **Business Intelligence Path:**
 - S02-S03 (Foundation)
 - S06 (Statistics basics)
-- S08 (PowerBI)
+- S08 (Dashboards)
 - Project P05
 
 **Full Stack Path:**
@@ -688,7 +641,7 @@ Projects (Integration)
 | M21-M26 | Supervised Learning | 40-60 |
 | M32-M34 | Statistics | 20-30 |
 | M35-M43 | SQL | 30-50 |
-| M44-M50 | PowerBI | 40-60 |
+| M44-M50 | Dashboards (BI) | 40-60 |
 | M51-M56 | Advanced Modelling | 40-60 |
 | M57 | Storytelling | 8-12 |
 | P01-P05 | Projects | 60-100 |

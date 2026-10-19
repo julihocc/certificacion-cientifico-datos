@@ -12,19 +12,19 @@ A complete learning and project repository documenting the Data Scientist Profes
 
 ## Repository Overview
 
-**Repository Size:** 295 MB | **Total Files:** 316 | **Modules Completed:** 56+ | **Projects:** 4
+**Repository Size:** 260 MB | **Total Files:** 447 | **Modules Completed:** 56+ | **Projects:** 4
 
 This repository contains comprehensive coursework, practical exercises, and real-world projects demonstrating proficiency across all major data science disciplines including Python, SQL, Machine Learning, Statistics, Business Intelligence, and Advanced Modelling.
 
 ### Quick Stats
 | Metric | Count |
 |--------|-------|
-| Jupyter Notebooks | 21 |
-| SQL Scripts | 52 |
-| CSV Datasets | 30 |
-| PDF Documentation | 78 |
-| PNG Visualizations | 85 |
-| Markdown Guides | 26 |
+| Jupyter Notebooks | 151 |
+| SQL Scripts | 40 |
+| CSV Datasets | 44 |
+| PDF Documentation | 50 |
+| PNG Visualizations | 81 |
+| Markdown Guides | 28 |
 
 ---
 
@@ -39,7 +39,7 @@ certificacion-cientifico-datos/
 ├── s05-aprendizaje-no-supervisado/  Unsupervised learning algorithms (M27-M31)
 ├── s06-estadistica/                 Statistical analysis methods (M32-M34)
 ├── s07-sql/                         Database & SQL queries (M35-M43)
-├── s08-power-bi/                    BI & dashboarding (M44-M50 + practica-ventas/)
+├── s08-dashboards/                  BI & dashboards with Streamlit (M44-M50 + practica-ventas/)
 ├── s09-modelado/                    Advanced statistical modelling (M51-M56)
 ├── s10-storytelling/                Data visualization & presentation (M57)
 └── proyectos/                       Capstone projects (P01-P05)
@@ -54,8 +54,9 @@ certificacion-cientifico-datos/
 | File | Content |
 | --- | --- |
 | `mNN-tema-guia.ipynb` | Student guide: context, data, instructions and empty answer cells |
-| `mNN-tema-solucion.*` | The solved exercise (`.ipynb`, `.md`, `.sql`, `.pdf`, `.pbix`…) |
+| `mNN-tema-solucion.*` | The solved exercise (`.ipynb`, `.md`, `.sql`, `.pdf`…) |
 | `mNN-tema-leccion.*` | Complementary lesson (only in some modules) |
+| `mNN-tema-app.py` | Streamlit app built in the module (S08 and P05 only) |
 
 - For example, `s04-aprendizaje-supervisado/m21-regresion-lineal-simple/` contains `m21-regresion-lineal-simple-guia.ipynb` and `m21-regresion-lineal-simple-solucion.ipynb`.
 
@@ -109,19 +110,20 @@ Statistical analysis and hypothesis testing
 ### S07: SQL (Database & Queries) - 16 MB
 SQL fundamentals and advanced database querying
 - **M35-M43:** 9 modules covering SQL introduction through advanced topics
-- **52 SQL scripts** with practical exercises and solutions
+- **37 SQL scripts** with practical exercises and solutions
 - Topics include: table operations, multi-table queries, aggregation, partitioning, SQLite with Python, and advanced querying
 
-### S08: PowerBI (Business Intelligence) - 146 MB ⭐ Largest Section
-Business intelligence and dashboard development
-- **M44:** Data Preparation
-- **M45:** Data Modelling
-- **M46:** Conditional Formatting
-- **M47:** DAX (Data Analysis Expressions)
-- **M48:** Dynamic Objects
-- **M49:** Dashboard Design
-- **M50:** Publishing Dashboards
-- Includes a sample dashboard and sales dataset in `practica-ventas/` (55 MB)
+### S08: Dashboards (Business Intelligence)
+Business intelligence and dashboard development with free, open-source tools: pandas and DuckDB for data preparation and modelling, Plotly for charts and Streamlit for the interactive apps
+- **M44:** Data Preparation (pandas)
+- **M45:** Data Modelling (star schema in DuckDB)
+- **M46:** Conditional Formatting (first dashboard)
+- **M47:** Measures and KPIs (time intelligence in SQL and pandas)
+- **M48:** Interactivity (filters, cross-filtering, drill-down and drill-through)
+- **M49:** Dashboard Design (layout, theme, navigation)
+- **M50:** Publishing Dashboards (Streamlit Community Cloud, row-level security)
+- `practica-ventas/` holds the sales extract (`datos-ventas/`, 57 MB), the cleaned model in Parquet (`datos-modelo/`), the shared module [`ventas.py`](s08-dashboards/practica-ventas/ventas.py) with the cleaning steps and measures, and the section's final multipage app (`app.py`)
+- The section was originally done in Power BI; it was redone in Python so it does not depend on paid or Windows-only software. The Power BI files remain in the git history.
 
 ### S09: Modelling (Advanced Analytics) - 17 MB
 Advanced statistical and time series modelling
@@ -166,20 +168,20 @@ Data visualization and presentation techniques
 - **Techniques:** SQL queries, data aggregation, exploratory analysis
 - **Deliverables:** 2 SQL analysis scripts, 15+ visualization screenshots, markdown documentation, comprehensive PDF report (1.5 MB)
 
-### P05: PowerBI COVID-19 Analysis - PowerBI File
-**Objective:** Business intelligence dashboard for COVID-19 statistics
-- **Tools:** Microsoft PowerBI
-- **Dataset:** COVID-19 statistics and metrics
-- **Deliverables:** Interactive PowerBI dashboard (.pbix), analysis report (PDF)
+### P05: COVID-19 Dashboard
+**Objective:** Dashboard ranking countries by COVID-19 cases, deaths, mortality and recovery rates
+- **Tools:** pandas, DuckDB, Plotly, Streamlit
+- **Dataset:** Johns Hopkins CSSE COVID-19 time series (confirmed, deaths, recovered), local copy in `datos/`
+- **Deliverables:** Jupyter notebook and Streamlit app ([`p05-dashboard-covid-app.py`](proyectos/p05-dashboard-covid/p05-dashboard-covid-app.py))
 
 ---
 
 ## Technologies & Tools
 
 ### Programming Languages
-- **Python:** Data analysis, machine learning, statistical computing (21 Jupyter notebooks)
-- **SQL:** Database querying and data manipulation (52 scripts)
-- **Markdown:** Technical documentation (26 guides)
+- **Python:** Data analysis, machine learning, statistical computing (151 Jupyter notebooks)
+- **SQL:** Database querying and data manipulation (40 scripts)
+- **Markdown:** Technical documentation (28 guides)
 
 ### Data Science Stack
 | Category | Tools | Usage |
@@ -187,20 +189,20 @@ Data visualization and presentation techniques
 | **Data Analysis** | Pandas, NumPy | Data manipulation & processing |
 | **Machine Learning** | Scikit-learn, Ensemble methods | Classification, regression, clustering |
 | **Statistics** | SciPy, Statsmodels | Hypothesis testing, time series analysis |
-| **Visualization** | Matplotlib, Seaborn | Data visualization & exploration |
-| **BI & Dashboarding** | Microsoft PowerBI, Orange | Dashboard creation & visual data mining |
-| **Database** | SQLite, SQL | Data storage & querying |
+| **Visualization** | Matplotlib, Seaborn, Plotly | Data visualization & exploration |
+| **BI & Dashboarding** | Streamlit, DuckDB, Orange | Interactive dashboards & visual data mining |
+| **Database** | SQLite, DuckDB, SQL | Data storage & querying |
 
 ### File Type Distribution
-- Jupyter Notebooks (.ipynb): 21 files
-- SQL Scripts (.sql): 52 files
-- CSV Datasets (.csv): 30 files
-- PDF Documentation (.pdf): 78 files
-- PNG Images (.png): 85 files
-- Markdown Guides (.md): 26 files
-- PowerBI Files (.pbix): 2 files
+- Jupyter Notebooks (.ipynb): 151 files
+- SQL Scripts (.sql): 40 files
+- CSV Datasets (.csv): 44 files
+- PDF Documentation (.pdf): 50 files
+- PNG Images (.png): 81 files
+- Markdown Guides (.md): 28 files
+- Parquet Files (.parquet): 5 files
 - Orange Workflows (.ows): 3 files
-- Python Scripts (.py): 3 files
+- Python Scripts (.py): 19 files, including the Streamlit apps
 
 ---
 
@@ -217,14 +219,14 @@ Modules whose folders contained only solved exercises also include a complementa
 | Sections | Format | Example |
 | --- | --- | --- |
 | S01 (M02–M12), S07 (M35–M43), S09 (M51–M56), M24, M27, M30, M57 | Executed notebook | [m07-pandas-leccion.ipynb](s01-programacion/m07-pandas/m07-pandas-leccion.ipynb) |
-| S08 (M44–M50) | Markdown, with Power Query (M) and DAX code | [m47-dax-leccion.md](s08-power-bi/m47-dax/m47-dax-leccion.md) |
+| S08 (M44–M50) | Executed notebook, with the module's Streamlit app | [m47-medidas-y-kpis-leccion.ipynb](s08-dashboards/m47-medidas-y-kpis/m47-medidas-y-kpis-leccion.ipynb) |
 | S02 (M13–M16), S03 (M17–M18) | Markdown: the module's original text, written during the course | [m18-kdd-crisp-dm-leccion.md](s03-metodologia/m18-kdd-crisp-dm/m18-kdd-crisp-dm-leccion.md) |
 
 In M13–M18 the exercise is new: the guide poses an applied case with written questions plus a Python practice on synthetic data, and the solution is a reference notebook written for it.
 
 Apart from the M13–M18 texts, lessons are not part of the submitted work. The notebook lessons run offline, using the datasets in each folder or simulated data. The SQL lessons use an in-memory SQLite database and show the SQL Server syntax used in the course wherever it differs.
 
-Some submitted exercises were corrected after review. For example, M51 had a singular matrix caused by collinear columns, and in M55 the forecast intervals were never drawn. Each corrected notebook or script ends with a **Revisión posterior (2026-10)** note describing the change. The accompanying PDFs keep the version that was originally submitted.
+Some submitted exercises were corrected after review. For example, M51 had a singular matrix caused by collinear columns, and in M55 the forecast intervals were never drawn. Each corrected notebook or script ends with a **Revisión posterior (2026-10)** note describing the change. The accompanying PDFs keep the version that was originally submitted. S08 and P05 are the exception: they were redone from scratch in Python and Streamlit, so they have no PDFs, and the original Power BI work is only in the git history.
 
 ## Running the notebooks
 
@@ -239,15 +241,31 @@ pandas is pinned below 3 and statsmodels below 0.15, because the notebooks were 
 
 Each notebook reads its data with a relative path, so run it from its own folder.
 
+The S08 and P05 notebooks save their Plotly charts as PNG images with kaleido, which needs Chrome. If re-running one fails while exporting a chart, install it with `uv run plotly_get_chrome`.
+
+## Running the apps
+
+The Streamlit apps of S08 and P05 are launched from the repository root, so they pick up the theme in `.streamlit/config.toml`:
+
+```bash
+uv run streamlit run s08-dashboards/practica-ventas/app.py                    # final S08 dashboard
+uv run streamlit run s08-dashboards/m46-formato-condicional/m46-formato-condicional-app.py
+uv run streamlit run proyectos/p05-dashboard-covid/p05-dashboard-covid-app.py
+```
+
+The S08 apps read the cleaned model from `s08-dashboards/practica-ventas/datos-modelo/*.parquet`. If the cleaning in `ventas.py` changes, rebuild it with `uv run python s08-dashboards/practica-ventas/preparar_datos.py`. `uv run python s08-dashboards/verificar_apps.py` runs every app headless as a smoke test.
+
 ## Large files
 
-Power BI files (`*.pbix`), zip archives and the large datasets are stored with [Git LFS](https://git-lfs.com/). Run `git lfs install` once before cloning, or `git lfs pull` after cloning, to get their contents instead of pointer files.
+Zip archives and the large datasets are stored with [Git LFS](https://git-lfs.com/). Run `git lfs install` once before cloning, or `git lfs pull` after cloning, to get their contents instead of pointer files. The Parquet model used by the S08 apps is small enough to be stored as a regular file, so the apps also work where LFS files are not downloaded (for example, on Streamlit Community Cloud).
 
 | Dataset | Used by | Source |
 | --- | --- | --- |
 | `proyectos/p02-aprendizaje-supervisado/mnist.csv` | P02 | `train.csv` from Kaggle's [Digit Recognizer](https://www.kaggle.com/competitions/digit-recognizer/data) competition |
 | `proyectos/p03-segmentacion-de-clientes/online-retail.csv` | P03 | Course-provided copy of the [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) dataset, with columns renamed to upper case (`INVOICE_NO`, `CUSTOMER_ID`, `REGION`…) and dates shifted to 2019 |
-| `s08-power-bi/practica-ventas/datos-ventas/` | S08 practice dashboard | Sales extract provided by the course |
+| `s08-dashboards/practica-ventas/datos-ventas/` | S08 practice dashboard | Sales extract provided by the course |
+
+P05 uses a local copy of the [JHU CSSE COVID-19 Data Repository](https://github.com/CSSEGISandData/COVID-19) time series (`proyectos/p05-dashboard-covid/datos/`, under 2 MB each, so not in LFS). The repository was archived in March 2023 and is licensed under CC BY 4.0.
 
 ## Not included
 
@@ -266,8 +284,8 @@ The repository includes multiple real-world and educational datasets:
 - **Housing/Price Data:** Regression modelling
 - **MNIST Handwritten Digits:** Machine learning (76 MB)
 - **User Reviews:** Clustering and unsupervised learning
-- **Sales Dataset:** PowerBI dashboard creation (55 MB)
-- **COVID-19 Data:** Time series and business intelligence
+- **Sales Dataset:** Dashboard creation with Streamlit (57 MB)
+- **COVID-19 Data:** Dashboard of country rankings (JHU CSSE)
 - **New York Temperature Data:** Time series analysis
 - **UN Economic Activity Data:** Data storytelling
 
@@ -276,9 +294,9 @@ The repository includes multiple real-world and educational datasets:
 ## Documentation & Resources
 
 ### Included Documentation
-- **26 Markdown guides** with module instructions, exercises, and theory
-- **78 PDF documents** including class materials, solutions, and project reports
-- **85 PNG images** showing visualizations, screenshots, and diagrams
+- **28 Markdown guides** with module instructions, exercises, and theory
+- **50 PDF documents** including class materials, solutions, and project reports
+- **81 PNG images** showing visualizations, screenshots, and diagrams
 - **Jupyter notebooks** with detailed analysis and code comments
 
 ### Learning Path
@@ -294,10 +312,10 @@ The repository is organized as a progressive learning path:
 
 ✓ **56+ modules** completed across 7 data science domains
 ✓ **4 capstone projects** with end-to-end delivery
-✓ **52 SQL scripts** demonstrating database expertise
-✓ **21 Jupyter notebooks** showcasing analysis workflows
-✓ **146 MB PowerBI section** demonstrating BI proficiency
-✓ **Comprehensive documentation** with 26 guides and 78 PDFs
+✓ **40 SQL scripts** demonstrating database expertise
+✓ **151 Jupyter notebooks** showcasing analysis workflows
+✓ **Interactive Streamlit dashboards** built on a DuckDB star schema
+✓ **Comprehensive documentation** with 28 guides and 50 PDFs
 ✓ **Real-world datasets** across multiple industries and domains
 
 ---
@@ -309,7 +327,7 @@ The repository is organized as a progressive learning path:
   - Python/ML: S01, S04, S05 and proyectos
   - SQL: S07 and P04
   - Statistics: S06 and S09
-  - PowerBI: S08 and P05
+  - BI and dashboards: S08 and P05
   - Methodology: S03 and S10
 - **By Project:** Jump to `proyectos/` folder for capstone deliverables
 

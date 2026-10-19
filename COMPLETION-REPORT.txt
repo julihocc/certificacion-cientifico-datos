@@ -84,7 +84,7 @@ File Type Distribution:
 ├─ PDF Documents: 78
 ├─ PNG Images: 85
 ├─ Markdown Guides: 26
-├─ PowerBI Files: 2
+├─ Streamlit Apps: 5
 ├─ Orange Workflows: 3
 └─ Python Scripts: 3
 
@@ -94,7 +94,7 @@ Section Breakdown:
 ├─ S04: Supervised Learning (7 modules, 6.7 MB)
 ├─ S06: Statistics (3 modules, 2.8 MB)
 ├─ S07: SQL (9 modules, 52 scripts, 16 MB)
-├─ S08: PowerBI (7 modules, 146 MB) ⭐ Largest
+├─ S08: Dashboards (7 modules, 68 MB)
 ├─ S09: Modelling (6 modules, 17 MB)
 ├─ M57: Storytelling (1 module, 7.8 MB)
 └─ Projects: 4 capstone projects (95 MB)
@@ -102,7 +102,7 @@ Section Breakdown:
 Technologies Identified:
 ├─ Python Stack: Pandas, NumPy, Scikit-learn, TensorFlow
 ├─ Databases: SQLite, PostgreSQL, SQL queries
-├─ BI: Microsoft PowerBI, DAX
+├─ BI: Streamlit, Plotly, DuckDB
 ├─ ML: Orange visual data mining, Scikit-learn, XGBoost
 ├─ Statistics: SciPy, Statsmodels
 ├─ Visualization: Matplotlib, Seaborn
@@ -112,7 +112,7 @@ Capstone Projects:
 ├─ P01: User Reviews Clustering (7.7 MB, Unsupervised Learning)
 ├─ P02: Heart Attack Prediction (76 MB, Classification + Deep Learning)
 ├─ P04: Movie Rental Analysis (1.5 MB, SQL Analytics)
-└─ P05: COVID-19 Dashboard (PowerBI, Business Intelligence)
+└─ P05: COVID-19 Dashboard (Streamlit, Business Intelligence)
 
 Datasets Catalogued:
 ├─ GDP data
@@ -304,7 +304,7 @@ PROJECTS.md Features:
   • Skills demonstrated matrices
   • Project comparison table
   • SQL techniques (P04)
-  • DAX features (P05)
+  • Streamlit dashboards (S08, P05)
   • Model performance (P02)
 
 QUICK-REFERENCE.md Features:

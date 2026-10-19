@@ -61,7 +61,7 @@ This document summarizes the comprehensive documentation created for the Data Sc
 3. Module Organization (detailed breakdown of each section)
 4. Capstone Projects Structure
 5. Dataset Inventory (12+ datasets catalogued)
-6. Technology Stack (Python, SQL, PowerBI, Orange, etc.)
+6. Technology Stack (Python, SQL, DuckDB, Streamlit, Orange, etc.)
 7. Size Distribution (295 MB total breakdown)
 8. Learning Progression (4 phases)
 
@@ -94,7 +94,7 @@ This document summarizes the comprehensive documentation created for the Data Sc
 3. **Section 4: Supervised Learning** (7 modules)
 4. **Section 6: Statistics** (3 modules)
 5. **Section 7: SQL** (9 modules, 52 scripts)
-6. **Section 8: PowerBI** (7 modules)
+6. **Section 8: Dashboards** (7 modules)
 7. **Section 9: Modelling** (6 modules)
 8. **Module 57: Storytelling** (1 module)
 
@@ -146,10 +146,10 @@ This document summarizes the comprehensive documentation created for the Data Sc
 - DVD rental database with 16 tables
 - Deliverables: SQL scripts, Report, Visualizations
 
-**P05: PowerBI COVID-19 Dashboard**
+**P05: COVID-19 Dashboard**
 - Business Intelligence / Dashboarding
-- Data modelling, DAX, interactive visualizations
-- Deliverables: .pbix file, Report, Screenshots
+- Data reshaping, country-level measures, interactive Streamlit app
+- Deliverables: Notebook, Streamlit app
 
 **Special Features:**
 - Detailed methodology for each project (6-7 phases each)
@@ -236,7 +236,7 @@ This document summarizes the comprehensive documentation created for the Data Sc
 ### Technology Coverage
 - Python (Pandas, NumPy, Scikit-learn, TensorFlow)
 - SQL (SQLite, PostgreSQL queries)
-- PowerBI (DAX, Data Modelling)
+- Streamlit, Plotly and DuckDB (data modelling, measures)
 - Orange ML (Visual data mining)
 - Statistical Tools (SciPy, Statsmodels)
 

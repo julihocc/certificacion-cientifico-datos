@@ -15,7 +15,7 @@ certificacion-cientifico-datos/
 ├── s05-aprendizaje-no-supervisado/  Unsupervised Learning (5 modules, 9.2 MB)
 ├── s06-estadistica/                 Statistics (3 modules, 2.8 MB)
 ├── s07-sql/                         SQL (9 modules, 52 scripts, 16 MB)
-├── s08-power-bi/                    PowerBI (7 modules, 146 MB) ⭐
+├── s08-dashboards/                  Dashboards with Streamlit (7 modules, 68 MB)
 ├── s09-modelado/                    Modelling (6 modules, 17 MB)
 ├── s10-storytelling/                Storytelling (1 module, 7.8 MB)
 └── proyectos/                       Projects (4 capstone projects, 95 MB)
@@ -47,7 +47,7 @@ certificacion-cientifico-datos/
 `S02 → S03 → S07 (SQL) → P04 (movie analysis)`
 
 ### Path 3: Business Intelligence Focus
-`S02 → S03 → S08 (PowerBI) → P05 (COVID dashboard)`
+`S02 → S03 → S08 (Dashboards) → P05 (COVID dashboard)`
 
 ### Path 4: Complete Program
 `S02 → S03 → S04 → S06 → S07 → S08 → S09 → M57 → Projects`
@@ -102,14 +102,14 @@ certificacion-cientifico-datos/
 | M42 | Query Optimization | 4 | 4-5h |
 | M43 | Advanced Topics | 4 | 4-5h |
 
-### Section 8: PowerBI (7 modules + Practice)
+### Section 8: Dashboards (7 modules + Practice)
 | Module | Topic | Time |
 |--------|-------|------|
 | M44 | Data Preparation | 6-8h |
 | M45 | Data Modelling | 8-10h |
 | M46 | Conditional Formatting | 5-6h |
-| M47 | DAX Formulas | 8-10h |
-| M48 | Dynamic Objects | 6-8h |
+| M47 | Measures and KPIs | 8-10h |
+| M48 | Interactivity | 6-8h |
 | M49 | Dashboard Design | 8-10h |
 | M50 | Publishing | 4-5h |
 | Practice | Hands-on exercises | 10-12h |
@@ -138,7 +138,7 @@ certificacion-cientifico-datos/
 | **P01** | Clustering | 7.7 MB | Python/ML | 15-20h |
 | **P02** | Classification | 76 MB | Python/DL | 25-30h |
 | **P04** | SQL Analytics | 1.5 MB | SQL | 20-25h |
-| **P05** | Dashboards | Variable | PowerBI | 20-25h |
+| **P05** | Dashboards | 4.3 MB | Python/Streamlit | 20-25h |
 
 ---
 
@@ -168,7 +168,8 @@ SQL: Query language
 ```
 Matplotlib: Static plots
 Seaborn: Statistical graphics
-PowerBI: Business dashboards
+Plotly: Interactive charts
+Streamlit: Business dashboards
 Orange: Visual data mining
 ```
 
@@ -196,12 +197,12 @@ Git: Version control
 - Movies: `proyectos/p04-analisis-de-peliculas-sql/`
 - Reviews: `proyectos/p01-resenas-de-apps/`
 
-### Find PowerBI Files
-`s08-power-bi/` (.pbix files in each module)
+### Find the Streamlit Apps
+`s08-dashboards/` (`mNN-tema-app.py` in M46–M48, final app in `practica-ventas/app.py`) and `proyectos/p05-dashboard-covid/`
 
 ### Find Large Datasets
 - MNIST: `proyectos/p02-aprendizaje-supervisado/mnist.csv` (76 MB)
-- Sales: `s08-power-bi/practica-ventas/datos-ventas/` (55 MB)
+- Sales: `s08-dashboards/practica-ventas/datos-ventas/` (57 MB)
 
 ---
 
@@ -210,7 +211,7 @@ Git: Version control
 ### By Language
 - **Python:** Notebooks, scripts in S04, S06, S09, Projects
 - **SQL:** All files in S07 (M35-M43)
-- **DAX:** s08-power-bi (M47)
+- **DuckDB SQL measures:** s08-dashboards (M45, M47)
 - **Markdown:** Documentation throughout
 
 ### By Algorithm
@@ -223,7 +224,7 @@ Git: Version control
 ### By Tool
 - **Python/Pandas:** Most modules
 - **Scikit-learn:** S04 (M21-26)
-- **PowerBI:** S08 (M44-50)
+- **Streamlit, Plotly, DuckDB:** S08 (M44-50), P05
 - **Orange:** S03/M20
 - **SQL:** S07 (M35-43)
 
@@ -256,7 +257,7 @@ Git: Version control
 - [ ] Practice hands-on exercises
 
 ### Advanced Tools (80-120 hours)
-- [ ] Complete S08: PowerBI (40-60h)
+- [ ] Complete S08: Dashboards (40-60h)
 - [ ] Complete S09: Modelling (40-60h)
 - [ ] Build sample dashboards
 - [ ] Implement time series models
@@ -294,7 +295,7 @@ Git: Version control
 ### Business Intelligence Skills
 ✓ Dashboard design
 ✓ Data modelling
-✓ DAX formula writing
+✓ Business measures in SQL and pandas
 ✓ Business metric definition
 ✓ Report creation
 ✓ Data storytelling
@@ -325,7 +326,7 @@ Git: Version control
 **Notebooks** → Throughout sections (21 total)
 **PDFs** → Every module folder
 **Datasets** → Module folders + proyectos/
-**PowerBI Files** → s08-power-bi/ (m44-m50, one per module)
+**Streamlit Apps** → s08-dashboards/ (m46-m48 and practica-ventas/) and proyectos/p05-dashboard-covid/
 **Orange Workflows** → s03-metodologia/ (m19-m20, .ows files)
 
 ---

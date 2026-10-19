@@ -12,7 +12,7 @@ This document provides detailed documentation of all capstone projects in the Da
 - [P01: User Reviews Analysis](#p01-user-reviews-clustering-analysis)
 - [P02: Heart Attack Prediction](#p02-heart-attack-prediction)
 - [P04: Movie Data Analysis](#p04-movie-rental-data-analysis)
-- [P05: PowerBI COVID-19 Analysis](#p05-powerbi-covid-19-dashboard)
+- [P05: COVID-19 Dashboard](#p05-covid-19-dashboard)
 
 ---
 
@@ -500,221 +500,63 @@ Staff (2 staff members)
 
 ---
 
-## P05: PowerBI COVID-19 Dashboard
+## P05: COVID-19 Dashboard
 
 **Directory:** `proyectos/p05-dashboard-covid/`
-**Size:** Variable (PowerBI file + data)
+**Size:** 4.3 MB (three CSV files of about 1–2 MB each)
 **Project Type:** Business Intelligence / Dashboarding
-**Status:** Completed
+**Status:** Completed (redone in Python and Streamlit; the original Power BI version is in the git history)
 
 ### Project Overview
 
-This project demonstrates advanced business intelligence techniques using Microsoft PowerBI to create interactive dashboards analyzing COVID-19 pandemic data. The dashboard provides visual insights into pandemic trends, geographic distribution, and key metrics for decision-making.
+A dashboard that ranks countries by COVID-19 confirmed cases, deaths, mortality rate and recovery rate, built from the Johns Hopkins CSSE time series. The data is reshaped and aggregated with pandas (and checked again with DuckDB SQL), and the rankings are served as an interactive Streamlit app.
 
 ### Objectives
-1. Import and prepare COVID-19 dataset
-2. Design data model for analysis
-3. Create calculated measures (DAX)
-4. Build interactive dashboard visualizations
-5. Implement drill-through and filtering
-6. Develop insights for stakeholders
-7. Publish dashboard for distribution
+- Reshape three wide time series (one column per day) into long format
+- Aggregate provinces to countries before combining the three series
+- Compute per-country totals and rates with safe division
+- Detect and handle the data problems that would distort the rankings
+- Publish the rankings as an interactive dashboard
 
-### Dataset: COVID-19 Statistics
+### Dataset: JHU CSSE COVID-19 time series
 
-**File:** `covid_data.csv`
-- **Records:** Thousands of daily records
-- **Dimensions:** Date, country, region, state/province
-- **Metrics:**
-  - Cases (confirmed, recovered, active)
-  - Deaths (total, daily)
-  - Tests (if available)
-  - Hospitalization rates
-- **Time Period:** Multi-year pandemic data
-- **Format:** CSV (structured time series)
+Local copy in `datos/` of the global time series from the [JHU CSSE COVID-19 Data Repository](https://github.com/CSSEGISandData/COVID-19) (archived in March 2023, CC BY 4.0):
+
+| File | Rows | Content |
+| --- | --- | --- |
+| `casos-confirmados.csv` | 289 | Cumulative confirmed cases per province or country, 1143 daily columns |
+| `muertes.csv` | 289 | Cumulative deaths |
+| `recuperados.csv` | 274 | Cumulative recoveries (reporting stopped on 2021-08-04) |
 
 ### Technologies & Tools
-- **Platform:** Microsoft PowerBI Desktop
-- **Data:** COVID-19 datasets (Johns Hopkins, WHO, local health departments)
-- **Language:** DAX (Data Analysis Expressions)
-- **Visualization Types:** Cards, charts, maps, tables, slicers
-- **Export:** PowerBI Service for online publishing
+- **Data preparation:** pandas (`melt`, `groupby`), DuckDB SQL
+- **Visualization:** Plotly
+- **Dashboard:** Streamlit (`st.column_config`, `scatter_geo` map, sidebar controls, CSV download)
 
 ### Methodology
-
-#### Phase 1: Data Import & Preparation
-- Import COVID-19 CSV data
-- Data type validation
-- Missing value handling
-- Date format standardization
-- Field naming and organization
-
-#### Phase 2: Data Modelling
-- Design star schema
-- Create date dimension table
-- Create location hierarchy (country → region → state)
-- Define relationships
-- Set measure groups
-
-#### Phase 3: DAX Calculations
-**Key Measures:**
-- Total confirmed cases
-- Daily new cases (calculated)
-- Death rate (deaths/cases)
-- Recovery rate (recovered/cases)
-- 7-day moving average
-- Month-over-month growth
-- Geographic case density
-- Trend indicators
-
-**Calculated Columns:**
-- Date intelligence (month, week, quarter)
-- Risk level classification
-- Growth trajectory indicators
-- Comparative metrics
-
-#### Phase 4: Dashboard Design
-
-**Dashboard 1: Overview**
-- Cards: Total cases, deaths, recoveries, active
-- Map: Geographic distribution
-- Trend lines: Cases and deaths over time
-- Slicers: Date range, country, region
-
-**Dashboard 2: Geographic Analysis**
-- Choropleth map by country
-- Ranking tables (top affected countries)
-- Regional comparison charts
-- Drill-down capabilities
-
-**Dashboard 3: Trend Analysis**
-- Moving average trend lines
-- Growth rate analysis
-- Comparative country trends
-- Predictive trend visualization
-
-**Dashboard 4: Demographics/Details**
-- Time series by category
-- Detailed data table with filters
-- Custom sorting and ranking
-- Bookmarks for predefined views
-
-#### Phase 5: Interactivity & Features
-- Slicers for filtering (date, location, metric)
-- Drill-through pages for detailed analysis
-- Conditional formatting for alerts
-- Hover tooltips with additional metrics
-- Bookmarks for navigation
-- Dynamic titles based on selections
-
-#### Phase 6: Publishing & Distribution
-- Publish to PowerBI Service
-- Configure scheduled refresh
-- Set row-level security (if needed)
-- Create shareable links
-- Configure alerts and notifications
+1. Read the three CSV files and reshape them from wide to long with `melt`.
+2. Aggregate to country level before joining: the recovered file has different province rows (Canada is a single row there), so joining by province would lose 1 405 971 Canadian recoveries.
+3. Per-country measures: the maximum of each province's cumulative series, then the sum per country, computed in pandas and in two-level DuckDB SQL with identical results.
+4. Rates with safe division. The recovery rate uses the confirmed cases at the same cut-off date, capped at 2021-08-04.
+5. Exclude entries that are not countries (Diamond Princess, MS Zaandam, the Olympics rows, Antarctica), countries that never reported recoveries, and countries below a minimum number of cases in the rate rankings.
 
 ### Deliverables
-
-1. **PowerBI File:** `p05-dashboard-covid-solucion.pbix`
-   - Complete interactive dashboard
-   - Multiple pages/views
-   - All calculations and formatting
-   - Ready for publication
-   - File size: 10-20 MB (including embedded data)
-
-2. **Dashboard Report:** `p05-dashboard-covid-solucion.pdf`
-   - Executive summary
-   - Key findings and insights
-   - Dashboard navigation guide
-   - Data sources and methodology
-   - Interpretation of metrics
-   - Policy recommendations
-
-3. **Screenshots & Documentation:** `Dashboard-Visualizations/`
-   - Multiple dashboard page screenshots
-   - Visual navigation guide
-   - Feature descriptions
-   - Slicer and filter explanations
-   - Drill-through examples
-
-4. **Data Documentation:** `covid_data_dictionary.md`
-   - Field descriptions
-   - Data sources
-   - Update frequency
-   - Data quality notes
-   - Calculation methodologies
-
-### Dashboard Features
-
-**Visual Elements:**
-- KPI cards with trend indicators
-- Geographic choropleth maps with color-coded risk levels
-- Time series line charts with moving averages
-- Bar charts for country/region rankings
-- Combination charts showing cases and death rates
-- Table grids with conditional formatting
-- Scatter plots for correlation analysis
-
-**Interactive Features:**
-- Date range slicer (day, week, month, quarter, year)
-- Country/region dropdown filter
-- Metric toggle (cases, deaths, recovery rate)
-- Drill-through from summary to detailed view
-- Hover tooltips with detailed information
-- Bookmarks for saved views
-- Dynamic labels and titles
-
-**Advanced DAX Features:**
-- CALCULATE function for filtered measures
-- DATEADD for year-over-year comparisons
-- VAR for complex measure calculations
-- IF statements for conditional logic
-- Aggregation functions (SUM, COUNT, AVERAGE)
-- RELATE for relationship handling
-
-### Key Insights Visualized
-
-**Pandemic Trends:**
-- Peak case periods identified
-- Geographic hotspot evolution
-- Death rate variations by region
-- Correlation between testing and cases
-
-**Comparative Analysis:**
-- Country-to-country comparison
-- Best/worst performing regions
-- Trend acceleration/deceleration
-- Policy impact visualization
-
-**Predictive Elements:**
-- Trend trajectory visualization
-- Growth rate indicators
-- Risk level classification
-- Forecasting potential
+1. **Guide:** `p05-dashboard-covid-guia.ipynb`
+2. **Solution notebook:** `p05-dashboard-covid-solucion.ipynb` (executed)
+3. **Streamlit app:** `p05-dashboard-covid-app.py`, with five ranking tables, a map, sidebar controls (cut-off date, minimum cases, top N) and a CSV download
+4. **Deployment file:** `requirements.txt` for Streamlit Community Cloud
 
 ### Skills Demonstrated
-✓ PowerBI data import and transformation
-✓ Data modelling with star schema
-✓ Advanced DAX formula development
-✓ Interactive dashboard design
-✓ Business metric definition
-✓ Visual best practices
-✓ Publishing and distribution
-✓ Stakeholder communication through dashboards
-✓ Time series analysis visualization
-✓ Geographic data visualization
+✓ Reshaping wide time series with pandas
+✓ Choosing the right aggregation grain before joining
+✓ Cross-checking pandas results with SQL
+✓ Detecting data-quality traps (stopped series, non-country rows, tiny denominators)
+✓ Building and testing a Streamlit dashboard
 
 ### Related Modules
-- S08: PowerBI (7 modules, 146 MB content)
-  - M44: Data preparation
-  - M45: Data modelling
-  - M47: DAX formulas
-  - M48: Dynamic objects
-  - M49: Dashboard design
-  - M50: Publishing
-- S06: Statistics (for metric interpretation)
-- M57: Storytelling (for insight communication)
+- S08: Dashboards (preparation, modelling, measures, interactivity, design and publishing)
+- S07: SQL (aggregation and joins)
+- M57: Storytelling (presenting the rankings)
 
 ---
 
@@ -724,11 +566,11 @@ This project demonstrates advanced business intelligence techniques using Micros
 |--------|-----|-----|-----|-----|
 | **Primary Focus** | Unsupervised Learning | Supervised Learning | SQL Analytics | BI Dashboarding |
 | **Dataset Type** | Text (reviews) | Medical/Images | Relational DB | Time Series |
-| **Dataset Size** | 7.7 MB | 76 MB | 1.5 MB | Variable |
-| **Main Tools** | Python/Scikit-learn | Python/TensorFlow | SQL/Database | PowerBI/DAX |
+| **Dataset Size** | 7.7 MB | 76 MB | 1.5 MB | 4.3 MB |
+| **Main Tools** | Python/Scikit-learn | Python/TensorFlow | SQL/Database | Python/Streamlit |
 | **Duration** | Medium | Long | Medium | Medium |
 | **Complexity** | High (NLP) | Very High (ML+DL) | Very High (SQL) | High (BI) |
-| **Deliverables** | Notebook + Report | Notebook + Report | SQL Scripts + Report | .pbix + Report |
+| **Deliverables** | Notebook + Report | Notebook + Report | SQL Scripts + Report | Notebook + Streamlit app |
 
 ---
 
@@ -750,7 +592,7 @@ This project demonstrates advanced business intelligence techniques using Micros
 ### Business Intelligence Skills
 - **Data Modelling:** P04 (relational), P05 (dimensional)
 - **Dashboard Design:** P05
-- **DAX/Formulas:** P05
+- **Measures (pandas/SQL):** P05
 - **Visualization:** All projects
 - **Publishing:** P05
 
@@ -783,7 +625,7 @@ This project demonstrates advanced business intelligence techniques using Micros
 3. **Code Review:**
    - Examine Jupyter notebooks
    - Review SQL scripts
-   - Study DAX formulas
+   - Run the Streamlit apps
    - Understand visualization techniques
 
 4. **Extension:**

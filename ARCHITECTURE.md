@@ -73,15 +73,16 @@ certificacion-cientifico-datos/
 │   ├── m42-consultas-avanzadas-sql/         # Advanced SQL Queries
 │   └── m43-temas-avanzados-sql/             # Advanced Topics
 │
-├── s08-power-bi/                            # Section 8: Business Intelligence (146 MB)
+├── s08-dashboards/                          # Section 8: Business Intelligence with Streamlit (68 MB)
 │   ├── m44-preparacion-de-datos/            # Data Preparation
 │   ├── m45-modelado-de-datos/               # Data Modelling
 │   ├── m46-formato-condicional/             # Conditional Formatting
-│   ├── m47-dax/                             # DAX (Data Analysis Expressions)
-│   ├── m48-objetos-dinamicos/               # Dynamic Objects
+│   ├── m47-medidas-y-kpis/                  # Measures and KPIs
+│   ├── m48-interactividad/                  # Interactivity
 │   ├── m49-diseno-de-dashboards/            # Dashboard Design
 │   ├── m50-publicacion-de-dashboards/       # Publishing Dashboards
-│   └── practica-ventas/                     # Practice dashboard & sales datasets
+│   ├── practica-ventas/                     # Sales data, ventas.py and the final Streamlit app
+│   └── verificar_apps.py                    # Smoke test for every Streamlit app
 │
 ├── s09-modelado/                            # Section 9: Advanced Modelling (6 modules)
 │   ├── m51-analisis-de-regresion/           # Regression Analysis
@@ -199,21 +200,21 @@ certificacion-cientifico-datos/
 
 **Database:** DVD Rental Database (dvdrental) with SQL restore scripts
 
-### Section S08 `s08-power-bi/` (146 MB, 7 modules + `practica-ventas/`)
-**Focus:** Business intelligence and dashboard development
+### Section S08 `s08-dashboards/` (68 MB, 7 modules + `practica-ventas/`)
+**Focus:** Business intelligence and dashboard development with pandas, DuckDB, Plotly and Streamlit (redone from the original Power BI work, which remains in the git history)
 
-| Module | Topic | Resources | File Size |
-|--------|-------|-----------|-----------|
-| M44 | Data Preparation | 2 PDFs, .pbix file | 5-10 MB |
-| M45 | Data Modelling | 3 PDFs, .pbix file | 8-12 MB |
-| M46 | Conditional Formatting | 2 PDFs, .pbix file | 5 MB |
-| M47 | DAX (Expressions) | 3 PDFs, .pbix file | 8 MB |
-| M48 | Dynamic Objects | 2 PDFs, .pbix file | 6 MB |
-| M49 | Dashboard Design | 3 PDFs, .pbix file | 10 MB |
-| M50 | Publishing | 2 PDFs | 2 MB |
-| `practica-ventas/` | Sample Dashboards | .pbix files, sales data | 55 MB (ZIP) |
+| Module | Topic | Resources |
+|--------|-------|-----------|
+| M44 | Data Preparation | Guide, lesson and solution notebooks |
+| M45 | Data Modelling | Guide, lesson and solution notebooks |
+| M46 | Conditional Formatting | Notebooks + `m46-formato-condicional-app.py` |
+| M47 | Measures and KPIs | Notebooks + `m47-medidas-y-kpis-app.py` |
+| M48 | Interactivity | Notebooks + `m48-interactividad-app.py` |
+| M49 | Dashboard Design | Notebooks + screenshots of the final app |
+| M50 | Publishing | Notebooks (deployment and row-level security) |
+| `practica-ventas/` | Data and final app | `datos-ventas/` (57 MB, LFS), `datos-modelo/` (8.6 MB Parquet), `ventas.py`, `app.py`, `paginas/` |
 
-**Datasets:** Sales Extract Dataset (55 MB compressed), various analysis data
+**Datasets:** Sales extract (1 499 000 sales, 2019–2021) and its cleaned star-schema model
 
 ### Section S09 `s09-modelado/` (17 MB, 6 modules)
 **Focus:** Advanced statistical and time series modelling
@@ -283,15 +284,18 @@ proyectos/p04-analisis-de-peliculas-sql/
 **Technologies:** SQL, SQLite, Database design, Data visualization
 **Key Skills:** Complex SQL queries, data aggregation, reporting, visualization
 
-### P05: PowerBI COVID-19 Analysis
+### P05: COVID-19 Dashboard
 **Objective:** Business intelligence - pandemic data dashboard
 **Structure:**
 ```
 proyectos/p05-dashboard-covid/
-├── p05-dashboard-covid-solucion.pbix       # PowerBI file (data embedded)
-└── p05-dashboard-covid-solucion.pdf        # Analysis report
+├── datos/                                  # JHU CSSE time series (confirmed, deaths, recovered)
+├── p05-dashboard-covid-guia.ipynb          # Student guide
+├── p05-dashboard-covid-solucion.ipynb      # Solution notebook
+├── p05-dashboard-covid-app.py              # Streamlit app with the country rankings
+└── requirements.txt                        # Dependencies for Streamlit Community Cloud
 ```
-**Technologies:** Microsoft PowerBI, DAX, Data modeling
+**Technologies:** pandas, DuckDB, Plotly, Streamlit
 **Key Skills:** Dashboard design, KPI design, interactive visualization, storytelling
 
 ---
@@ -307,7 +311,7 @@ proyectos/p05-dashboard-covid/
 6. **Advertising Data** - Regression model training
 7. **User Reviews** - 7.7 MB clustering exercise
 8. **Movie Rental Database (dvdrental)** - SQL relational database
-9. **Sales Extract Dataset** - 55 MB, PowerBI training
+9. **Sales Extract Dataset** - 57 MB, dashboard practice (S08)
 10. **Temperature Data (New York)** - Time series analysis
 11. **UN Economic Activity Data** - Data storytelling exercise
 12. **Spotify Data** - Analytics case study
@@ -330,7 +334,8 @@ proyectos/p05-dashboard-covid/
 ### Visualization
 - **Matplotlib:** Static visualizations
 - **Seaborn:** Statistical graphics
-- **PowerBI:** Business intelligence dashboards
+- **Plotly:** Interactive charts
+- **Streamlit:** Business intelligence dashboards
 - **Orange:** Visual data mining
 
 ### Database & SQL
@@ -379,15 +384,17 @@ proyectos/p05-dashboard-covid/
 
 | Component | Size | % of Total |
 |-----------|------|-----------|
-| s08-power-bi (BI & dashboards) | 146 MB | 49.5% |
-| p02-aprendizaje-supervisado (Project) | 76 MB | 25.8% |
-| PDF Documentation | ~50 MB | 17% |
-| s07-sql (Database & scripts) | 16 MB | 5.4% |
-| s09-modelado | 17 MB | 5.8% |
-| CSV Datasets | Variable | ~3-4% |
-| PNG Images | ~20 MB | 6.8% |
-| Other Modules | ~15 MB | 5% |
-| **Total** | **295 MB** | **100%** |
+| p02-aprendizaje-supervisado (Project) | 78.5 MB | 30.2% |
+| s08-dashboards (BI & dashboards) | 68.0 MB | 26.1% |
+| p03-segmentacion-de-clientes (Project) | 47.6 MB | 18.3% |
+| s07-sql (Database & scripts) | 10.1 MB | 3.9% |
+| p01-resenas-de-apps (Project) | 10.0 MB | 3.9% |
+| s05-aprendizaje-no-supervisado | 9.5 MB | 3.7% |
+| s09-modelado | 8.3 MB | 3.2% |
+| Other sections, projects and root files | 28.3 MB | 10.9% |
+| **Total** | **260 MB** | **100%** |
+
+Sizes count the files in the working tree, with Git LFS files downloaded (2026-10).
 
 ---
 
@@ -409,7 +416,7 @@ proyectos/p05-dashboard-covid/
 **Professional & Advanced Topics**
 - Business intelligence dashboarding
 - Advanced time series modelling
-- DAX and data modelling
+- Data modelling and business measures (DuckDB, SQL)
 
 ### Phase 4: Integration & Specialization (S10/M57, Projects)
 **Capstone & Specialization**
@@ -426,7 +433,7 @@ proyectos/p05-dashboard-covid/
 - **Code Quality:** Python scripts follow data science best practices
 - **Documentation:** Comprehensive guides and PDFs
 - **Dataset Diversity:** 12+ different datasets across multiple domains
-- **Technology Breadth:** 6+ major technologies (Python, SQL, PowerBI, Orange, etc.)
+- **Technology Breadth:** 6+ major technologies (Python, SQL, DuckDB, Streamlit, Orange, etc.)
 
 ---
 
