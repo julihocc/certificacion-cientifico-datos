@@ -154,4 +154,7 @@ M5 SQL m03 Anexo Tarea .pdf
 screencapture-lms-*.pdf
 
 # Archive of the Sales Extract CSVs, which are tracked with Git LFS
-s08-power-bi/wetransfer_sales-extract-dataset_2022-06-07_2023.zip
+s08-dashboards/wetransfer_sales-extract-dataset_2022-06-07_2023.zip
+
+# Streamlit secrets (copy .streamlit/secrets.example.toml)
+.streamlit/secrets.toml

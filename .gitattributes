@@ -1,9 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Git LFS: Power BI files, archives and datasets over 10 MB
-*.pbix filter=lfs diff=lfs merge=lfs -text
+# Git LFS: archives and datasets over 10 MB
 *.zip filter=lfs diff=lfs merge=lfs -text
 proyectos/p02-aprendizaje-supervisado/mnist.csv filter=lfs diff=lfs merge=lfs -text
 proyectos/p03-segmentacion-de-clientes/online-retail.csv filter=lfs diff=lfs merge=lfs -text
-s08-power-bi/practica-ventas/datos-ventas/**/*.csv filter=lfs diff=lfs merge=lfs -text
+s08-dashboards/practica-ventas/datos-ventas/**/*.csv filter=lfs diff=lfs merge=lfs -text

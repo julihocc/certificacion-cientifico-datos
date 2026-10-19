@@ -4,19 +4,25 @@ version = "0.1.0"
 description = "Projects and exercises from the Data Scientist certification program"
 requires-python = ">=3.11"
 dependencies = [
+    "duckdb>=1.5",
     "feature-engine>=1.9.4",
     "jupyter>=1.1.1",
+    "kaleido>=1",
     "matplotlib>=3.11.2",
     "mlxtend>=0.25.0",
     "numpy>=2.4.6",
+    "openpyxl>=3.1",
     "orange3>=3.39.0",
     # Notebooks were written for pandas 2.x and statsmodels 0.14; newer majors break them.
     "pandas>=2.2,<3",
-    "pillow>=13.0.0",
+    "pillow>=12",
+    "plotly>=6",
+    "pyarrow>=26.0.0",
     "scikit-learn>=1.9.1",
     "scipy>=1.17.1",
     "seaborn>=0.13.2",
     "statsmodels>=0.14,<0.15",
+    "streamlit>=1.66",
     "xgboost>=2.0.3",
     "yfinance>=1.7.0",
 ]
