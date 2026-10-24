@@ -1,0 +1,11 @@
+# Dependencias de la app para Streamlit Community Cloud (Módulo 50).
+# Community Cloud busca el archivo de dependencias primero junto al archivo
+# principal (esta carpeta) y después en la raíz del repositorio, así que este
+# archivo tiene prioridad sobre pyproject.toml y uv.lock de la raíz.
+streamlit>=1.66
+plotly>=6.0
+duckdb>=1.2
+pandas>=2.2,<3
+pyarrow>=17
+# Para iniciar sesión con st.login() (proveedor OIDC), sustituye la primera línea por:
+# streamlit[auth]>=1.66
